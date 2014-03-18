@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TestEngineController : MonoBehaviour {
 	public Rigidbody leftEngine,rightEngine;
+	public bool go = true;
+	public bool acceptUserInput = true;
 
 	// Use this for initialization
 	void Start () {
@@ -10,14 +12,20 @@ public class TestEngineController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
+		if(go){
+			Vector3 leftForce = leftEngine.transform.up*25;
+			Vector3 rightForce=rightEngine.transform.up*25;
+			leftEngine.AddForce(leftForce);
+			rightEngine.AddForce(rightForce);
+		}
+		if(!acceptUserInput)return;
 		float leftTrigger = Input.GetAxis("LeftTrigger");
 		float rightTrigger = Input.GetAxis("RightTrigger");
 
-		Vector3 leftForce = leftEngine.transform.up*200*leftTrigger;
-		Vector3 rightForce=rightEngine.transform.up*200*rightTrigger;
-		leftEngine.AddForce(leftForce);
-		rightEngine.AddForce(rightForce);
+		leftEngine.AddForce (leftEngine.transform.forward *20* leftTrigger);
+		rightEngine.AddForce(rightEngine.transform.forward*20*rightTrigger);
+
 
 //		float leftAdjust = (Input.GetAxis("LeftTrigger")-0.5f)*2;
 //		float rightAdjust = (Input.GetAxis("RightTrigger")-0.5f)*2;
@@ -27,7 +35,7 @@ public class TestEngineController : MonoBehaviour {
 //		leftEngine.AddRelativeTorque(new Vector3(0f,Input.GetAxis("LeftTrigger"),0f));
 //		rightEngine.AddRelativeTorque(new Vector3(0f,-Input.GetAxis("RightTrigger"),0f));
 
-		leftEngine.AddRelativeTorque(Input.GetAxis("LeftStickVert")*100,0,-Input.GetAxis("LeftStickHoriz")*100);
-		rightEngine.AddRelativeTorque(Input.GetAxis("RightStickVert")*100,0,-Input.GetAxis("RightStickHoriz")*100);
+		leftEngine.AddRelativeTorque(Input.GetAxis("LeftStickVert")*50,0,-Input.GetAxis("LeftStickHoriz")*50);
+		rightEngine.AddRelativeTorque(Input.GetAxis("RightStickVert")*50,0,-Input.GetAxis("RightStickHoriz")*50);
 	}
 }

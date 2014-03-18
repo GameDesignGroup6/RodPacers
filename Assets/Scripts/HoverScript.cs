@@ -45,22 +45,20 @@ public class HoverScript : MonoBehaviour {
 	void FixedUpdate () {
 		if(rgb==null)rgb = rigidbody;
 //		trans.rotation = Quaternion.RotateTowards(trans.rotation,Quaternion.LookRotation(Vector3.forward),1f);
-		rgb.AddForceAtPosition(1*Vector3.up,trans.TransformPoint(5*up));
+		rgb.AddForceAtPosition(2*Vector3.up,trans.TransformPoint(5*up));
 
 		foreach(Transform t in points){
 			RaycastHit hit;
 			//Hooke's law: F=kx
 			if(Physics.Raycast(t.position,Vector3.down,out hit)){
-				if(hit.collider != col){
+				if(hit.collider != col && !hit.collider.CompareTag("Engine")){//don't hover on other engines!
 					Debug.DrawRay(t.position,Vector3.down,Color.red);
 					Debug.DrawRay(hit.point,hit.normal,Color.green);
 					float delta = hit.distance-targetHeight;
-					if(delta<0){
-						float force = k*delta;
-						Vector3 forceVector = hit.normal*force;
-						rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
-						Debug.DrawRay(t.position,forceVector,Color.blue);
-					}
+					float force = k*delta;
+					Vector3 forceVector = hit.normal*force;
+					rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
+					Debug.DrawRay(t.position,forceVector,Color.blue);
 				}
 			}
 		}

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class TestEngineController : MonoBehaviour {
 	public Rigidbody leftEngine,rightEngine;
-	public bool go = true;
 	public bool acceptUserInput = true;
 
 	// Use this for initialization
@@ -13,12 +12,6 @@ public class TestEngineController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(go){
-			Vector3 leftForce = leftEngine.transform.up*50;
-			Vector3 rightForce=rightEngine.transform.up*50;
-			leftEngine.AddForce(leftForce);
-			rightEngine.AddForce(rightForce);
-		}
 		if(!acceptUserInput)return;
 		float leftTrigger = Input.GetAxis("LeftTrigger");
 		float rightTrigger = Input.GetAxis("RightTrigger");

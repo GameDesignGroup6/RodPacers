@@ -20,6 +20,7 @@ public class EngineAutoTiltTurn : MonoBehaviour {
 	}
 	void FixedUpdate () {
 		float heightDelta = rightTransform.position.y-leftTransform.position.y;
+		DebugHUD.setValue("Engine Height Delta",heightDelta);
 		if(Mathf.Abs(heightDelta)<threshold)return;
 		leftEngine.AddRelativeTorque(0f,0f,keng*heightDelta);
 		rightEngine.AddRelativeTorque(0f,0f,keng*heightDelta);

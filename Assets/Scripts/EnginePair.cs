@@ -119,6 +119,9 @@ public class EnginePair : MonoBehaviour {
 			//we're backwards!
 			force = ((rightPos-leftPos)/dist)*k*k*k;
 			Debug.Log ("Engines are switched!");
+			DebugHUD.setValue("Engines Switched","<color=red>TRUE</color>" as System.Object);
+		}else{
+			DebugHUD.setValue("Engines Switched","<color=green>FALSE</color>" as System.Object);
 		}
 
 

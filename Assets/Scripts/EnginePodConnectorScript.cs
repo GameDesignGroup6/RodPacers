@@ -2,12 +2,11 @@
 using System.Collections;
 
 public class EnginePodConnectorScript : MonoBehaviour {
-	public float maxDist;
+//	public float maxDist;
 	public Transform rightEngine,leftEngine,rightMount,leftMount;
 	public float k;
 	private float targetDist;
 	private float targetCrossDist;
-//	private Transform trans;
 	private Rigidbody rb;
 	
 	private LineRenderer leftRenderer,rightRenderer;
@@ -15,7 +14,6 @@ public class EnginePodConnectorScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		trans = transform;//GameObject.transform is just an alias for GetComponent<Transform>()!
 		rb = rigidbody;
 		targetDist = (Vector3.Distance(rightMount.position,rightEngine.position)+Vector3.Distance(leftMount.position,leftEngine.position))/2.0f;
 		targetCrossDist = (Vector3.Distance(rightMount.position,leftEngine.position)+Vector3.Distance(leftMount.position,rightEngine.position))/2.0f;

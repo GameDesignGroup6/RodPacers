@@ -26,15 +26,12 @@ public class RotatableGuiItem : MonoBehaviour {
 	}
 
 	void UpdateSettings() {
-//		size.x = texture.width;
-//		size.y = texture.height;
 		pos = new Vector2(transform.position.x*Screen.width, transform.position.y*Screen.height);
 		rect = new Rect(pos.x - size.x * 0.5f, pos.y - size.y * 0.5f, size.x, size.y);
 		pivot = new Vector2(rect.xMin + rect.width * 0.5f, rect.yMin + rect.height * 0.5f);
+//		render();
 	}
-	
-	void OnGUI() {
-		if (Application.isEditor) { UpdateSettings(); }
+	public void render(){
 		Matrix4x4 matrixBackup = GUI.matrix;
 		Color restore = GUI.color;
 		GUI.color = color;
@@ -42,5 +39,10 @@ public class RotatableGuiItem : MonoBehaviour {
 		GUI.DrawTexture(rect, texture);
 		GUI.matrix = matrixBackup;
 		GUI.color = restore;
+	}
+	
+	void OnGUI() {
+		if (Application.isEditor) { UpdateSettings();}
+
 	}
 }

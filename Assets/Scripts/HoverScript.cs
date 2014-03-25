@@ -7,6 +7,13 @@ public class HoverScript : MonoBehaviour {
 	public float targetHeight;
 	public float k;
 	public DirectionOptions upwardsDirection = DirectionOptions.up;
+	
+	public float AverageHoverHeight{
+		get{return average;}
+	}
+	private float average;
+	private float sum;
+	private int hitsThisFrame;
 
 	public enum DirectionOptions{up,down,left,right,forward,backward}
 
@@ -44,17 +51,20 @@ public class HoverScript : MonoBehaviour {
 
 	void FixedUpdate () {
 		if(rgb==null)rgb = rigidbody;
-//		trans.rotation = Quaternion.RotateTowards(trans.rotation,Quaternion.LookRotation(Vector3.forward),1f);
 		rgb.AddForceAtPosition(2*Vector3.up,trans.TransformPoint(5*up));
 
+		sum = 0;
+		hitsThisFrame = 0;
 		foreach(Transform t in points){
 			RaycastHit hit;
 			//Hooke's law: F=kx
-			if(Physics.Raycast(t.position,Vector3.down,out hit)){
+			if(Physics.Raycast(t.position,t.forward,out hit)){
 				if(hit.collider != col && !hit.collider.CompareTag("Engine")){//don't hover on other engines!
-					Debug.DrawRay(t.position,Vector3.down,Color.red);
+					Debug.DrawRay(t.position,t.forward,Color.red);
 					Debug.DrawRay(hit.point,hit.normal,Color.green);
 					float delta = hit.distance-targetHeight;
+					sum += hit.distance;
+					hitsThisFrame++;
 					float force = k*delta;
 					Vector3 forceVector = hit.normal*force;
 					rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
@@ -62,16 +72,10 @@ public class HoverScript : MonoBehaviour {
 				}
 			}
 		}
-//		foreach(Vector3 t in raycastPoints){
-//			RaycastHit hit = null;
-//			//Hooke's law: F=kx
-//			Vector3 pos = trans.position+t;
-//			if(Physics.Raycast(pos,Vector3.down,out hit)){
-//				Debug.DrawRay(pos,Vector3.down,Color.green);
-//				float force = k*(hit.distance-targetHeight);
-//				Debug.Log("Applying force of "+force+" at coords "+t);
-//				rgb.AddForceAtPosition(Vector3.down*force,pos,ForceMode.Force);
-//			}
-//		}
+		if(hitsThisFrame!=0){
+			average = sum/hitsThisFrame;
+		}else{
+			average = -1;
+		}
 	}
 }

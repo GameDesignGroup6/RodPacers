@@ -18,19 +18,16 @@ public class PodSkin : MonoBehaviour {
 		GameObject newLeft = Resources.Load<GameObject>("Pods/"+skin+"/Left");
 		GameObject newRight = Resources.Load<GameObject>("Pods/"+skin+"/Right");
 		if(newPod!=null){
-			Debug.Log("Pod found!");
 			curPod = Instantiate(newPod,basePod.position,basePod.rotation)as GameObject;
 			basePod.renderer.enabled = false;
 			curPod.transform.parent = basePod;
 		}
 		if(newLeft!=null){
-			Debug.Log("Left found!");
 			curLeft = Instantiate(newLeft,baseLeft.position,baseLeft.rotation)as GameObject;
 			baseLeft.renderer.enabled = false;
 			curLeft.transform.parent = baseLeft;
 		}
 		if(newRight!=null){
-			Debug.Log("Right found!");
 			curRight = Instantiate(newRight,baseRight.position,baseRight.rotation)as GameObject;
 			baseRight.renderer.enabled = false;
 			curRight.transform.parent = baseRight;
@@ -41,7 +38,7 @@ public class PodSkin : MonoBehaviour {
 		GameObject leftToKill = curLeft;
 		GameObject rightToKill = curRight;
 		
-		//oo! kill 'em
+		//oo! kill 'em!
 		if(podToKill!=null)DestroyImmediate(podToKill);
 		if(leftToKill!=null)DestroyImmediate(leftToKill);
 		if(rightToKill!=null)DestroyImmediate(rightToKill);

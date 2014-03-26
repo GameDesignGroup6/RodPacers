@@ -9,6 +9,11 @@ public class EnginePair : MonoBehaviour {
 	private float targetLeftRight,targetRightLeft;//distance at start
 	private float targetFront,targetRear;//distance at start
 	private float targetMain;//distance at start of the actual transforms;
+	private bool priSwitch;
+
+	public bool EnginesSwitched{
+		get{return priSwitch;}
+	}
 
 	[System.Serializable]
 	public class Engine{
@@ -117,10 +122,11 @@ public class EnginePair : MonoBehaviour {
 		//therefore, if I transform the right engine's world position using the left engine's transform, and the x cord is negative, they've switched places! yes! thinking!
 		if(left.main.InverseTransformPoint(right.main.position).x<0){
 			//we're backwards!
+			priSwitch = true;
 			force = ((rightPos-leftPos)/dist)*k*k*k;
-			Debug.Log ("Engines are switched!");
 			DebugHUD.setValue("Engines Switched","<color=red>TRUE</color>" as System.Object);
 		}else{
+			priSwitch = false;
 			DebugHUD.setValue("Engines Switched","<color=green>FALSE</color>" as System.Object);
 		}
 

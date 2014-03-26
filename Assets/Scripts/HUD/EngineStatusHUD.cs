@@ -9,11 +9,14 @@ public class EngineStatusHUD : MonoBehaviour {
 	public RigidbodyInfo infoToTrack;
 	public EngineThruster engineToTrack;
 	public EngineHealth health;
+	public GUITexture warningSign;
 	public bool inverted;
 	private int timer = 0;
 	// Use this for initialization
 	void Start () {
-	
+		Color c = warningSign.color;
+		c.a = 0f;
+		warningSign.color = c;
 	}
 	
 	// Update is called once per frame
@@ -26,9 +29,15 @@ public class EngineStatusHUD : MonoBehaviour {
 		if(healthPercent<=0.2f){
 			timer++;
 			if(timer==30){
+				Color c = warningSign.color;
+				c.a = 0.5f;
+				warningSign.color = c;
 				redMeter.color.a = 0f;
 			}else if(timer>=60){
 				redMeter.color.a = 1f;
+				Color c = warningSign.color;
+				c.a = 0.15f;
+				warningSign.color = c;
 				timer=0;
 			}
 		}

@@ -5,6 +5,8 @@ using System.Collections;
 public class EngineHealth : MonoBehaviour {
 	public float maxHealth = 1000f;
 	public EnginePair enginePair;
+	public Transform pod;
+	private Transform trans;
 	private float curHealth;
 	public float Health{
 		get{return curHealth;}
@@ -14,6 +16,7 @@ public class EngineHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		trans = transform;
 		curHealth = maxHealth;
 		left = enginePair.left.body.transform;
 		right = enginePair.right.body.transform;
@@ -37,5 +40,13 @@ public class EngineHealth : MonoBehaviour {
 
 		if(angleDelta>angleThreshold)curHealth-=1;
 		DebugHUD.setValue(name+" angleDelta",angleDelta);
+
+		Vector3 localPod = trans.InverseTransformPoint(pod.position);
+		if(localPod.y>0f){
+			curHealth-=5f;
+			DebugHUD.setValue(name+": Pod in front","<color=red>TRUE</color>");
+		}else{
+			DebugHUD.setValue(name+": Pod in front","<color=green>FALSE</color>");
+		}
 	}
 }

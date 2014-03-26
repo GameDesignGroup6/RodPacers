@@ -65,6 +65,7 @@ public class HoverScript : MonoBehaviour {
 					float delta = hit.distance-targetHeight;
 					sum += hit.distance;
 					hitsThisFrame++;
+//					if(delta>0f)delta*=0.1f;
 					float force = k*delta;
 					Vector3 forceVector = hit.normal*force;
 					rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);

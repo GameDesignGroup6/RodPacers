@@ -7,7 +7,10 @@ public class HoverScript : MonoBehaviour {
 	public float targetHeight;
 	public float k;
 	public DirectionOptions upwardsDirection = DirectionOptions.up;
-	
+	public EngineThruster leftThruster,rightThruster;
+	public int stallHeight;
+	public float gravity;
+
 	public float AverageHoverHeight{
 		get{return average;}
 	}
@@ -59,17 +62,21 @@ public class HoverScript : MonoBehaviour {
 			RaycastHit hit;
 			//Hooke's law: F=kx
 			if(Physics.Raycast(t.position,t.forward,out hit)){
-				if(hit.collider != col && !hit.collider.CompareTag("Engine")){//don't hover on other engines!
-					Debug.DrawRay(t.position,t.forward,Color.red);
-					Debug.DrawRay(hit.point,hit.normal,Color.green);
-					float delta = hit.distance-targetHeight;
-					sum += hit.distance;
-					hitsThisFrame++;
-//					if(delta>0f)delta*=0.1f;
-					float force = k*delta;
-					Vector3 forceVector = hit.normal*force;
-					rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
-					Debug.DrawRay(t.position,forceVector,Color.blue);
+				if(hit.collider != col && hit.distance < stallHeight){//don't hover on other engines!
+						Debug.DrawRay(t.position,t.forward,Color.red);
+						Debug.DrawRay(hit.point,hit.normal,Color.green);
+						float delta = hit.distance-targetHeight;
+						sum += hit.distance;
+						hitsThisFrame++;
+						float force = k*delta;
+						Vector3 forceVector = hit.normal*force;
+						rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
+						Debug.DrawRay(t.position,forceVector,Color.blue);
+				}
+				else if (hit.distance > stallHeight) {
+					leftThruster.thrust = 0;
+					rightThruster.thrust = 0;
+					rgb.AddForce(0, -gravity, 0);
 				}
 			}
 		}

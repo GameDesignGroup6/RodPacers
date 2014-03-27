@@ -12,6 +12,8 @@ public class EngineStatusHUD : MonoBehaviour {
 	public GUITexture warningSign;
 	public bool inverted;
 	private int timer = 0;
+	public float velocityMultiplier;
+	public float thrustMultiplier;
 	// Use this for initialization
 	void Start () {
 		Color c = warningSign.color;
@@ -22,7 +24,7 @@ public class EngineStatusHUD : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float healthPercent = health.Health/health.maxHealth;
-		blueMeter.angle = 180f+infoToTrack.Velocity*3f;//div 100, times 360; ...but just 3 looks better
+		blueMeter.angle = 180f+infoToTrack.Velocity*360f/velocityMultiplier;//div 100, times 360; ...but just 3 looks better
 		greenMeter.angle = 180f+(engineToTrack.thrust/(engineToTrack.DefaultThrust*1.1f))*180f;
 		redMeter.angle = 180f+healthPercent*180f;
 

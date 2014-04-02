@@ -1,0 +1,77 @@
+fileFormatVersion: 2
+guid: 0bd8ead843a334c0f9b90296f343e6fc
+labels:
+- Africa
+- Furniture
+- Rusty
+- Kitchen
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Refridgerator_Door
+    100002: //RootNode
+    100004: Refridgerator
+    400000: Refridgerator_Door
+    400002: //RootNode
+    400004: Refridgerator
+    2300000: Refridgerator_Door
+    2300002: Refridgerator
+    3300000: Refridgerator_Door
+    3300002: Refridgerator
+    4300000: Refridgerator
+    4300002: Refridgerator_Door
+    6400000: Refridgerator
+    6400002: Refridgerator_Door
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0109999999
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 0
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

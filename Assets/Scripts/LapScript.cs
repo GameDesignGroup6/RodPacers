@@ -3,13 +3,19 @@ using System.Collections;
 
 public class LapScript : MonoBehaviour {
 
+<<<<<<< HEAD
 	public AudioSource podSound, trackMusic, endingMusic;
+=======
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 	private int inOrder = 0;
 	private bool rightWay = false;
 	private bool backwards = false;
 
 	void Start() {
+<<<<<<< HEAD
 		endingMusic.playOnAwake = false;
+=======
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		backwards = false;
 		rightWay = true;
 		inOrder = 0;
@@ -25,9 +31,13 @@ public class LapScript : MonoBehaviour {
 					PlayerManager.AddLap (inOrder);
 				}
 				else {
+<<<<<<< HEAD
 					podSound.Stop ();
 					trackMusic.Stop ();
 					endingMusic.Play ();
+=======
+					gameObject.GetComponent<AudioSource>().Stop();
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 					//DebugHUD.setValue ("Playing Track Music", 1);
 				}
 			}

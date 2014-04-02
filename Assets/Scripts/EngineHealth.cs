@@ -39,14 +39,24 @@ public class EngineHealth : MonoBehaviour {
 		float angleDelta = Vector3.Angle(left.up,right.up);
 
 		if(angleDelta>angleThreshold)curHealth-=1;
+<<<<<<< HEAD
 		//DebugHUD.setValue(name+" angleDelta",angleDelta);
+=======
+		DebugHUD.setValue(name+" angleDelta",angleDelta);
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 
 		Vector3 localPod = trans.InverseTransformPoint(pod.position);
 		if(localPod.y>0f){
 			curHealth-=5f;
+<<<<<<< HEAD
 			//DebugHUD.setValue(name+": Pod in front","<color=red>TRUE</color>");
 		}else{
 			//DebugHUD.setValue(name+": Pod in front","<color=green>FALSE</color>");
+=======
+			DebugHUD.setValue(name+": Pod in front","<color=red>TRUE</color>");
+		}else{
+			DebugHUD.setValue(name+": Pod in front","<color=green>FALSE</color>");
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		}
 	}
 }

@@ -28,7 +28,10 @@ public class HoverScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
 		Screen.showCursor = false;
+=======
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		OnValidate();
 	}
 	void OnValidate(){

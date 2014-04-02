@@ -6,7 +6,10 @@ public class TestEngineController : MonoBehaviour {
 	public EngineThruster leftThruster,rightThruster;
 	public bool acceptUserInput = true;
 	public static bool acceptUserInputOn;
+<<<<<<< HEAD
 	public float podForce = 20f;
+=======
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 	public float turningForce = 20f;
 	public float turningTorque = 50f;
 	public float turningThrust = 10f;
@@ -14,7 +17,10 @@ public class TestEngineController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
 		Screen.showCursor = false;
+=======
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		acceptUserInputOn = acceptUserInput;
 	}
 	
@@ -34,8 +40,12 @@ public class TestEngineController : MonoBehaviour {
 
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
+<<<<<<< HEAD
 		pod.AddForce (pod.transform.right*-podForce*leftTrigger);
 		pod.AddForce (pod.transform.right*podForce*rightTrigger);
+=======
+		pod.AddForce (pod.transform.right*strafingForce*leftStick);
+>>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 
 
 		leftEngine.AddRelativeTorque(Input.GetAxis("LeftStickVert")*turningTorque,0,-Input.GetAxis("LeftStickHoriz")*turningTorque);

@@ -28,10 +28,7 @@ public class HoverScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
 		Screen.showCursor = false;
-=======
->>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		OnValidate();
 	}
 	void OnValidate(){
@@ -66,7 +63,7 @@ public class HoverScript : MonoBehaviour {
 			RaycastHit hit;
 			//Hooke's law: F=kx
 			if(Physics.Raycast(t.position,t.forward,out hit)){
-				if(hit.collider != col && hit.distance < stallHeight && !hit.transform.CompareTag("Engine")){//don't hover on other engines!
+				if(hit.collider != col && hit.distance < stallHeight){//don't hover on other engines!
 						Debug.DrawRay(t.position,t.forward,Color.red);
 						Debug.DrawRay(hit.point,hit.normal,Color.green);
 						float delta = hit.distance-targetHeight;

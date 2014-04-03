@@ -16,16 +16,7 @@ public class PlayerManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!finished) {
-<<<<<<< HEAD
 			DebugHUD.setValue("Time", Time.timeSinceLevelLoad - Beginning.subtractTime);
-=======
-			DebugHUD.setValue("Time", Time.time);
-			//DebugHUD.setValue ("PlayingEndMusic", 0);
-		}
-		else {
-			PlayEndingMusic ();
-			//DebugHUD.setValue ("PlayingEndMusic", 1);
->>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 		}
 	}
 
@@ -44,11 +35,4 @@ public class PlayerManager : MonoBehaviour {
 		}
 		return finished;
 	}
-<<<<<<< HEAD
-=======
-
-	public void PlayEndingMusic() {
-		gameObject.GetComponent<AudioSource>().Play();
-	}
->>>>>>> 8b964c1d497f2913bd9a7091756604a5ee21b852
 }

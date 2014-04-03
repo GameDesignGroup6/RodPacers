@@ -4,7 +4,7 @@ using System.Collections;
 public class Racer : MonoBehaviour {
 	public Node nearestNode;
 	private float distanceFromNode;
-	private bool evenTick;//to prevent lag, we do different actions every other FixedUpdate
+	private bool evenTick = true;//to prevent lag, we do different actions every other FixedUpdate
 	public float DistanceFromStart{
 		get{
 			return distanceFromNode+nearestNode.DistanceFromStart;
@@ -23,6 +23,10 @@ public class Racer : MonoBehaviour {
 			return distanceFromNode;
 		}
 	}
+	private Vector3 avgPos;
+	public Vector3 AveragePosition{
+		get{return avgPos;}
+	}
 
 	void FixedUpdate () {
 		evenTick = !evenTick;
@@ -38,7 +42,7 @@ public class Racer : MonoBehaviour {
 			//It should only be done at most once per FixedUpdate 
 			//I guess this class is as good as any to do it...
 			Vector3 nodeVector = nearestNode.VectorToNextNode;
-			CalculateAverageVelocity();
+			CalculateAverageVelocityAndPosition();
 			backwards = Vector3.Angle(AverageVelocity,nodeVector)>90f;
 		}
 	}
@@ -51,7 +55,8 @@ public class Racer : MonoBehaviour {
 		//set the nearestNode to whichever is smallest
 		//update distanceFromNode accordingly
 		
-		Vector3 curPos = transform.position;//SHIT! this line breaks the entire script! I have to rethink this...
+		Vector3 curPos = avgPos;
+		if(curPos.Equals(Vector3.zero))return;//the other code hasn't run yet
 		//sqrMagnitude is much faster than regular magnitude because it doesn't take the square root
 		float sqDistanceFromCur = (nearestNode.Position-curPos).sqrMagnitude;
 		float sqDistanceFromPrev = (nearestNode.next.Position-curPos).sqrMagnitude;
@@ -77,19 +82,23 @@ public class Racer : MonoBehaviour {
 		//The next time the nearest Node is calculated, the player should be closest to the next Node (the one they skipped)
 		//compared to the current one.  The next Node now becomes the current one.  Then, the next time the current Node is calculated,
 		//the CurrentNode will actually be the correct one.
-		//In short: the currentNode may take longer to change then the player took to get to it, if they skipped a node
+		//tl;dr: the currentNode may take longer to change then the player took to get to it, if they skipped a node
 	}
-	private void CalculateAverageVelocity(){
+	private void CalculateAverageVelocityAndPosition(){
 		Vector3 sum = Vector3.zero;
+		Vector3 posSum = Vector3.zero;
 		int count = 0;
 		foreach(Rigidbody r in GetComponentsInChildren<Rigidbody>()){
 			count++;
 			sum+=r.velocity;
+			posSum+=r.position;
 		}
 		if(count<=0){
 			avgVeloc = Vector3.zero;
+			avgPos = Vector3.zero;
 		}else{
 			avgVeloc = sum/count;
+			avgPos = posSum/count;
 		}
 	}
 }

@@ -43,11 +43,7 @@ public class TestEngineController : MonoBehaviour {
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
 		pod.AddForce (pod.transform.right*-podForce*leftTrigger);
 		pod.AddForce (pod.transform.right*podForce*rightTrigger);
-
-
-//		leftEngine.AddRelativeTorque(Input.GetAxis("LeftStickVert")*turningTorque,0,-Input.GetAxis("LeftStickHoriz")*turningTorque);
-//		rightEngine.AddRelativeTorque(Input.GetAxis("RightStickVert")*turningTorque,0,-Input.GetAxis("RightStickHoriz")*turningTorque);
-
+		
 		//thrust controll
 		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle");
 		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle");

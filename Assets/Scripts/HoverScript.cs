@@ -76,8 +76,8 @@ public class HoverScript : MonoBehaviour {
 						Debug.DrawRay(t.position,forceVector,Color.blue);
 				}
 				else if (hit.distance > stallHeight) {
-					leftThruster.thrust = 0;
-					rightThruster.thrust = 0;
+//					leftThruster.thrust = 0;
+//					rightThruster.thrust = 0;
 					rgb.AddForce(0, -gravity, 0);
 				}
 			}

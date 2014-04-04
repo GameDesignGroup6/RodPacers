@@ -10,6 +10,7 @@ public class HoverScript : MonoBehaviour {
 	public EngineThruster leftThruster,rightThruster;
 	public int stallHeight;
 	public float gravity;
+	public float stabHeight = 5;
 
 	public float AverageHoverHeight{
 		get{return average;}
@@ -50,12 +51,12 @@ public class HoverScript : MonoBehaviour {
 		foreach(Transform t in points)
 			Gizmos.DrawSphere(t.position,0.1f);
 		Gizmos.color = Color.red;
-		Gizmos.DrawSphere(transform.TransformPoint(5*up),0.1f);
+		Gizmos.DrawSphere(transform.TransformPoint(stabHeight*up),0.1f);
 	}
 
 	void FixedUpdate () {
 		if(rgb==null)rgb = rigidbody;
-		rgb.AddForceAtPosition(2*Vector3.up,trans.TransformPoint(5*up));
+		rgb.AddForceAtPosition(2*Vector3.up,trans.TransformPoint(stabHeight*up));
 
 		sum = 0;
 		hitsThisFrame = 0;

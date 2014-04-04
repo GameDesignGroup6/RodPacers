@@ -9,7 +9,6 @@ public class LapScript : MonoBehaviour {
 	private bool backwards = false;
 
 	void Start() {
-		endingMusic.playOnAwake = false;
 		backwards = false;
 		rightWay = true;
 		inOrder = 0;

@@ -30,6 +30,14 @@ public class TestEngineController : MonoBehaviour {
 		if(!acceptUserInput){Input.ResetInputAxes();}
 		float leftTrigger = Input.GetAxis("LeftTrigger");
 		float rightTrigger = Input.GetAxis("RightTrigger");
+
+		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
+			leftTrigger = (leftTrigger +1)/2;
+			rightTrigger = (rightTrigger + 1)/2;
+		}
+		
+		DebugHUD.setValue ("Right Trigger", rightTrigger);
+		DebugHUD.setValue ("LeftTrigger", leftTrigger);
 		float leftStick = Input.GetAxis ("LeftStickHoriz");
 
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);

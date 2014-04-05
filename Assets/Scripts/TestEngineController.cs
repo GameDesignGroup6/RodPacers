@@ -4,7 +4,7 @@ using System.Collections;
 public class TestEngineController : MonoBehaviour {
 	public int playerNumber;
 	public Rigidbody leftEngine,rightEngine, bothEngines, pod;
-	public EngineThruster leftThruster,rightThruster;
+	public EngineThruster leftThruster,rightThruster, podThruster;
 	public bool acceptUserInput = true;
 	public static bool acceptUserInputOn;
 	public float podForce = 20f;
@@ -46,13 +46,17 @@ public class TestEngineController : MonoBehaviour {
 		//thrust controll
 		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
 		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
+		podThruster.thrust = podThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
 
 		leftThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);//remap from 0-1 to 1-1.1
 		rightThruster.thrust*=(leftTrigger*1/turningThrust+1.0f);
+		podThruster.thrust*=(leftTrigger*1/turningThrust+1.0f);
+		podThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);
 
 	}
 	void OnDisable(){
 		leftThruster.resetThrust();
 		rightThruster.resetThrust();
+		podThruster.resetThrust ();
 	}
 }

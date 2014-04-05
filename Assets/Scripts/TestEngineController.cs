@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class TestEngineController : MonoBehaviour {
+	public int playerNumber;
 	public Rigidbody leftEngine,rightEngine, bothEngines, pod;
 	public EngineThruster leftThruster,rightThruster;
 	public bool acceptUserInput = true;
@@ -28,17 +29,13 @@ public class TestEngineController : MonoBehaviour {
 
 
 		if(!acceptUserInput){Input.ResetInputAxes();}
-		float leftTrigger = Input.GetAxis("LeftTrigger");
-		float rightTrigger = Input.GetAxis("RightTrigger");
+		float leftTrigger = Input.GetAxis("LeftTrigger" + playerNumber);
+		float rightTrigger = Input.GetAxis("RightTrigger" + playerNumber);
 
 		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
 			leftTrigger = (leftTrigger +1)/2;
 			rightTrigger = (rightTrigger + 1)/2;
 		}
-		
-		DebugHUD.setValue ("Right Trigger", rightTrigger);
-		DebugHUD.setValue ("LeftTrigger", leftTrigger);
-		float leftStick = Input.GetAxis ("LeftStickHoriz");
 
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
@@ -47,8 +44,8 @@ public class TestEngineController : MonoBehaviour {
 
 
 		//thrust controll
-		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle");
-		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle");
+		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
+		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
 
 		leftThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);//remap from 0-1 to 1-1.1
 		rightThruster.thrust*=(leftTrigger*1/turningThrust+1.0f);

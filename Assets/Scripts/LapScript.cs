@@ -12,7 +12,7 @@ public class LapScript : MonoBehaviour {
 		backwards = false;
 		rightWay = true;
 		inOrder = 0;
-		DebugHUD.setValue ("backwards", backwards);
+		//DebugHUD.setValue ("backwards", backwards);
 		//DebugHUD.setValue ("inOrder", inOrder);
 	}
 
@@ -34,26 +34,26 @@ public class LapScript : MonoBehaviour {
 			backwards = false;
 			rightWay = false;
 			//DebugHUD.setValue ("inOrder", inOrder);
-			DebugHUD.setValue ("backwards", backwards);
+			//DebugHUD.setValue ("backwards", backwards);
 		}
 		else if (other.tag == "First Line" && rightWay == false) {
 			inOrder--;
 			rightWay = true;
 			backwards = true;
 			//DebugHUD.setValue ("inOrder", inOrder);
-			DebugHUD.setValue ("backwards", backwards);
+			//DebugHUD.setValue ("backwards", backwards);
 		}
 		if (other.tag == "Second Line" && rightWay == false) {
 			backwards = false;
 			rightWay = true;
 			//DebugHUD.setValue ("inOrder", inOrder);
-			DebugHUD.setValue ("backwards", backwards);
+			//DebugHUD.setValue ("backwards", backwards);
 		}
 		else if (other.tag == "Second Line" && rightWay == true) {
 			backwards = true;
 			rightWay = false;
 			//DebugHUD.setValue ("inOrder", inOrder);
-			DebugHUD.setValue ("backwards", backwards);
+			//DebugHUD.setValue ("backwards", backwards);
 		}
 	}
 }

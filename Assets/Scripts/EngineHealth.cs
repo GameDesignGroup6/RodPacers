@@ -27,11 +27,6 @@ public class EngineHealth : MonoBehaviour {
 		float damage = Vector3.Dot(normal,velocity);
 		curHealth-=Mathf.Abs(damage);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		DebugHUD.setValue(name+" health",curHealth);
-	}
 
 	void FixedUpdate(){
 		if(enginePair.EnginesSwitched)curHealth-=5f;

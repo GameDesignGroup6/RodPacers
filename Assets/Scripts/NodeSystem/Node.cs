@@ -19,6 +19,18 @@ public class Node : MonoBehaviour {
 		get{return pos;}
 	}
 
+	void OnDrawGizmosSelected(){
+		Gizmos.color = Color.yellow;
+		if(checkpoint)Gizmos.color = Color.blue;
+		if(start)Gizmos.color = Color.red;
+		Gizmos.DrawSphere(transform.position,10f);
+		if(next){
+			Gizmos.color = Color.green;
+			if(next.previous!=this)Gizmos.color = Color.red;
+			Gizmos.DrawLine(transform.position,next.transform.position);
+		}
+	}
+
 	void Awake(){
 		pos = transform.position;
 	}

@@ -28,6 +28,11 @@ public class Racer : MonoBehaviour {
 		get{return avgPos;}
 	}
 
+	void Update() {
+		DebugHUD.setValue ("Backwards", FacingBackwards);
+		DebugHUD.setValue ("Distance from start", DistanceFromStart);
+	}
+
 	void FixedUpdate () {
 		evenTick = !evenTick;
 		if(evenTick){//recalculate the nearestNode

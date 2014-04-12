@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Collider),typeof(Rigidbody))]
+[RequireComponent(typeof(Collider),typeof(Engine))]
 public class EngineHealth : MonoBehaviour {
 	public float maxHealth = 1000f;
-	public EnginePair enginePair;
-	public Transform pod;
+	private Engine engine;
+	public Engine otherEngine;
+	private EnginePair enginePair;
+	private Transform pod;
 	private Transform trans;
 	private float curHealth;
 	public float Health{
@@ -16,10 +18,19 @@ public class EngineHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		engine = GetComponent<Engine>();
+		enginePair = engine.enginePair;
+		pod = engine.enginePair.transform;
 		trans = transform;
 		curHealth = maxHealth;
-		left = enginePair.left.body.transform;
-		right = enginePair.right.body.transform;
+		if(engine.Side==Engine.EngineSide.LEFT){
+			left = engine.EngineTransform;
+			right = otherEngine.EngineTransform;
+		}else{
+			left = otherEngine.EngineTransform;
+			right = engine.EngineTransform;
+		}
+
 	}
 	void OnCollisionStay(Collision col){
 		Vector3 velocity = col.relativeVelocity;

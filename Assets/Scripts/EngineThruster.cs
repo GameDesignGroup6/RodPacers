@@ -41,6 +41,7 @@ public class EngineThruster : MonoBehaviour {
 		startThrust = thrust;
 		rgb = rigidbody;
 		resetThrustDirection();
+		thrust = 0f;
 	}
 
 	void FixedUpdate () {

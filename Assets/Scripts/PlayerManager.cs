@@ -30,7 +30,6 @@ public class PlayerManager : MonoBehaviour {
 	public static bool Finish() {
 		if (numLaps == MapManager.maxLaps) {
 			finished = true;
-			TestEngineController.acceptUserInputOn = false;
 			DebugHUD.setValue ("Finished", finished);
 		}
 		return finished;

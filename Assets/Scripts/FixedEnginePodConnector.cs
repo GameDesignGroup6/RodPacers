@@ -55,7 +55,6 @@ public class FixedEnginePodConnector : MonoBehaviour {
 			rightRenderer.SetPosition(0,rightMount.position);
 			rightRenderer.SetPosition(1,right.TransformPosition);
 		}
-		DebugHUD.setValue("LeftStick",Input.GetAxis("LeftStickVert"));
 		
 	}
 }

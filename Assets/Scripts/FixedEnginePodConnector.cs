@@ -24,7 +24,7 @@ public class FixedEnginePodConnector : MonoBehaviour {
 		if(rightRenderer)rightRenderer.SetVertexCount(2);
 	}
 
-	void LateUpdate () {
+	void FixedUpdate () {
 		Vector3 podLeftPos = left.EngineTransform.TransformPoint(podOffsetLeft);
 		Vector3 podRightPos = right.EngineTransform.TransformPoint(podOffsetRight);
 		pod.position = (podLeftPos+podRightPos)/2f;

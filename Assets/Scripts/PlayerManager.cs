@@ -16,7 +16,6 @@ public class PlayerManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!finished) {
-			DebugHUD.setValue("Time", Time.timeSinceLevelLoad);
 		}
 	}
 

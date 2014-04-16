@@ -6,7 +6,7 @@ public class TestEngineController : MonoBehaviour {
 	public Rigidbody leftEngine,rightEngine, bothEngines;
 	public EngineThruster leftThruster,rightThruster;
 	public bool acceptUserInput = true;
-//	public static bool acceptUserInputOn;
+	public static bool acceptUserInputOn;
 	public float turningForce = 20f;
 	public float turningTorque = 20f;
 	public float turningThrust = 5f;
@@ -14,13 +14,13 @@ public class TestEngineController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Screen.showCursor = false;
-//		acceptUserInputOn = acceptUserInput;
+		acceptUserInputOn = acceptUserInput;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-//		if (!acceptUserInputOn)
-//			acceptUserInput = false;
+		if (!acceptUserInputOn)
+			acceptUserInput = false;
 		if(Input.GetKeyDown(KeyCode.G)){
 			acceptUserInput = true;
 		}
@@ -39,7 +39,7 @@ public class TestEngineController : MonoBehaviour {
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
 		
-		//thrust controll
+		//thrust control
 		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
 		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
 

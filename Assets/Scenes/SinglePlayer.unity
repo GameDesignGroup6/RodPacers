@@ -3193,6 +3193,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 909993603}
+  - 114: {fileID: 909993604}
   m_Layer: 10
   m_Name: Engine Meters1
   m_TagString: Untagged
@@ -3213,6 +3214,18 @@ Transform:
   - {fileID: 1698765549}
   - {fileID: 334489213}
   m_Father: {fileID: 0}
+--- !u!114 &909993604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909993602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af7b7db41c8ab440a56b2f52674be67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateInterval: .5
 --- !u!1 &912205908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,7 +3844,6 @@ GameObject:
   - 114: {fileID: 1145511761}
   - 114: {fileID: 1145511758}
   - 114: {fileID: 1145511757}
-  - 114: {fileID: 1145511756}
   - 82: {fileID: 1145511755}
   - 114: {fileID: 1145511760}
   m_Layer: 2
@@ -3930,21 +3942,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1145511756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1145511752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1145511755}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1145511757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4174,7 +4171,6 @@ GameObject:
   - 114: {fileID: 1190952265}
   - 114: {fileID: 1190952262}
   - 114: {fileID: 1190952261}
-  - 114: {fileID: 1190952260}
   - 82: {fileID: 1190952258}
   - 114: {fileID: 1190952256}
   m_Layer: 2
@@ -4288,21 +4284,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1190952260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1190952253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1190952258}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1190952261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6123,7 +6104,6 @@ GameObject:
   - 114: {fileID: 1846939667}
   - 114: {fileID: 1846939664}
   - 114: {fileID: 1846939663}
-  - 114: {fileID: 1846939662}
   - 82: {fileID: 1846939660}
   - 114: {fileID: 1846939658}
   m_Layer: 2
@@ -6237,21 +6217,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1846939662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1846939655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1846939660}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1846939663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6643,7 +6608,6 @@ GameObject:
   - 54: {fileID: 1943316336}
   - 114: {fileID: 1943316332}
   - 114: {fileID: 1943316331}
-  - 114: {fileID: 1943316330}
   - 82: {fileID: 1943316328}
   - 114: {fileID: 1943316326}
   m_Layer: 2
@@ -6742,21 +6706,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1943316330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1943316324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1943316328}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1943316331
 MonoBehaviour:
   m_ObjectHideFlags: 0

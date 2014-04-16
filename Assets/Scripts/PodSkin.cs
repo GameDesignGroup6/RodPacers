@@ -25,28 +25,44 @@ public class PodSkin : MonoBehaviour {
 	}
 	public void ChangeSkin(string skin){
 		Deskin();
-		Debug.Log("loading skin "+skin);
 		GameObject newPod = Resources.Load<GameObject>("Pods/"+skin+"/Pod");
 		GameObject newLeft = Resources.Load<GameObject>("Pods/"+skin+"/Left");
 		GameObject newRight = Resources.Load<GameObject>("Pods/"+skin+"/Right");
 		if(newPod!=null){
-			Debug.Log("Pod found!");
 			curPod = Instantiate(newPod,basePod.position,basePod.rotation)as GameObject;
+			Transform newLeftMount = curPod.transform.Find ("LeftMount");
+			if(newLeftMount!=null){
+				Transform oldLeftMount = basePod.Find("LeftMount");
+				if(oldLeftMount!=null)oldLeftMount.position = newLeftMount.position;
+			}
+			Transform newRightMount = curPod.transform.Find ("RightMount");
+			if(newRightMount!=null){
+				Transform oldRightMount = basePod.Find("RighttMount");
+				if(oldRightMount!=null)oldRightMount.position = newRightMount.position;
+			}
 			basePod.renderer.enabled = false;
 			curPod.transform.parent = basePod;
-		}else Debug.Log ("Pod not found, reverting to default");
+		}
 		if(newLeft!=null){
-			Debug.Log("Left found!");
 			curLeft = Instantiate(newLeft,baseLeft.position,baseLeft.rotation)as GameObject;
+			Transform newDecLink = curLeft.transform.Find ("Decorative_Link");
+			if(newDecLink!=null){
+				Transform oldDecLink = baseLeft.Find("Decorative_Link");
+				if(oldDecLink!=null)oldDecLink.position = newDecLink.position;
+			}
 			baseLeft.renderer.enabled = false;
 			curLeft.transform.parent = baseLeft;
-		}else Debug.Log ("Left not found, reverting to default");
+		}
 		if(newRight!=null){
-			Debug.Log("Right found!");
 			curRight = Instantiate(newRight,baseRight.position,baseRight.rotation)as GameObject;
+			Transform newDecLink = curRight.transform.Find ("Decorative_Link");
+			if(newDecLink!=null){
+				Transform oldDecLink = baseRight.Find("Decorative_Link");
+				if(oldDecLink!=null)oldDecLink.position = newDecLink.position;
+			}
 			baseRight.renderer.enabled = false;
 			curRight.transform.parent = baseRight;
-		}else Debug.Log ("Right not found, reverting to default");
+		}
 	}
 	public void Deskin(){
 		GameObject podToKill = curPod;

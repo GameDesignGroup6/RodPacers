@@ -37,7 +37,7 @@ public class PodSkin : MonoBehaviour {
 			}
 			Transform newRightMount = curPod.transform.Find ("RightMount");
 			if(newRightMount!=null){
-				Transform oldRightMount = basePod.Find("RighttMount");
+				Transform oldRightMount = basePod.Find("RightMount");
 				if(oldRightMount!=null)oldRightMount.position = newRightMount.position;
 			}
 			basePod.renderer.enabled = false;

@@ -15,8 +15,6 @@ public class FixedEnginePodConnector : MonoBehaviour {
 		podOffsetLeft = left.EngineTransform.InverseTransformPoint(pod.position);
 		podOffsetRight = right.EngineTransform.InverseTransformPoint(pod.position);
 		if(rigidbody){rigidbody.isKinematic = true;}
-		HoverScript hs = GetComponent<HoverScript>();
-		if(hs)hs.enabled = false;
 
 		leftRenderer = leftMount.GetComponent<LineRenderer>();
 		rightRenderer = rightMount.GetComponent<LineRenderer>();
@@ -29,7 +27,6 @@ public class FixedEnginePodConnector : MonoBehaviour {
 		Vector3 podRightPos = right.EngineTransform.TransformPoint(podOffsetRight);
 		pod.position = (podLeftPos+podRightPos)/2f;
 
-		Vector3 midpoint = (left.TransformPosition+right.TransformPosition)/2f;
 		pod.rotation = Quaternion.Lerp (left.EngineTransform.rotation,right.EngineTransform.rotation,0.5f);
 		pod.Rotate(-90f,0f,0f,Space.Self);
 

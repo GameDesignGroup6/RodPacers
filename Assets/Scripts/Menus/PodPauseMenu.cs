@@ -10,7 +10,7 @@ public class PodPauseMenu : MonoBehaviour {
 	private float whatWouldBeDeltaTime;
 	
 	void Start () {
-		whatWouldBeDeltaTime = Time.deltaTime;
+		whatWouldBeDeltaTime = Time.deltaTime;//this doesnt do anything, you realize
 		menuChoices[0].color = Color.white;
 		for (int i = 0; i < menuChoices.Length; i++) {
 			menuChoices[i].enabled = false;
@@ -19,17 +19,16 @@ public class PodPauseMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		DebugHUD.setValue ("position", position);
-		DebugHUD.setValue ("Throttle", Input.GetAxis ("Throttle1"));
-		DebugHUD.setValue ("Pause", Input.GetAxis ("Pause"));
 		if (updateIsTooFast > 0) {
 			updateIsTooFast = updateIsTooFast - whatWouldBeDeltaTime;
 			return;
 		}
 
-		if (Input.GetAxis ("Pause") == 1) {
+		if (Input.GetButtonDown ("Pause")) {
 			if (!paused) {
 				pause();
+			}else{
+				unpause();
 			}
 		}
 
@@ -49,9 +48,8 @@ public class PodPauseMenu : MonoBehaviour {
 		
 		menuChoices[position].color = Color.white;
 		
-		if (Input.GetAxis ("LeftStickHoriz") > 0.025f && paused) {
+		if (Input.GetButtonDown ("Throttle1") && paused) {
 			if (position == 0) {
-				DebugHUD.setValue ("unpaused", true);
 				unpause ();
 			}
 			else if (position == 1) {
@@ -60,13 +58,14 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 			else if (position == 2) {
 				unpause ();
-				Application.Quit();
+				Application.LoadLevel(0);
 			}
 		}
 	}
 
 	public void pause() {
 		Time.timeScale = 0;
+		Input.ResetInputAxes();
 		AudioListener.pause = true;
 		for (int i = 0; i < menuChoices.Length; i++) {
 			menuChoices[i].enabled = true;
@@ -81,5 +80,6 @@ public class PodPauseMenu : MonoBehaviour {
 		}
 		Time.timeScale = 1;
 		paused = false;
+		Input.ResetInputAxes();
 	}
 }

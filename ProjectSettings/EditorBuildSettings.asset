@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TeamSixScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/ToddFraizerScreen.unity
+  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
   - enabled: 1
     path: Assets/Scenes/PlayerNumberSelectionScreen.unity
@@ -21,3 +25,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TwoPlayer.unity
   - enabled: 1
     path: Assets/Scenes/FourPlayer.unity
+  - enabled: 1
+    path: Assets/Scenes/OptionsScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/SinglePlayerSelection.unity
+  - enabled: 1
+    path: Assets/Scenes/LegalScreen.unity

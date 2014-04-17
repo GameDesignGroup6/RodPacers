@@ -5,7 +5,6 @@ public class StartMenu : MonoBehaviour {
 
 	public GUIText[] menuChoices;
 	public string[] nextScenes;
-	public string previousScene;
 	private int position = 0;
 	private float updateIsTooFast = .25f;
 
@@ -23,8 +22,6 @@ public class StartMenu : MonoBehaviour {
 		if (Input.GetAxis ("LeftStickVert") > 0.025f) {
 			menuChoices[position].color = Color.yellow;
 			position--;
-//			string s = menuChoices[position].text;
-//			menuChoices[position].text = s + ">";
 			if (position < 0) {
 				position = menuChoices.Length - 1;
 			}
@@ -33,24 +30,19 @@ public class StartMenu : MonoBehaviour {
 		if (Input.GetAxis ("LeftStickVert") < -0.025f) {
 			menuChoices[position].color = Color.yellow;
 			position = (position + 1)%menuChoices.Length;
-//			string s = menuChoices[position].text;
-//			menuChoices[position].text = s + ">";
 			updateIsTooFast = 0.25f;
 		}
 
 		menuChoices[position].color = Color.white;
 
-		if (Input.GetAxis ("LeftStickHoriz") > 0.025f) {
-			Application.LoadLevel (nextScenes[position]);
-		}
-
-		if (Input.GetAxis ("LeftStickHoriz") < -0.025f) {
-			if (previousScene == "Quit") {
+		if (Input.GetAxis ("Throttle1") > 0) {
+			if (nextScenes[position] == "Quit") {
 				Application.Quit ();
 			}
 			else {
-				Application.LoadLevel(previousScene);
+				Application.LoadLevel (nextScenes[position]);
 			}
 		}
 	}
+	
 }

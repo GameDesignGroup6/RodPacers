@@ -21,9 +21,13 @@ public class DebugHUD : MonoBehaviour {
 		guiText.alignment = TextAlignment.Left;
 		guiText.anchor = TextAnchor.UpperLeft;
 		guiText.richText = true;
+		guiText.enabled = Application.isEditor||Debug.isDebugBuild;
 	}
 
 	void LateUpdate () {
+		if(Input.GetKeyDown(KeyCode.F3)){
+			guiText.enabled = !guiText.enabled;
+		}
 		string s = "";
 		foreach(string key in list.Keys){
 			s+="<color=blue>"+key+"</color>: ";

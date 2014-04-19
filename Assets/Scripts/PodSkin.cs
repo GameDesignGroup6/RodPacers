@@ -6,40 +6,21 @@ public class PodSkin : MonoBehaviour {
 	private GameObject curPod,curLeft,curRight;
 	public bool ChangeOnStart;
 	public int initialSkinIndex = 0;
-	private static int skinIndex = 1;
-	private float updateIsTooFast = .25f;
+	public int playerNumber = -1;
 
 	void Start(){
+		if(playerNumber>=1&&playerNumber<=4){
+			initialSkinIndex = PlayerManager.podSkins[playerNumber];
+		}
 		if(ChangeOnStart)ChangeSkin(initialSkinIndex);
 	}
 
 	void Update(){
-		if (updateIsTooFast > 0) {
-			updateIsTooFast = updateIsTooFast - Time.deltaTime;
-			return;
-		}
 		if(Input.GetKey(KeyCode.F2)){
 			for(int i = 0; i<SkinManager.SkinList.Length;i++){
 				if(Input.GetKeyDown((i).ToString())){
 					ChangeSkin(i);
 				}
-			}
-		}
-
-		if (Application.loadedLevelName == "SinglePlayerSelection" || Application.loadedLevelName == "TwoPlayerSelection" || 
-		    Application.loadedLevelName == "ThreePlayerSelection" || Application.loadedLevelName == "FourPlayerSelection") {
-			if (Input.GetAxis ("LeftStickHoriz") > 0.025) {
-				skinIndex = (skinIndex + 1)%SkinManager.SkinList.Length;
-				ChangeSkin(skinIndex);
-				updateIsTooFast = 0.25f;
-			}
-			if (Input.GetAxis ("LeftStickHoriz") < -0.025f) {
-				skinIndex--;
-				if (skinIndex < 0) {
-					skinIndex = SkinManager.SkinList.Length - 1;
-				}
-				ChangeSkin(skinIndex);
-				updateIsTooFast = 0.25f;
 			}
 		}
 	}

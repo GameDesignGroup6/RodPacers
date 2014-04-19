@@ -247,7 +247,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294950911
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -275,7 +275,7 @@ GameObject:
   - 23: {fileID: 321360720}
   - 64: {fileID: 321360719}
   - 54: {fileID: 321360718}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Refridgerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 986739517}
   - 132: {fileID: 986739516}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Statement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,6 +400,78 @@ Transform:
   m_GameObject: {fileID: 986739515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .400000006, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1016031675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1016031681}
+  - 20: {fileID: 1016031680}
+  - 92: {fileID: 1016031679}
+  - 124: {fileID: 1016031678}
+  m_Layer: 0
+  m_Name: FridgeCam
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!124 &1016031678
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016031675}
+  m_Enabled: 1
+--- !u!92 &1016031679
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016031675}
+  m_Enabled: 1
+--- !u!20 &1016031680
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016031675}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 40
+  field of view: 50.2577629
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 16384
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+  m_OcclusionCulling: 1
+--- !u!4 &1016031681
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016031675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1595,7 +1667,7 @@ GameObject:
   - 64: {fileID: 1578755956}
   - 54: {fileID: 1578755955}
   - 59: {fileID: 1578755954}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Refridgerator_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1846,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2072528344}
   - 132: {fileID: 2072528343}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Statement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1825,7 +1897,7 @@ GameObject:
   - 4: {fileID: 2133015044}
   - 111: {fileID: 2133015046}
   - 114: {fileID: 2133015045}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Refridgerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

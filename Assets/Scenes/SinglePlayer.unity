@@ -1591,6 +1591,7 @@ MonoBehaviour:
   baseRight: {fileID: 716302584}
   ChangeOnStart: 1
   initialSkinIndex: 1
+  playerNumber: 1
 --- !u!1 &538390552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,6 +3124,7 @@ MonoBehaviour:
   baseRight: {fileID: 1439036491}
   ChangeOnStart: 1
   initialSkinIndex: 0
+  playerNumber: 4
 --- !u!1 &902970098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4806,6 +4808,7 @@ MonoBehaviour:
   baseRight: {fileID: 791270564}
   ChangeOnStart: 1
   initialSkinIndex: 3
+  playerNumber: 2
 --- !u!1 &1424876639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6019,6 +6022,7 @@ MonoBehaviour:
   baseRight: {fileID: 593620959}
   ChangeOnStart: 1
   initialSkinIndex: 2
+  playerNumber: 3
 --- !u!114 &1765756006
 MonoBehaviour:
   m_ObjectHideFlags: 0

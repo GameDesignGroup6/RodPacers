@@ -318,7 +318,7 @@ GUIText:
   m_GameObject: {fileID: 1098467327}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: TeamVI
+  m_Text: Team 6
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -369,7 +369,7 @@ GUIText:
   m_GameObject: {fileID: 1448428122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: TeamVI
+  m_Text: Team 6
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}

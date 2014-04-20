@@ -18,7 +18,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 8
     joyNum: 1
   - serializedVersion: 3
     m_Name: LeftTrigger2
@@ -34,7 +34,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 8
     joyNum: 2
   - serializedVersion: 3
     m_Name: LeftTrigger3
@@ -50,7 +50,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 8
     joyNum: 3
   - serializedVersion: 3
     m_Name: LeftTrigger4
@@ -66,7 +66,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 8
     joyNum: 4
   - serializedVersion: 3
     m_Name: RightTrigger1
@@ -82,7 +82,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 5
+    axis: 9
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightTrigger2
@@ -98,7 +98,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 5
+    axis: 9
     joyNum: 2
   - serializedVersion: 3
     m_Name: RightTrigger3
@@ -114,7 +114,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 5
+    axis: 9
     joyNum: 3
   - serializedVersion: 3
     m_Name: RightTrigger4
@@ -130,10 +130,10 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 5
+    axis: 9
     joyNum: 4
   - serializedVersion: 3
-    m_Name: LeftStickVert1
+    m_Name: LeftStickVert
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -148,54 +148,6 @@ InputManager:
     type: 2
     axis: 1
     joyNum: 1
-  - serializedVersion: 3
-    m_Name: LeftStickVert2
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: down
-    altPositiveButton: up
-    gravity: 0
-    dead: .0500000007
-    sensitivity: .100000001
-    snap: 0
-    invert: 1
-    type: 2
-    axis: 1
-    joyNum: 2
-  - serializedVersion: 3
-    m_Name: LeftStickVert3
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: down
-    altPositiveButton: up
-    gravity: 0
-    dead: .0500000007
-    sensitivity: .100000001
-    snap: 0
-    invert: 1
-    type: 2
-    axis: 1
-    joyNum: 3
-  - serializedVersion: 3
-    m_Name: LeftStickVert4
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: down
-    altPositiveButton: up
-    gravity: 0
-    dead: .0500000007
-    sensitivity: .100000001
-    snap: 0
-    invert: 1
-    type: 2
-    axis: 1
-    joyNum: 4
   - serializedVersion: 3
     m_Name: LeftStickHoriz1
     descriptiveName: 
@@ -277,7 +229,7 @@ InputManager:
     axis: 4
     joyNum: 1
   - serializedVersion: 3
-    m_Name: RightStickHoriz
+    m_Name: RightStickHoriz1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -292,6 +244,54 @@ InputManager:
     type: 2
     axis: 3
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: RightStickHoriz2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 3
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: RightStickHoriz3
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 3
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: RightStickHoriz4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 3
+    joyNum: 4
   - serializedVersion: 3
     m_Name: LeftTrigger
     descriptiveName: 
@@ -328,8 +328,8 @@ InputManager:
     m_Name: Throttle1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: joystick 1 button 17
-    positiveButton: joystick 1 button 16
+    negativeButton: joystick 1 button 1
+    positiveButton: joystick 1 button 0
     altNegativeButton: 
     altPositiveButton: space
     gravity: 1000
@@ -344,8 +344,8 @@ InputManager:
     m_Name: Throttle2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: joystick 2 button 17
-    positiveButton: joystick 2 button 16
+    negativeButton: joystick 2 button 1
+    positiveButton: joystick 2 button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -360,8 +360,8 @@ InputManager:
     m_Name: Throttle3
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: joystick 3 button 17
-    positiveButton: joystick 3 button 16
+    negativeButton: joystick 3 button 1
+    positiveButton: joystick 3 button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -376,8 +376,8 @@ InputManager:
     m_Name: Throttle4
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: joystick 4 button 16
-    positiveButton: joystick 4 button 17
+    negativeButton: joystick 4 button 1
+    positiveButton: joystick 4 button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -393,7 +393,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 1 button 9
+    positiveButton: joystick 1 button 7
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

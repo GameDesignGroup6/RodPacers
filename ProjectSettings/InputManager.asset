@@ -133,7 +133,7 @@ InputManager:
     axis: 5
     joyNum: 4
   - serializedVersion: 3
-    m_Name: LeftStickVert
+    m_Name: LeftStickVert1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -149,7 +149,55 @@ InputManager:
     axis: 1
     joyNum: 1
   - serializedVersion: 3
-    m_Name: LeftStickHoriz
+    m_Name: LeftStickVert2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: down
+    altPositiveButton: up
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: LeftStickVert3
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: down
+    altPositiveButton: up
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: LeftStickVert4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: down
+    altPositiveButton: up
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 4
+  - serializedVersion: 3
+    m_Name: LeftStickHoriz1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -164,6 +212,54 @@ InputManager:
     type: 2
     axis: 0
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: LeftStickHoriz2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: LeftStickHoriz3
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: LeftStickHoriz4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: .0500000007
+    sensitivity: .100000001
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 4
   - serializedVersion: 3
     m_Name: RightStickVert
     descriptiveName: 

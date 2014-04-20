@@ -5,12 +5,12 @@ PhysicMaterial:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: NoFriction
-  dynamicFriction: 1
+  m_Name: Friction
+  dynamicFriction: .5
   staticFriction: 0
   bounciness: 0
   frictionCombine: 0
   bounceCombine: 0
-  frictionDirection2: {x: 1, y: 1, z: 1}
-  dynamicFriction2: 1
+  frictionDirection2: {x: .5, y: .5, z: .5}
+  dynamicFriction2: .5
   staticFriction2: 0

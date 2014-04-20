@@ -28,6 +28,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OptionsScreen.unity
   - enabled: 1
-    path: Assets/Scenes/SinglePlayerSelection.unity
+    path: Assets/Scenes/TwoPlayerSelection.unity
   - enabled: 1
     path: Assets/Scenes/LegalScreen.unity

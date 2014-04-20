@@ -32,7 +32,7 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetAxis ("LeftStickVert") > 0.025 && paused) {
+		if (Input.GetAxis ("LeftStickVert1") > 0.025 && paused) {
 			menuChoices[position].color = Color.yellow;
 			position--;
 			if (position < 0) {
@@ -40,7 +40,7 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 			updateIsTooFast = 0.25f;
 		}
-		if (Input.GetAxis ("LeftStickVert") < -0.025f && paused) {
+		if (Input.GetAxis ("LeftStickVert1") < -0.025f && paused) {
 			menuChoices[position].color = Color.yellow;
 			position = (position + 1)%menuChoices.Length;
 			updateIsTooFast = 0.25f;
@@ -58,7 +58,7 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 			else if (position == 2) {
 				unpause ();
-				Application.LoadLevel(0);
+				Application.LoadLevel("StartScreen");
 			}
 		}
 	}

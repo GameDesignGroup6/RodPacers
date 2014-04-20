@@ -1498,6 +1498,7 @@ MonoBehaviour:
   baseRight: {fileID: 716302584}
   ChangeOnStart: 1
   initialSkinIndex: 1
+  playerNumber: -1
 --- !u!1 &538390552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,7 +2429,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 791270563}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 2.70000005, y: -6.4518795, z: -2.38418579e-07}
+  m_LocalPosition: {x: 2, y: -6.4518795, z: -2.38418579e-07}
   m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_Children:
   - {fileID: 91571284}
@@ -3192,6 +3193,7 @@ MonoBehaviour:
   baseRight: {fileID: 1439036491}
   ChangeOnStart: 1
   initialSkinIndex: 0
+  playerNumber: -1
 --- !u!1 &902970098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,7 +3316,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912205908}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -2.70000005, y: -6.4518795, z: 2.38418579e-07}
+  m_LocalPosition: {x: -2, y: -6.4518795, z: 2.38418579e-07}
   m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_Children:
   - {fileID: 631916464}
@@ -5226,6 +5228,7 @@ MonoBehaviour:
   baseRight: {fileID: 791270564}
   ChangeOnStart: 1
   initialSkinIndex: 3
+  playerNumber: -1
 --- !u!1 &1424876639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,6 +6574,7 @@ MonoBehaviour:
   baseRight: {fileID: 593620959}
   ChangeOnStart: 1
   initialSkinIndex: 2
+  playerNumber: -1
 --- !u!114 &1765756006
 MonoBehaviour:
   m_ObjectHideFlags: 0

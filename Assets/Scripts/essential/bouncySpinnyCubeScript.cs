@@ -17,21 +17,18 @@ public class bouncySpinnyCubeScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		initPos = transform.localPosition;
-		if(useOffset)
-		offset = Random.Range(0f,360f);
+		if(useOffset){
+			offset = Random.Range(0f,360f);
+			transform.rotation = Random.rotation;
+		}
 //		initRot = transform.eulerAngles;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float y = initPos.y+Mathf.Sin(Time.time*bobRate+offset)*bobHeight;
 		Vector3 oldPos = transform.localPosition;
-		oldPos.y = y;
+		oldPos.y = initPos.y+Mathf.Sin(Time.time*bobRate+offset)*bobHeight;
 		transform.localPosition = oldPos;
-		Vector3 newAngle = transform.localEulerAngles;
-		newAngle.x = Mathf.Repeat(Time.time*spinRate.x+offset,360);
-		newAngle.y = Mathf.Repeat(Time.time*spinRate.y+offset,360);
-		newAngle.z = Mathf.Repeat(Time.time*spinRate.z+offset,360);
-		transform.localEulerAngles = newAngle;
+		transform.Rotate(Time.deltaTime*spinRate);
 	}
 }

@@ -123,7 +123,7 @@ Transform:
   m_LocalPosition: {x: .5, y: .550000012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1688647462}
 --- !u!1 &553057365
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +173,52 @@ Transform:
   m_LocalPosition: {x: .5, y: .400000006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 1688647462}
+--- !u!1 &740247746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 740247748}
+  - 131: {fileID: 740247747}
+  m_Layer: 0
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &740247747
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740247746}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 537daec53a43a4bb69369578929b756b, type: 3}
+  m_Color: {r: .996078432, g: .917647064, b: .0156862754, a: .670588255}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -512
+    y: -158
+    width: 1024
+    height: 128
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &740247748
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740247746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: 1, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1098467327
 GameObject:
@@ -183,14 +229,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 1098467329}
   - 132: {fileID: 1098467328}
-  - 114: {fileID: 1098467330}
   m_Layer: 0
   m_Name: RodPacers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!132 &1098467328
 GUIText:
   m_ObjectHideFlags: 0
@@ -225,27 +270,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1098467330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1098467327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e260c065304424eeb9c5c0eb190de320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuChoices:
-  - {fileID: 526416282}
-  - {fileID: 553057366}
-  - {fileID: 1183595802}
-  - {fileID: 2010286270}
-  nextScenes:
-  - PlayerNumberSelectionScreen
-  - OptionsScreen
-  - LegalScreen
-  - Quit
 --- !u!1 &1117122646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,7 +1571,7 @@ Transform:
   m_LocalPosition: {x: .5, y: .25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1688647462}
 --- !u!1 &1363629390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1618,58 @@ Transform:
   m_LocalScale: {x: 0, y: .159999996, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1688647461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1688647462}
+  - 114: {fileID: 1688647463}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1688647462
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688647461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 553057367}
+  - {fileID: 1183595803}
+  - {fileID: 526416283}
+  - {fileID: 2010286271}
+  m_Father: {fileID: 0}
+--- !u!114 &1688647463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688647461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e260c065304424eeb9c5c0eb190de320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuChoices:
+  - {fileID: 526416282}
+  - {fileID: 553057366}
+  - {fileID: 1183595802}
+  - {fileID: 2010286270}
+  nextScenes:
+  - PlayerNumberSelectionScreen
+  - OptionsScreen
+  - LegalScreen
+  - Quit
 --- !u!1 &1855471271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,4 +1781,4 @@ Transform:
   m_LocalPosition: {x: .5, y: .100000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1688647462}

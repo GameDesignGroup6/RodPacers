@@ -451,9 +451,9 @@ MonoBehaviour:
   - {fileID: 1491095339}
   nextScenes:
   - SinglePlayerSelection
-  - TwoPlayer
-  - ThreePlayer
-  - FourPlayer
+  - TwoPlayerSelection
+  - ThreePlayerSelection
+  - FourPlayerSelection
   - StartScreen
 --- !u!1 &1117122646
 GameObject:

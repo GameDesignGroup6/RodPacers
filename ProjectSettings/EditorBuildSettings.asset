@@ -24,9 +24,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThreePlayer.unity
   - enabled: 1
+    path: Assets/Scenes/ThreePlayerSelection.unity
+  - enabled: 1
     path: Assets/Scenes/TwoPlayer.unity
   - enabled: 1
+    path: Assets/Scenes/SinglePlayerSelection.unity
+  - enabled: 1
     path: Assets/Scenes/FourPlayer.unity
+  - enabled: 1
+    path: Assets/Scenes/FourPlayerSelection.unity
   - enabled: 1
     path: Assets/Scenes/OptionsScreen.unity
   - enabled: 1

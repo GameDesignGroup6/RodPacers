@@ -135,7 +135,7 @@ GameObject:
   - 132: {fileID: 1098467328}
   - 114: {fileID: 1098467330}
   m_Layer: 0
-  m_Name: Controls
+  m_Name: Default Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ GUIText:
   m_GameObject: {fileID: 1098467327}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: controls
+  m_Text: default controls
   m_Anchor: 1
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -1442,50 +1442,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1363629390
+--- !u!1 &1643125937
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1363629392}
-  - 131: {fileID: 1363629391}
+  - 4: {fileID: 1643125939}
+  - 131: {fileID: 1643125938}
   m_Layer: 0
-  m_Name: LucasArts
+  m_Name: UnityWatermark-small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!131 &1363629391
+--- !u!131 &1643125938
 GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1363629390}
+  m_GameObject: {fileID: 1643125937}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 180740cc009d940658aadc7c415f564d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 69afbf7e27d3b4b31846582c3e1e2088, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
-    y: -29
-    width: 128
-    height: 58
+    x: -322
+    y: -200
+    width: 644
+    height: 400
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
---- !u!4 &1363629392
+--- !u!4 &1643125939
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1363629390}
+  m_GameObject: {fileID: 1643125937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0799999982, y: .140000001, z: 0}
-  m_LocalScale: {x: 0, y: .159999996, z: 0}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1855471271

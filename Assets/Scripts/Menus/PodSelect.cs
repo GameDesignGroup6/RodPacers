@@ -17,7 +17,7 @@ public class PodSelect : MonoBehaviour {
 		selectedPod = 1;
 		skinToChange = GetComponent<PodSkin>();
 		skinToChange.ChangeSkin(selectedPod);
-		PlayerManager.podSkins[playerNumber] = selectedPod;
+		PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		bscs = GetComponent<bouncySpinnyCubeScript>();
 	}
 	
@@ -36,14 +36,14 @@ public class PodSelect : MonoBehaviour {
 			if(selectedPod<minPodNumber)selectedPod = maxPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
-			PlayerManager.podSkins[playerNumber] = selectedPod;
+			PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		}
 		if(Input.GetAxis("LeftStickHoriz"+playerNumber)>0.025f){
 			selectedPod++;
 			if(selectedPod>maxPodNumber)selectedPod = minPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
-			PlayerManager.podSkins[playerNumber] = selectedPod;
+			PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		}
 	}
 }

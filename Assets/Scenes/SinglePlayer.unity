@@ -1188,6 +1188,7 @@ GameObject:
   - 81: {fileID: 492966039}
   - 114: {fileID: 492966038}
   - 45: {fileID: 492966037}
+  - 114: {fileID: 492966043}
   m_Layer: 0
   m_Name: Camera1
   m_TagString: Untagged
@@ -1280,6 +1281,18 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
+--- !u!114 &492966043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492966035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d30bc8ce2391b4eb81efc93e296fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wireframeEnabled: 0
 --- !u!1 &506205537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,8 +1379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 716302594}
-  angleThreshold: 30
 --- !u!114 &506205542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,8 +1913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 801580645}
-  angleThreshold: 30
 --- !u!114 &593620951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,8 +2422,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 506205548}
-  angleThreshold: 30
 --- !u!114 &716302588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2608,8 +2615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 912205919}
-  angleThreshold: 30
 --- !u!114 &791270566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2863,8 +2868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 593620960}
-  angleThreshold: 30
 --- !u!114 &801580639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3314,8 +3317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 791270574}
-  angleThreshold: 30
 --- !u!114 &912205913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4891,8 +4892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 1635442875}
-  angleThreshold: 30
 --- !u!114 &1439036493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5386,8 +5385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 1439036501}
-  angleThreshold: 30
 --- !u!114 &1635442869
 MonoBehaviour:
   m_ObjectHideFlags: 0

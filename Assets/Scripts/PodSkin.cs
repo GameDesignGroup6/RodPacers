@@ -10,7 +10,7 @@ public class PodSkin : MonoBehaviour {
 
 	void Start(){
 		if(playerNumber>=1&&playerNumber<=4){
-			initialSkinIndex = PlayerManager.podSkins[playerNumber];
+			initialSkinIndex = PlayerManager.podSkins[playerNumber-1];
 		}
 		if(ChangeOnStart)ChangeSkin(initialSkinIndex);
 	}

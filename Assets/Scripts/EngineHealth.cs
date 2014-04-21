@@ -10,20 +10,23 @@ public class EngineHealth : MonoBehaviour {
 	}
 	private float inv = 0f;
 
-	// Use this for initialization
+	void Start(){
+		curHealth = maxHealth;
+	}
+
 	void OnCollisionStay(Collision col){
-		if(inv<0f)return;
+		if(inv>0f)return;
 		inv = 0.25f;
 		Vector3 velocity = col.relativeVelocity;
 		Vector3 normal = col.contacts[0].normal;
 		float speed = Vector3.Project(velocity,normal).magnitude;
 		float damage = speed/2f;
 		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
-		curHealth-=damage*damage;
+		Hurt(damage*damage*5f);
 	}
 	void FixedUpdate(){
 		if(inv>0.0f){
-			inv-=0.005f;
+			inv-=Time.fixedDeltaTime;
 			if(inv<0f)inv=0f;
 		}
 	}

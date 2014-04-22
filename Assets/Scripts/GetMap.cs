@@ -5,6 +5,7 @@ public class GetMap : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Application.LoadLevelAdditive ("Test1");
+		if(PlayerManager.playerCount==0)
+			Application.LoadLevelAdditive ("Test1");
 	}
 }

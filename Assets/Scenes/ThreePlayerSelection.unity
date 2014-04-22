@@ -882,6 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -1065,6 +1066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -1814,6 +1816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2233,6 +2236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2575,7 +2579,7 @@ MonoBehaviour:
   - {fileID: 616091238}
   - {fileID: 1840195978}
   nextScenes:
-  - ThreePlayer
+  - Test1
   - PlayerNumberSelectionScreen
 --- !u!1 &1117122646
 GameObject:
@@ -4326,6 +4330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -5743,6 +5748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1

@@ -22,6 +22,10 @@ public class CameraAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.anyKeyDown){
+			stop();
+			return;
+		}
 		float lerp = 1f-Vector3.Distance(trans.position,node.transform.position)/distanceToNextNode;
 		float curSpeed=baseSpeed;
 		if(!fixedSpeed&&node.useAnimationCurve){
@@ -42,8 +46,19 @@ public class CameraAnimator : MonoBehaviour {
 					trans.rotation = node.transform.rotation;
 				}
 			}else{
-				Debug.Log ("Done with camera stuff!");
+				stop();
 			}
+		}
+	}
+	public void stop(){
+		Destroy(gameObject);
+		
+		switch(PlayerManager.playerCount){
+		case 1: Application.LoadLevelAdditive("SinglePlayer");break;
+		case 2: Application.LoadLevelAdditive("TwoPlayer");break;
+		case 3: Application.LoadLevelAdditive("ThreePlayer");break;
+		case 4: Application.LoadLevelAdditive("FourPlayer");break;
+		default:Debug.LogError("Impossible number of players!");break;
 		}
 	}
 }

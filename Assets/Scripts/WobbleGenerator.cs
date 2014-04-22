@@ -5,6 +5,7 @@ using System.Collections;
 public class WobbleGenerator : MonoBehaviour {
 	private Rigidbody body;
 	private RigidbodyInfo bodyInfo;
+	public InputManager manager;
 	public float forceMiltiplier=1f,torqueMultiplier=1f;
 	public float velocityThreshold = 1f;
 
@@ -16,7 +17,9 @@ public class WobbleGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(bodyInfo.Velocity>velocityThreshold)return;
+		bool force = false;
+		if(manager!=null)force = manager.bothTriggersPressed();
+		if(bodyInfo.Velocity>velocityThreshold && !force)return;
 		body.AddForce(Random.onUnitSphere*forceMiltiplier);
 		body.AddTorque(Random.onUnitSphere*torqueMultiplier);
 	}

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(InputManager))]
 public class TestEngineController : MonoBehaviour {
-	public int playerNumber;
+	private InputManager manager;
 	public Rigidbody leftEngine,rightEngine, bothEngines;
 	public EngineThruster leftThruster,rightThruster;
 	public bool acceptUserInput = true;
@@ -15,6 +16,7 @@ public class TestEngineController : MonoBehaviour {
 	void Start () {
 		Screen.showCursor = false;
 		acceptUserInputOn = acceptUserInput;
+		manager = GetComponent<InputManager>();
 	}
 	
 	// Update is called once per frame
@@ -27,21 +29,16 @@ public class TestEngineController : MonoBehaviour {
 
 
 		if(!acceptUserInput){Input.ResetInputAxes();}
-		float leftTrigger = Input.GetAxis("LeftTrigger" + playerNumber);
-		float rightTrigger = Input.GetAxis("RightTrigger" + playerNumber);
-
-		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
-			leftTrigger = (leftTrigger +1)/2;
-			rightTrigger = (rightTrigger + 1)/2;
-		}
-
+		float leftTrigger = manager.getLeftTrigger();
+		float rightTrigger = manager.getRightTrigger();
 
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
-		
+
+		float throttle = manager.getThrottle();
 		//thrust control
-		leftThruster.thrust = leftThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
-		rightThruster.thrust = rightThruster.DefaultThrust*Input.GetAxis("Throttle"+playerNumber);
+		leftThruster.thrust = leftThruster.DefaultThrust*throttle;
+		rightThruster.thrust = rightThruster.DefaultThrust*throttle;
 
 		leftThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);//remap from 0-1 to 1-1.1
 		rightThruster.thrust*=(leftTrigger*1/turningThrust+1.0f);

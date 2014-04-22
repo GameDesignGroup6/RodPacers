@@ -380,7 +380,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279541467}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -542,7 +542,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 307435480}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -1205,6 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -1414,6 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -1895,7 +1897,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641713843}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -2381,6 +2383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2548,6 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -3134,6 +3138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -3283,7 +3288,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1082599146}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -3476,7 +3481,7 @@ MonoBehaviour:
   - {fileID: 616091238}
   - {fileID: 1840195978}
   nextScenes:
-  - FourPlayer
+  - Test1
   - PlayerNumberSelectionScreen
 --- !u!1 &1117122646
 GameObject:
@@ -4652,7 +4657,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1179387988}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -5227,6 +5232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -5472,6 +5478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -5726,7 +5733,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524019705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -6279,7 +6286,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732371237}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -7180,6 +7187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -7329,7 +7337,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041717671}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 

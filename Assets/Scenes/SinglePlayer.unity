@@ -1453,6 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1943316327}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2001,6 +2002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1846939659}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2496,6 +2498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1943316327}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2641,7 +2644,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 791270563}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 2.70000005, y: -6.4518795, z: -2.38418579e-07}
+  m_LocalPosition: {x: 1.70000005, y: -6.4518795, z: -2.38418579e-07}
   m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_Children:
   - {fileID: 91571284}
@@ -2703,6 +2706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1145511756}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2942,6 +2946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1846939659}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -3313,7 +3318,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912205908}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -2.70000005, y: -6.4518795, z: 2.38418579e-07}
+  m_LocalPosition: {x: -1.70000005, y: -6.4518795, z: 2.38418579e-07}
   m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_Children:
   - {fileID: 631916464}
@@ -3391,6 +3396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1145511756}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -3899,6 +3905,7 @@ GameObject:
   - 114: {fileID: 1145511757}
   - 82: {fileID: 1145511755}
   - 114: {fileID: 1145511760}
+  - 114: {fileID: 1145511756}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -3995,6 +4002,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1145511756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145511752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1145511757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4036,7 +4054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 2
   leftEngine: {fileID: 912205910}
   rightEngine: {fileID: 791270570}
   bothEngines: {fileID: 0}
@@ -4226,6 +4243,7 @@ GameObject:
   - 114: {fileID: 1190952261}
   - 82: {fileID: 1190952258}
   - 114: {fileID: 1190952256}
+  - 114: {fileID: 1190952257}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -4278,6 +4296,17 @@ MonoBehaviour:
   right: {fileID: 1439036501}
   leftMount: {fileID: 601532871}
   rightMount: {fileID: 692079864}
+--- !u!114 &1190952257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1190952258
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4378,7 +4407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 4
   leftEngine: {fileID: 1635442866}
   rightEngine: {fileID: 1439036497}
   bothEngines: {fileID: 0}
@@ -4980,6 +5008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1190952257}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -5459,6 +5488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1190952257}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -6157,6 +6187,7 @@ GameObject:
   - 114: {fileID: 1846939663}
   - 82: {fileID: 1846939660}
   - 114: {fileID: 1846939658}
+  - 114: {fileID: 1846939659}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6209,6 +6240,17 @@ MonoBehaviour:
   right: {fileID: 593620960}
   leftMount: {fileID: 1308056045}
   rightMount: {fileID: 1246215052}
+--- !u!114 &1846939659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1846939660
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6309,7 +6351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 3
   leftEngine: {fileID: 801580636}
   rightEngine: {fileID: 593620955}
   bothEngines: {fileID: 0}
@@ -6661,6 +6702,7 @@ GameObject:
   - 114: {fileID: 1943316331}
   - 82: {fileID: 1943316328}
   - 114: {fileID: 1943316326}
+  - 114: {fileID: 1943316327}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6698,6 +6740,18 @@ MonoBehaviour:
   right: {fileID: 716302594}
   leftMount: {fileID: 54489352}
   rightMount: {fileID: 896271712}
+--- !u!114 &1943316327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943316324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e06c70e760726148b92ac06047c8125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
 --- !u!82 &1943316328
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6798,7 +6852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
   leftEngine: {fileID: 506205539}
   rightEngine: {fileID: 716302585}
   bothEngines: {fileID: 0}

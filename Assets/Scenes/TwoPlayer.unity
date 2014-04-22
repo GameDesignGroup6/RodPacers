@@ -1260,8 +1260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 716302594}
-  angleThreshold: 30
 --- !u!114 &506205542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,6 +1284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1943316327}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -1809,8 +1808,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 801580645}
-  angleThreshold: 30
 --- !u!114 &593620951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,6 +1846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1846939659}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2258,8 +2256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 506205548}
-  angleThreshold: 30
 --- !u!114 &716302588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1943316327}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2453,8 +2450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 912205919}
-  angleThreshold: 30
 --- !u!114 &791270566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2493,6 +2488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1145511756}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2709,8 +2705,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 593620960}
-  angleThreshold: 30
 --- !u!114 &801580639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2735,6 +2729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1846939659}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -3370,8 +3365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 791270574}
-  angleThreshold: 30
 --- !u!114 &912205913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3396,6 +3389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1145511756}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -4055,9 +4049,9 @@ GameObject:
   - 114: {fileID: 1145511761}
   - 114: {fileID: 1145511758}
   - 114: {fileID: 1145511757}
-  - 114: {fileID: 1145511756}
   - 82: {fileID: 1145511755}
   - 114: {fileID: 1145511760}
+  - 114: {fileID: 1145511756}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -4157,18 +4151,15 @@ AudioSource:
 --- !u!114 &1145511756
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145511752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e06c70e760726148b92ac06047c8125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  podSound: {fileID: 1145511755}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
+  playerNumber: 2
 --- !u!114 &1145511757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4210,7 +4201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 2
   leftEngine: {fileID: 912205910}
   rightEngine: {fileID: 791270570}
   bothEngines: {fileID: 0}
@@ -4445,9 +4435,9 @@ GameObject:
   - 114: {fileID: 1190952265}
   - 114: {fileID: 1190952262}
   - 114: {fileID: 1190952261}
-  - 114: {fileID: 1190952260}
   - 82: {fileID: 1190952258}
   - 114: {fileID: 1190952256}
+  - 114: {fileID: 1190952257}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -4500,6 +4490,17 @@ MonoBehaviour:
   right: {fileID: 1439036501}
   leftMount: {fileID: 601532871}
   rightMount: {fileID: 692079864}
+--- !u!114 &1190952257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1190952258
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4559,21 +4560,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1190952260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1190952253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1190952258}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1190952261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4615,7 +4601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 4
   leftEngine: {fileID: 1635442866}
   rightEngine: {fileID: 1439036497}
   bothEngines: {fileID: 0}
@@ -5311,8 +5296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 1635442875}
-  angleThreshold: 30
 --- !u!114 &1439036493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5351,6 +5334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1190952257}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -5925,8 +5909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
-  otherEngine: {fileID: 1439036501}
-  angleThreshold: 30
 --- !u!114 &1635442869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5951,6 +5933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1190952257}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -6660,9 +6643,9 @@ GameObject:
   - 114: {fileID: 1846939667}
   - 114: {fileID: 1846939664}
   - 114: {fileID: 1846939663}
-  - 114: {fileID: 1846939662}
   - 82: {fileID: 1846939660}
   - 114: {fileID: 1846939658}
+  - 114: {fileID: 1846939659}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6715,6 +6698,17 @@ MonoBehaviour:
   right: {fileID: 593620960}
   leftMount: {fileID: 1308056045}
   rightMount: {fileID: 1246215052}
+--- !u!114 &1846939659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1846939660
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6774,21 +6768,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1846939662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1846939655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1846939660}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1846939663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6830,7 +6809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 3
   leftEngine: {fileID: 801580636}
   rightEngine: {fileID: 593620955}
   bothEngines: {fileID: 0}
@@ -7180,9 +7158,9 @@ GameObject:
   - 54: {fileID: 1943316336}
   - 114: {fileID: 1943316332}
   - 114: {fileID: 1943316331}
-  - 114: {fileID: 1943316330}
   - 82: {fileID: 1943316328}
   - 114: {fileID: 1943316326}
+  - 114: {fileID: 1943316327}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -7220,6 +7198,18 @@ MonoBehaviour:
   right: {fileID: 716302594}
   leftMount: {fileID: 54489352}
   rightMount: {fileID: 896271712}
+--- !u!114 &1943316327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943316324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e06c70e760726148b92ac06047c8125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
 --- !u!82 &1943316328
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7279,21 +7269,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1943316330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: ba4e52dd78fe41a408ec6407a73ad2c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1943316324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6208ceace038f48fba3e5e7e2fb6f799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podSound: {fileID: 1943316328}
-  trackMusic: {fileID: 0}
-  endingMusic: {fileID: 0}
 --- !u!114 &1943316331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7335,7 +7310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b392d746e924294bb614de480439bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
   leftEngine: {fileID: 506205539}
   rightEngine: {fileID: 716302585}
   bothEngines: {fileID: 0}

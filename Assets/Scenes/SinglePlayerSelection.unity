@@ -393,6 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -954,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
@@ -2522,7 +2524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d30bc8ce2391b4eb81efc93e296fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wireframeEnabled: 1
+  wireframeEnabled: 0
 --- !u!1 &1463116758
 GameObject:
   m_ObjectHideFlags: 0

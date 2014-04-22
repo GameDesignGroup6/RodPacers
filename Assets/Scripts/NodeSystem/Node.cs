@@ -4,37 +4,6 @@ using System.Collections;
 public class Node : MonoBehaviour {
 	public Node next,previous;
 	private float distance;
-	public bool checkpoint;
-	public bool start;
-	private Vector3 pos;
-	
-	public int numNodes;
-
-	public Node getNext(){
-		get{return next;}
-	}
-
-	public Node getPrev(){
-		getNext{return previous;}
-	}
-
-	void OnTriggerEnter(Collider racer){
-		var pod = racer.GetComponent<PodScript>();
-		if (this == pod.goalNode){ //this condition makes it so that the player cannot go backwards to win.
-			pod.currentNode=pod.goalNode;
-			if (this.getNext()==null){
-				Debug.Log(pod.name " won the game");
-				//do victory stuff
-				return;
-			}
-			pod.goalNode=this.getNext();
-			pod.passedANode();
-		}
-	}
-
-	public Vector3 Position{
-		get{return pos;}
-	}
 	public float DistanceFromStart{
 		get{return distance;}
 	}
@@ -43,6 +12,13 @@ public class Node : MonoBehaviour {
 			return next.pos-pos;
 		}
 	}
+	public bool checkpoint;
+	public bool start;
+	private Vector3 pos;
+	public Vector3 Position{
+		get{return pos;}
+	}
+
 	void OnDrawGizmosSelected(){
 		Gizmos.color = Color.yellow;
 		if(checkpoint)Gizmos.color = Color.blue;

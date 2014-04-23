@@ -14,7 +14,7 @@ public class Node : MonoBehaviour {
 	}
 	public bool checkpoint;
 	public bool start;
-	private Vector3 pos;
+    public Vector3 pos;
 	public Vector3 Position{
 		get{return pos;}
 	}

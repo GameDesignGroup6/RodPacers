@@ -2305,8 +2305,6 @@ Transform:
   - {fileID: 1792798065}
   - {fileID: 1204379155}
   - {fileID: 23025257}
-  - {fileID: 1282693297}
-  - {fileID: 1572850289}
   - {fileID: 1847117468}
   - {fileID: 1864331681}
   - {fileID: 1144830784}
@@ -2328,6 +2326,8 @@ Transform:
   - {fileID: 1405561436}
   - {fileID: 764850644}
   - {fileID: 1743861305}
+  - {fileID: 1282693297}
+  - {fileID: 1572850289}
   m_Father: {fileID: 0}
 --- !u!114 &78884008
 MonoBehaviour:

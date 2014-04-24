@@ -1804,7 +1804,7 @@ GameObject:
   - 65: {fileID: 23025259}
   - 23: {fileID: 23025258}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9917,8 +9917,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 5c35a7a3eb9cbc448bfd36f3756c7662, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 433384950}
-  m_LocalRotation: {x: 0, y: .962903023, z: 0, w: .269847572}
-  m_LocalPosition: {x: -3613.95874, y: 9, z: -4253.56689}
+  m_LocalRotation: {x: 0, y: .972397804, z: 0, w: .233329341}
+  m_LocalPosition: {x: -3386.02686, y: 9, z: -4506.6167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534822896}
@@ -35850,7 +35850,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1194291891}
   m_LocalRotation: {x: 0, y: .999770045, z: 0, w: -.0214455128}
-  m_LocalPosition: {x: -2939.07397, y: 9, z: -6542.59766}
+  m_LocalPosition: {x: -3033.65503, y: 9, z: -6538.53809}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534822896}
@@ -58042,8 +58042,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 5c35a7a3eb9cbc448bfd36f3756c7662, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876151976}
-  m_LocalRotation: {x: 0, y: .997358263, z: 0, w: .0726400316}
-  m_LocalPosition: {x: -2989.12891, y: 9, z: -5431.85889}
+  m_LocalRotation: {x: 0, y: .999538898, z: 0, w: .0303643588}
+  m_LocalPosition: {x: -2936.68945, y: 21.7661743, z: -5424.17969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534822896}

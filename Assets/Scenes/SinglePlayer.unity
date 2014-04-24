@@ -8468,7 +8468,7 @@ Prefab:
     - target: {fileID: 13200000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
       propertyPath: m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 0bb66c7eefa304f92920d01e09224c5d,
+      objectReference: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5,
         type: 3}
     - target: {fileID: 13200000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
       propertyPath: m_Text
@@ -8476,7 +8476,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13200000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
       propertyPath: m_FontStyle
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 13200000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
       propertyPath: m_Color.rgba
@@ -8537,10 +8537,10 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: 0bb66c7eefa304f92920d01e09224c5d, type: 3}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
   m_FontSize: 140
-  m_FontStyle: 2
+  m_FontStyle: 0
   m_Color:
     serializedVersion: 2
     rgba: 4278190335

@@ -173,6 +173,8 @@ GameObject:
   - 4: {fileID: 12516896}
   - 198: {fileID: 12516895}
   - 199: {fileID: 12516894}
+  - 136: {fileID: 12516898}
+  - 114: {fileID: 12516897}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -1268,6 +1270,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &12516897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12516893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &12516898
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12516893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &15945022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2305,8 @@ Transform:
   - {fileID: 1792798065}
   - {fileID: 1204379155}
   - {fileID: 23025257}
+  - {fileID: 1282693297}
+  - {fileID: 1572850289}
   - {fileID: 1847117468}
   - {fileID: 1864331681}
   - {fileID: 1144830784}
@@ -3675,6 +3704,8 @@ GameObject:
   - 4: {fileID: 181011514}
   - 198: {fileID: 181011513}
   - 199: {fileID: 181011512}
+  - 136: {fileID: 181011516}
+  - 114: {fileID: 181011515}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -4770,6 +4801,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &181011515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181011511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &181011516
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181011511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &181132552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,6 +5003,8 @@ GameObject:
   - 4: {fileID: 200085130}
   - 198: {fileID: 200085129}
   - 199: {fileID: 200085128}
+  - 136: {fileID: 200085132}
+  - 114: {fileID: 200085131}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -6042,6 +6100,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &200085131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200085127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &200085132
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200085127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &213775319
 GameObject:
   m_ObjectHideFlags: 0
@@ -7613,7 +7696,7 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
   m_FontSize: 0
   m_FontStyle: 0
@@ -8866,6 +8949,8 @@ GameObject:
   - 4: {fileID: 505682533}
   - 198: {fileID: 505682532}
   - 199: {fileID: 505682531}
+  - 136: {fileID: 505682535}
+  - 114: {fileID: 505682534}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -9961,6 +10046,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &505682534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505682530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &505682535
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505682530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &506641877
 GameObject:
   m_ObjectHideFlags: 0
@@ -9971,6 +10081,8 @@ GameObject:
   - 4: {fileID: 506641880}
   - 198: {fileID: 506641879}
   - 199: {fileID: 506641878}
+  - 136: {fileID: 506641882}
+  - 114: {fileID: 506641881}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -11066,6 +11178,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &506641881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506641877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &506641882
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506641877}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &514897534
 GameObject:
   m_ObjectHideFlags: 0
@@ -12034,6 +12171,8 @@ GameObject:
   - 4: {fileID: 573860208}
   - 198: {fileID: 573860207}
   - 199: {fileID: 573860206}
+  - 136: {fileID: 573860210}
+  - 114: {fileID: 573860209}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -13129,6 +13268,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &573860209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573860205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &573860210
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573860205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &576365418
 GameObject:
   m_ObjectHideFlags: 0
@@ -14401,6 +14565,8 @@ GameObject:
   - 4: {fileID: 636757044}
   - 198: {fileID: 636757043}
   - 199: {fileID: 636757042}
+  - 136: {fileID: 636757046}
+  - 114: {fileID: 636757045}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -15496,6 +15662,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &636757045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636757041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &636757046
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636757041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &641447121
 Prefab:
   m_ObjectHideFlags: 0
@@ -18904,6 +19095,8 @@ GameObject:
   - 4: {fileID: 883042726}
   - 198: {fileID: 883042725}
   - 199: {fileID: 883042724}
+  - 136: {fileID: 883042728}
+  - 114: {fileID: 883042727}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -19999,6 +20192,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &883042727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883042723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &883042728
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883042723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &886386366
 GameObject:
   m_ObjectHideFlags: 0
@@ -21973,6 +22191,8 @@ GameObject:
   - 4: {fileID: 1009400334}
   - 198: {fileID: 1009400333}
   - 199: {fileID: 1009400332}
+  - 136: {fileID: 1009400336}
+  - 114: {fileID: 1009400335}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -23068,6 +23288,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1009400335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009400331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1009400336
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009400331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1013052273
 GameObject:
   m_ObjectHideFlags: 0
@@ -23289,6 +23534,8 @@ GameObject:
   - 4: {fileID: 1028802674}
   - 198: {fileID: 1028802673}
   - 199: {fileID: 1028802672}
+  - 136: {fileID: 1028802676}
+  - 114: {fileID: 1028802675}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -24384,6 +24631,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1028802675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028802671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1028802676
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028802671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1031317688
 GameObject:
   m_ObjectHideFlags: 0
@@ -24746,6 +25018,8 @@ GameObject:
   - 4: {fileID: 1043511915}
   - 198: {fileID: 1043511914}
   - 199: {fileID: 1043511913}
+  - 136: {fileID: 1043511917}
+  - 114: {fileID: 1043511916}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -25841,6 +26115,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1043511916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1043511912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1043511917
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1043511912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1050495844
 GameObject:
   m_ObjectHideFlags: 0
@@ -25923,6 +26222,8 @@ GameObject:
   - 4: {fileID: 1052996613}
   - 198: {fileID: 1052996612}
   - 199: {fileID: 1052996611}
+  - 136: {fileID: 1052996615}
+  - 114: {fileID: 1052996614}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -27018,6 +27319,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1052996614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052996610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1052996615
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052996610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1053002807
 GameObject:
   m_ObjectHideFlags: 0
@@ -27270,6 +27596,8 @@ GameObject:
   - 4: {fileID: 1069991916}
   - 198: {fileID: 1069991915}
   - 199: {fileID: 1069991914}
+  - 136: {fileID: 1069991918}
+  - 114: {fileID: 1069991917}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -28365,6 +28693,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1069991917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069991913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1069991918
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069991913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1074719015
 GameObject:
   m_ObjectHideFlags: 0
@@ -28908,6 +29261,8 @@ GameObject:
   - 4: {fileID: 1104073373}
   - 198: {fileID: 1104073372}
   - 199: {fileID: 1104073371}
+  - 136: {fileID: 1104073375}
+  - 114: {fileID: 1104073374}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -30003,6 +30358,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1104073374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104073370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1104073375
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104073370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1109151786
 GameObject:
   m_ObjectHideFlags: 0
@@ -31944,6 +32324,66 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1972918196}
+--- !u!1 &1282693293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1282693297}
+  - 33: {fileID: 1282693296}
+  - 65: {fileID: 1282693295}
+  - 114: {fileID: 1282693294}
+  m_Layer: 2
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1282693294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282693293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+--- !u!65 &1282693295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282693293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1282693296
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282693293}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1282693297
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282693293}
+  m_LocalRotation: {x: 0, y: -.72567606, z: 0, w: .688036561}
+  m_LocalPosition: {x: -12410.3486, y: -.571777344, z: -4096.03271}
+  m_LocalScale: {x: 2000, y: 1, z: 3000}
+  m_Children: []
+  m_Father: {fileID: 78884007}
 --- !u!1 &1282831270
 GameObject:
   m_ObjectHideFlags: 0
@@ -32406,6 +32846,8 @@ GameObject:
   - 4: {fileID: 1298773508}
   - 198: {fileID: 1298773507}
   - 199: {fileID: 1298773506}
+  - 136: {fileID: 1298773510}
+  - 114: {fileID: 1298773509}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -33501,6 +33943,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1298773509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298773505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1298773510
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298773505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1304977727
 GameObject:
   m_ObjectHideFlags: 0
@@ -33555,6 +34022,8 @@ GameObject:
   - 4: {fileID: 1309526925}
   - 198: {fileID: 1309526924}
   - 199: {fileID: 1309526923}
+  - 136: {fileID: 1309526927}
+  - 114: {fileID: 1309526926}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -34650,6 +35119,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1309526926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309526922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1309526927
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309526922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1309741012
 GameObject:
   m_ObjectHideFlags: 0
@@ -35079,6 +35573,11 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 13200000, guid: 03975c4efbaba4dcea53915b5d60460a, type: 2}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03975c4efbaba4dcea53915b5d60460a, type: 2}
   m_RootGameObject: {fileID: 365059438}
@@ -35094,6 +35593,8 @@ GameObject:
   - 4: {fileID: 1332980778}
   - 198: {fileID: 1332980777}
   - 199: {fileID: 1332980776}
+  - 136: {fileID: 1332980780}
+  - 114: {fileID: 1332980779}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -36189,6 +36690,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1332980779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332980775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1332980780
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332980775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1343771401
 GameObject:
   m_ObjectHideFlags: 0
@@ -36462,6 +36988,8 @@ GameObject:
   - 4: {fileID: 1365006452}
   - 198: {fileID: 1365006451}
   - 199: {fileID: 1365006450}
+  - 136: {fileID: 1365006454}
+  - 114: {fileID: 1365006453}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -37557,6 +38085,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1365006453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365006449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1365006454
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365006449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1367363571
 GameObject:
   m_ObjectHideFlags: 0
@@ -38116,6 +38669,8 @@ GameObject:
   - 4: {fileID: 1426926538}
   - 198: {fileID: 1426926537}
   - 199: {fileID: 1426926536}
+  - 136: {fileID: 1426926540}
+  - 114: {fileID: 1426926539}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -39211,6 +39766,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1426926539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426926535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1426926540
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426926535}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1430352872
 GameObject:
   m_ObjectHideFlags: 0
@@ -39471,6 +40051,8 @@ GameObject:
   - 4: {fileID: 1457185904}
   - 198: {fileID: 1457185903}
   - 199: {fileID: 1457185902}
+  - 136: {fileID: 1457185906}
+  - 114: {fileID: 1457185905}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -40566,6 +41148,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1457185905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457185901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1457185906
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457185901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1457265256
 GameObject:
   m_ObjectHideFlags: 0
@@ -41984,6 +42591,66 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1972918196}
+--- !u!1 &1572850285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1572850289}
+  - 33: {fileID: 1572850288}
+  - 65: {fileID: 1572850287}
+  - 114: {fileID: 1572850286}
+  m_Layer: 2
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1572850286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572850285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+--- !u!65 &1572850287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572850285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1572850288
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572850285}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1572850289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572850285}
+  m_LocalRotation: {x: 0, y: -.273355842, z: 0, w: .96191299}
+  m_LocalPosition: {x: -12369.0273, y: -.571777344, z: -4871.47461}
+  m_LocalScale: {x: 1999.99988, y: 1, z: 3000}
+  m_Children: []
+  m_Father: {fileID: 78884007}
 --- !u!1 &1575575327
 GameObject:
   m_ObjectHideFlags: 0
@@ -42816,6 +43483,8 @@ GameObject:
   - 4: {fileID: 1677224400}
   - 198: {fileID: 1677224399}
   - 199: {fileID: 1677224398}
+  - 136: {fileID: 1677224402}
+  - 114: {fileID: 1677224401}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -43911,6 +44580,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1677224401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677224397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1677224402
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677224397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1679454010
 GameObject:
   m_ObjectHideFlags: 0
@@ -43921,6 +44615,8 @@ GameObject:
   - 4: {fileID: 1679454013}
   - 198: {fileID: 1679454012}
   - 199: {fileID: 1679454011}
+  - 136: {fileID: 1679454015}
+  - 114: {fileID: 1679454014}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -45016,6 +45712,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1679454014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679454010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1679454015
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679454010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1683476988
 GameObject:
   m_ObjectHideFlags: 0
@@ -45990,6 +46711,8 @@ GameObject:
   - 4: {fileID: 1734185144}
   - 198: {fileID: 1734185143}
   - 199: {fileID: 1734185142}
+  - 136: {fileID: 1734185146}
+  - 114: {fileID: 1734185145}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -47085,6 +47808,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1734185145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734185141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1734185146
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734185141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1741538365
 GameObject:
   m_ObjectHideFlags: 0
@@ -47327,6 +48075,8 @@ GameObject:
   - 4: {fileID: 1756343413}
   - 198: {fileID: 1756343412}
   - 199: {fileID: 1756343411}
+  - 136: {fileID: 1756343415}
+  - 114: {fileID: 1756343414}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -48422,6 +49172,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1756343414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1756343410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1756343415
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1756343410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1763226779
 GameObject:
   m_ObjectHideFlags: 0
@@ -49338,6 +50113,8 @@ GameObject:
   - 4: {fileID: 1820583276}
   - 198: {fileID: 1820583275}
   - 199: {fileID: 1820583274}
+  - 136: {fileID: 1820583278}
+  - 114: {fileID: 1820583277}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -50433,6 +51210,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1820583277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1820583273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1820583278
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1820583273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1833630829
 GameObject:
   m_ObjectHideFlags: 0
@@ -51525,6 +52327,8 @@ GameObject:
   - 4: {fileID: 1927447813}
   - 198: {fileID: 1927447812}
   - 199: {fileID: 1927447811}
+  - 136: {fileID: 1927447815}
+  - 114: {fileID: 1927447814}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -52620,6 +53424,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &1927447814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927447810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &1927447815
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927447810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1928902947
 GameObject:
   m_ObjectHideFlags: 0
@@ -53930,6 +54759,8 @@ GameObject:
   - 4: {fileID: 2004126468}
   - 198: {fileID: 2004126467}
   - 199: {fileID: 2004126466}
+  - 136: {fileID: 2004126470}
+  - 114: {fileID: 2004126469}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -55025,6 +55856,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &2004126469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004126465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &2004126470
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004126465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2004979575
 GameObject:
   m_ObjectHideFlags: 0
@@ -55387,6 +56243,8 @@ GameObject:
   - 4: {fileID: 2023681364}
   - 198: {fileID: 2023681363}
   - 199: {fileID: 2023681362}
+  - 136: {fileID: 2023681366}
+  - 114: {fileID: 2023681365}
   m_Layer: 0
   m_Name: SimpleFlame2(Red)
   m_TagString: Untagged
@@ -56482,6 +57340,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501207958}
+--- !u!114 &2023681365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023681361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da709d78b3afafd43b3abe48cce6f0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: .50999999
+--- !u!136 &2023681366
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023681361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 10
+  m_Height: 100
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2039459154
 GameObject:
   m_ObjectHideFlags: 0

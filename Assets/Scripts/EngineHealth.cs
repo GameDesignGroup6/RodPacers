@@ -15,15 +15,19 @@ public class EngineHealth : MonoBehaviour {
 	}
 
 	void OnCollisionStay(Collision col){
+		curHealth-=0.5f;
+	}
+	void OnCollisionEnter(Collision col){
 		if(inv>0f)return;
 		inv = 0.25f;
 		Vector3 velocity = col.relativeVelocity;
 		Vector3 normal = col.contacts[0].normal;
 		float speed = Vector3.Project(velocity,normal).magnitude;
-		float damage = speed/2f;
+		float damage = speed;
 		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
 		Hurt(damage*damage*5f);
 	}
+
 	void FixedUpdate(){
 		if(inv>0.0f){
 			inv-=Time.fixedDeltaTime;

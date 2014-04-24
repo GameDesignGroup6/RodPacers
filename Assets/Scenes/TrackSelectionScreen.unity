@@ -290,8 +290,6 @@ MonoBehaviour:
   - {fileID: 567083088}
   - {fileID: 526416282}
   - {fileID: 553057366}
-  - {fileID: 0}
-  - {fileID: 0}
   nextScenes:
   - Test0
   - Intro

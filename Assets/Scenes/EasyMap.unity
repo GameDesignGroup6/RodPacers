@@ -4814,6 +4814,7 @@ GameObject:
   - 114: {fileID: 1958118546}
   - 114: {fileID: 1958118545}
   - 114: {fileID: 1958118549}
+  - 82: {fileID: 1958118550}
   m_Layer: 2
   m_Name: Track 1 1
   m_TagString: Untagged
@@ -4926,6 +4927,129 @@ MonoBehaviour:
   - {fileID: 1532138418}
   - {fileID: 2141209296}
   - {fileID: 1794225592}
+--- !u!82 &1958118550
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958118543}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: c273a8e5b54f41047a180f8907ce5ec1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 300000
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 9.99999975e-05
+      value: 1
+      inSlope: -10004.0049
+      outSlope: -10004.0049
+      tangentMode: 0
+    - time: .000199999995
+      value: .5
+      inSlope: -2501.00122
+      outSlope: -2501.00122
+      tangentMode: 0
+    - time: .00039999999
+      value: .25
+      inSlope: -625.250305
+      outSlope: -625.250305
+      tangentMode: 0
+    - time: .00079999998
+      value: .125
+      inSlope: -156.312576
+      outSlope: -156.312576
+      tangentMode: 0
+    - time: .00159999996
+      value: .0625
+      inSlope: -39.0781441
+      outSlope: -39.0781441
+      tangentMode: 0
+    - time: .00319999992
+      value: .03125
+      inSlope: -9.76953602
+      outSlope: -9.76953602
+      tangentMode: 0
+    - time: .00639999984
+      value: .015625
+      inSlope: -2.442384
+      outSlope: -2.442384
+      tangentMode: 0
+    - time: .0127999997
+      value: .0078125
+      inSlope: -.610596001
+      outSlope: -.610596001
+      tangentMode: 0
+    - time: .0255999994
+      value: .00390625
+      inSlope: -.152649
+      outSlope: -.152649
+      tangentMode: 0
+    - time: .0511999987
+      value: .001953125
+      inSlope: -.0381622501
+      outSlope: -.0381622501
+      tangentMode: 0
+    - time: .102399997
+      value: .0009765625
+      inSlope: -.00954056252
+      outSlope: -.00954056252
+      tangentMode: 0
+    - time: .204799995
+      value: .00048828125
+      inSlope: -.00238514063
+      outSlope: -.00238514063
+      tangentMode: 0
+    - time: .40959999
+      value: .000244140625
+      inSlope: -.000596285157
+      outSlope: -.000596285157
+      tangentMode: 0
+    - time: .819199979
+      value: .000122070312
+      inSlope: -.000149071289
+      outSlope: -.000149071289
+      tangentMode: 0
+    - time: 1
+      value: 9.99999975e-05
+      inSlope: -.000100039921
+      outSlope: -.000100039921
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1981230447
 GameObject:
   m_ObjectHideFlags: 0

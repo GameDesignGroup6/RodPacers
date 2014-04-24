@@ -33,14 +33,14 @@ public class PodSelect : MonoBehaviour {
 		}
 		if(Input.GetAxis("LeftStickHoriz"+playerNumber)<-0.025f){
 			selectedPod--;
-			if(selectedPod<minPodNumber)selectedPod = maxPodNumber;
+			if(selectedPod<minPodNumber&&!(Input.GetKey("joystick "+playerNumber+" button 6")&&selectedPod>=0))selectedPod = maxPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
 			PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		}
 		if(Input.GetAxis("LeftStickHoriz"+playerNumber)>0.025f){
 			selectedPod++;
-			if(selectedPod>maxPodNumber)selectedPod = minPodNumber;
+			if(selectedPod>maxPodNumber && !(Input.GetKey("joystick "+playerNumber+" button 6")&&selectedPod<SkinManager.SkinList.Length))selectedPod = minPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
 			PlayerManager.podSkins[playerNumber-1] = selectedPod;

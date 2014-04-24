@@ -368,6 +368,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400044}
+  m_Layer: 0
+  m_Name: Decorative_Link
+  m_TagString: Untagged
+  m_Icon: {fileID: -1376725286, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -476,6 +491,7 @@ Transform:
   - {fileID: 400038}
   - {fileID: 400040}
   - {fileID: 400042}
+  - {fileID: 400044}
   m_Father: {fileID: 0}
 --- !u!4 &400016
 Transform:
@@ -629,6 +645,17 @@ Transform:
   m_LocalRotation: {x: -6.85914274e-05, y: .0118362438, z: -.999910355, w: .00627174182}
   m_LocalPosition: {x: .00374180824, y: .858905494, z: .087512292}
   m_LocalScale: {x: 3.75, y: 1, z: 3.75000048}
+  m_Children: []
+  m_Father: {fileID: 400014}
+--- !u!4 &400044
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 400014}
 --- !u!23 &2300000

@@ -198,7 +198,7 @@ GUIText:
   m_GameObject: {fileID: 567083087}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Baby Boonta Eve
+  m_Text: Boonta Eve Circuit
   m_Anchor: 3
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}

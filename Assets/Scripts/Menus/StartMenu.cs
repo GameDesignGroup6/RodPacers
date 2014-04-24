@@ -43,6 +43,11 @@ public class StartMenu : MonoBehaviour {
 				Application.LoadLevel (nextScenes[position]);
 			}
 		}
+		if (Input.GetAxis ("Throttle1") < 0) {
+			if (nextScenes[nextScenes.Length - 1] != "Quit") {
+				Application.LoadLevel (nextScenes[nextScenes.Length - 1]);
+			}
+		}
 	}
 	
 }

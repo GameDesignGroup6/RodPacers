@@ -8,8 +8,8 @@ public class StartCountDown : MonoBehaviour {
 	public float timePassed;
 	// Use this for initialization
 	void Start () {
-		count = 3;//we're counting down from 3, right?
-		gameObject.guiText.fontSize= 100;
+		count = 4;//we're counting down from 3, right?
+		gameObject.guiText.fontSize= 200;
 		gameObject.guiText.text="<color=red>"+count + "</color>";
 		deltaTime = Time.realtimeSinceStartup;
 		Time.timeScale=0;//freeze pods

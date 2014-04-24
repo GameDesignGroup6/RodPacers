@@ -1272,7 +1272,7 @@ MonoBehaviour:
   - {fileID: 616091238}
   - {fileID: 1840195978}
   nextScenes:
-  - Test1
+  - TrackSelectionScreen
   - PlayerNumberSelectionScreen
 --- !u!1 &1117122646
 GameObject:

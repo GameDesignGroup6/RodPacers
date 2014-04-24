@@ -53,12 +53,6 @@ public class CameraAnimator : MonoBehaviour {
 	public void stop(){
 		Destroy(gameObject);
 		
-		switch(PlayerManager.playerCount){
-		case 1: Application.LoadLevelAdditive("SinglePlayer");break;
-		case 2: Application.LoadLevelAdditive("TwoPlayer");break;
-		case 3: Application.LoadLevelAdditive("ThreePlayer");break;
-		case 4: Application.LoadLevelAdditive("FourPlayer");break;
-		default:Debug.LogError("Impossible number of players!");break;
-		}
+		Application.LoadLevel ("Test1");
 	}
 }

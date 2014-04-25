@@ -70,14 +70,12 @@ public class HoverScript : MonoBehaviour {
 						float delta = hit.distance-targetHeight;
 						sum += hit.distance;
 						hitsThisFrame++;
-						float force = k*delta;
+						float force = k*delta*((targetHeight/hit.distance));
 						Vector3 forceVector = hit.normal*force;
 						rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
 						Debug.DrawRay(t.position,forceVector,Color.blue);
 				}
 				else if (hit.distance > stallHeight) {
-//					leftThruster.thrust = 0;
-//					rightThruster.thrust = 0;
 					rgb.AddForce(0, -gravity, 0);
 				}
 			}

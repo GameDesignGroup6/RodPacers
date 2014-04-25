@@ -11,6 +11,9 @@ public class EnginePair : MonoBehaviour {
 	private float targetMain;//distance at start of the actual transforms;
 	private bool priSwitch;
 
+	public float TargetDistance{
+		get{return targetMain;}
+	}
 	public bool EnginesSwitched{
 		get{return priSwitch;}
 	}
@@ -122,7 +125,6 @@ public class EnginePair : MonoBehaviour {
 			//we're backwards!
 			priSwitch = true;
 			force = ((rightPos-leftPos)/dist)*k*k*k;
-			Debug.Log ("Engines are switched!");
 		}else{
 			priSwitch = false;
 		}

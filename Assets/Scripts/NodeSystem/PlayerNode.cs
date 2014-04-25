@@ -5,8 +5,10 @@ public class PlayerNode: MonoBehaviour {
 	public Transform nextWayPoint;
 	public int position;
 	public float distanceToNextPoint;
-
+	public int currentLap;
 	void Start () {
+
+		nextWayPoint = currentWayPoint.GetComponent<NodeA> ().next;
 		//initialize current and next waypoint
 	}
 
@@ -28,5 +30,15 @@ public class PlayerNode: MonoBehaviour {
 		distanceToNextPoint = Vector3.Distance (nextWayPoint.position, transform.position);
 		return distanceToNextPoint;
 }
+	public void finish(){
+		Debug.Log ("finish!");
+		GameObject.Find ("rank").GetComponent<Rank> ().guiText.text = GameObject.Find ("rank").GetComponent<Rank> ().currentPlayer.GetComponent<PlayerNode> ().position.ToString () + ",finishTime:" + GameObject.Find ("Time").GetComponent<TimeHUD> ().guiText.text;
+		GetComponent<InputManager> ().enabled = false;
+		GetComponent<PlayerInputManager> ().enabled = false;
+		GetComponent<TestEngineController> ().enabled = false;
+		GameObject.Find ("rank").GetComponent<Rank> ().notFinishedPod--;
+		GameObject.Find ("rank").GetComponent<Rank> ().finish=true;
+
+	}
 
 }

@@ -12,7 +12,7 @@ public class FadeInFadeOut : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.timeSinceLevelLoad > 5.0f) {
+		if (Time.timeSinceLevelLoad > 5.0f || Input.anyKeyDown) {
 			Application.LoadLevel (nextLevel);
 		}
 	}

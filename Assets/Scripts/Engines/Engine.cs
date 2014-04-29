@@ -11,6 +11,15 @@ public class Engine : MonoBehaviour {
 	public EngineThruster EngineThruster{
 		get{return thruster;}
 	}
+	public Engine OtherEngine{
+		get{
+			if(Side == EngineSide.LEFT){
+				return enginePair.right;
+			}else{
+				return enginePair.left;
+			}
+		}
+	}
 	private EngineHealth health;
 	public EngineHealth EngineHealth{
 		get{return health;}

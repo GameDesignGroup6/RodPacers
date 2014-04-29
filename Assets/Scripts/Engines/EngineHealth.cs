@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider),typeof(Engine))]
 public class EngineHealth : MonoBehaviour {
 	public float maxHealth = 1000f;
 	private float curHealth;
@@ -9,6 +9,10 @@ public class EngineHealth : MonoBehaviour {
 		get{return curHealth;}
 	}
 	private float inv = 0f;
+	private bool dead = false;
+	public bool Dead{
+		get{return dead;}
+	}
 
 	void Start(){
 		curHealth = maxHealth;
@@ -37,7 +41,14 @@ public class EngineHealth : MonoBehaviour {
 	public void Hurt(float damage){
 		curHealth-=damage;
 		if(curHealth<=0f){
-			Debug.Log ("DEAD!");
+			Engine e = GetComponent<Engine>();
+			e.HoverScript.enabled = false;
+			e.EngineThruster.enabled = false;
+			dead = true;
+			if(e.OtherEngine.EngineHealth.Dead){
+				transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(transform.parent.FindChild("Pod").GetComponent<NodeRespawn>().currentNode.previous.transform);
+			}
+
 		}
 	}
 }

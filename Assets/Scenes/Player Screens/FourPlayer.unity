@@ -1775,6 +1775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &506205541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2027,6 +2028,7 @@ GameObject:
   - 4: {fileID: 524838659}
   - 114: {fileID: 524838662}
   - 114: {fileID: 524838660}
+  - 114: {fileID: 524838661}
   m_Layer: 0
   m_Name: Racer1
   m_TagString: Untagged
@@ -2061,6 +2063,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearestNode: {fileID: 0}
+--- !u!114 &524838661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524838658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &524838662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,6 +2428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &593620953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,6 +2995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &716302587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3441,6 +3456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &791270568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3721,6 +3737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &801580638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4235,7 +4252,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 874364908}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4352,6 +4369,7 @@ GameObject:
   - 4: {fileID: 900000211}
   - 114: {fileID: 900000214}
   - 114: {fileID: 900000212}
+  - 114: {fileID: 900000213}
   m_Layer: 0
   m_Name: Racer4
   m_TagString: Untagged
@@ -4386,6 +4404,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearestNode: {fileID: 0}
+--- !u!114 &900000213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900000210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &900000214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4750,6 +4779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &912205912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5934,6 +5964,7 @@ GameObject:
   - 114: {fileID: 1145511760}
   - 114: {fileID: 1145511756}
   - 114: {fileID: 1145511766}
+  - 114: {fileID: 1145511767}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6209,6 +6240,19 @@ MonoBehaviour:
   distanceToNextPoint: 0
   finished: 0
   finishTime: 
+--- !u!114 &1145511767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145511752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!1 &1162802565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6404,6 +6448,7 @@ GameObject:
   - 114: {fileID: 1190952256}
   - 114: {fileID: 1190952257}
   - 114: {fileID: 1190952259}
+  - 114: {fileID: 1190952260}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6545,6 +6590,19 @@ MonoBehaviour:
   distanceToNextPoint: 0
   finished: 0
   finishTime: 
+--- !u!114 &1190952260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!114 &1190952261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7503,6 +7561,7 @@ GameObject:
   - 4: {fileID: 1396121274}
   - 114: {fileID: 1396121277}
   - 114: {fileID: 1396121275}
+  - 114: {fileID: 1396121276}
   m_Layer: 0
   m_Name: Racer2
   m_TagString: Untagged
@@ -7537,6 +7596,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearestNode: {fileID: 0}
+--- !u!114 &1396121276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396121273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1396121277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7876,6 +7946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &1439036495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8606,6 +8677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 325
+  maxThrust: 325
 --- !u!114 &1635442868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9282,6 +9354,7 @@ GameObject:
   - 4: {fileID: 1765756003}
   - 114: {fileID: 1765756005}
   - 114: {fileID: 1765756006}
+  - 114: {fileID: 1765756004}
   m_Layer: 0
   m_Name: Racer3
   m_TagString: Untagged
@@ -9304,6 +9377,17 @@ Transform:
   - {fileID: 1846939656}
   - {fileID: 869293183}
   m_Father: {fileID: 0}
+--- !u!114 &1765756004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765756002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1765756005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9642,6 +9726,7 @@ GameObject:
   - 114: {fileID: 1846939658}
   - 114: {fileID: 1846939659}
   - 114: {fileID: 1846939661}
+  - 114: {fileID: 1846939662}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -9783,6 +9868,19 @@ MonoBehaviour:
   distanceToNextPoint: 0
   finished: 0
   finishTime: 
+--- !u!114 &1846939662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!114 &1846939663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10339,6 +10437,7 @@ GameObject:
   - 114: {fileID: 1943316326}
   - 114: {fileID: 1943316327}
   - 114: {fileID: 1943316329}
+  - 114: {fileID: 1943316330}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -10465,6 +10564,19 @@ MonoBehaviour:
   distanceToNextPoint: 0
   finished: 0
   finishTime: 
+--- !u!114 &1943316330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943316324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!114 &1943316331
 MonoBehaviour:
   m_ObjectHideFlags: 0

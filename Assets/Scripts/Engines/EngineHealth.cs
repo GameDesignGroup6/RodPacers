@@ -32,7 +32,7 @@ public class EngineHealth : MonoBehaviour {
 		float speed = Vector3.Project(velocity,normal).magnitude;
 		float damage = speed;
 		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
-		Hurt(damage*damage*5f);
+		Hurt(damage*damage*2f);
 	}
 
 	void FixedUpdate(){

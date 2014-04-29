@@ -9,10 +9,11 @@ public class LeftRightTest : MonoBehaviour {
 
 	public Transform target;
 	public float dirNum;
-	ButtonSimulator sim;
+	NodeRespawn spawn;
 
 	void Start() {
-		sim = GetComponent<ButtonSimulator>();
+		target = GameObject.Find("Node1").transform;
+		spawn = GetComponent<NodeRespawn>();
 	}
 
 	void Update () {
@@ -21,20 +22,20 @@ public class LeftRightTest : MonoBehaviour {
 	}
 
 	public void ChangeNode() {
-		target = sim.nodeTransform;
+		target = spawn.nodeTransform;
 	}
 	
 	float AngleDir(Vector3 fwd, Vector3 targetDir, Vector3 up) {
 		Vector3 perp = Vector3.Cross(fwd, targetDir);
 		float dir = Vector3.Dot(perp, up);
 		if (dir > 0f) {
-			Debug.Log ("Going Right!");
+			//Debug.Log ("Going Right!");
 			return 1f;
 		} else if (dir < 0f) {
-			Debug.Log ("Going Left!");
+			//Debug.Log ("Going Left!");
 			return -1f;
 		} else {
-			Debug.Log ("Going Straight!");
+			//Debug.Log ("Going Straight!");
 			return 0f;
 		}
 	}

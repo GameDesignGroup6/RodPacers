@@ -12,9 +12,9 @@ public class RigidbodyInfo : MonoBehaviour {
 	void Start () {
 		rgb = rigidbody;
 	}
-//	void Update(){
-//		DebugHUD.setValue(gameObject.transform.parent.name+"/"+name+" velocity",curVelocity);
-//	}
+	void Update(){
+		DebugHUD.setValue(gameObject.transform.parent.name+"/"+name+" velocity",curVelocity);
+	}
 	void FixedUpdate () {
 		if(rgb==null)rgb=rigidbody;
 		curVelocity = Vector3.Magnitude(rgb.velocity);

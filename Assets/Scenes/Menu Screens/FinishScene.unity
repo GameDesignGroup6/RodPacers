@@ -136,7 +136,7 @@ GameObject:
   - 4: {fileID: 66847155}
   - 114: {fileID: 66847156}
   m_Layer: 0
-  m_Name: Leader Board
+  m_Name: LeaderBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,8 +922,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1560501109}
   - 114: {fileID: 1560501110}
+  - 114: {fileID: 1560501111}
   m_Layer: 0
-  m_Name: menu
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -957,8 +958,19 @@ MonoBehaviour:
   - {fileID: 2017487575}
   - {fileID: 1300818660}
   nextScenes:
-  - SinglePlayerSelection
+  - 
   - StartScreen
+--- !u!114 &1560501111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1560501108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69e9d5846b5ddf4198f98979a74eabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1648792252
 GameObject:
   m_ObjectHideFlags: 0

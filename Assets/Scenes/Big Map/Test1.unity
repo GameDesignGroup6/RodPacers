@@ -1832,7 +1832,6 @@ GameObject:
   - 4: {fileID: 34442996}
   - 33: {fileID: 34443000}
   - 65: {fileID: 34442999}
-  - 23: {fileID: 34442998}
   - 114: {fileID: 34442997}
   m_Layer: 0
   m_Name: 13b
@@ -1866,28 +1865,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1571544187}
   startPoint: 0
---- !u!23 &34442998
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300010, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 34442995}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &34442999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2124,7 +2101,6 @@ GameObject:
   - 4: {fileID: 67093691}
   - 33: {fileID: 67093695}
   - 65: {fileID: 67093694}
-  - 23: {fileID: 67093693}
   - 114: {fileID: 67093692}
   m_Layer: 0
   m_Name: 35b
@@ -2158,28 +2134,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1823725132}
   startPoint: 0
---- !u!23 &67093693
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 67093690}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &67093694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3457,7 +3411,6 @@ GameObject:
   - 4: {fileID: 171976693}
   - 33: {fileID: 171976697}
   - 65: {fileID: 171976696}
-  - 23: {fileID: 171976695}
   - 114: {fileID: 171976694}
   m_Layer: 0
   m_Name: 31b
@@ -3491,28 +3444,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 471082970}
   startPoint: 0
---- !u!23 &171976695
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300014, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 171976692}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &171976696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4751,7 +4682,6 @@ GameObject:
   - 4: {fileID: 196407404}
   - 33: {fileID: 196407408}
   - 65: {fileID: 196407407}
-  - 23: {fileID: 196407406}
   - 114: {fileID: 196407405}
   m_Layer: 0
   m_Name: 18b
@@ -4785,28 +4715,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1270978274}
   startPoint: 0
---- !u!23 &196407406
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300008, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 196407403}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &196407407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6453,7 +6361,6 @@ GameObject:
   - 4: {fileID: 211514616}
   - 33: {fileID: 211514620}
   - 65: {fileID: 211514619}
-  - 23: {fileID: 211514618}
   - 114: {fileID: 211514617}
   m_Layer: 0
   m_Name: 30a
@@ -6488,28 +6395,6 @@ MonoBehaviour:
   next: {fileID: 471082970}
   previous: {fileID: 369915068}
   rank: 8
---- !u!23 &211514618
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300032, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 211514615}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &211514619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7672,7 +7557,6 @@ GameObject:
   - 4: {fileID: 369915068}
   - 33: {fileID: 369915072}
   - 65: {fileID: 369915071}
-  - 23: {fileID: 369915070}
   - 114: {fileID: 369915069}
   m_Layer: 0
   m_Name: 26a
@@ -7707,28 +7591,6 @@ MonoBehaviour:
   next: {fileID: 211514616}
   previous: {fileID: 1357182119}
   rank: 7
---- !u!23 &369915070
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300036, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 369915067}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &369915071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7850,7 +7712,6 @@ GameObject:
   - 4: {fileID: 400608297}
   - 33: {fileID: 400608301}
   - 65: {fileID: 400608300}
-  - 23: {fileID: 400608299}
   - 114: {fileID: 400608298}
   m_Layer: 0
   m_Name: 33b
@@ -7884,28 +7745,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1965293434}
   startPoint: 0
---- !u!23 &400608299
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300002, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 400608296}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &400608300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8443,7 +8282,6 @@ GameObject:
   - 4: {fileID: 461717594}
   - 33: {fileID: 461717598}
   - 65: {fileID: 461717597}
-  - 23: {fileID: 461717596}
   - 114: {fileID: 461717595}
   m_Layer: 0
   m_Name: 7b
@@ -8477,28 +8315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1707722858}
   startPoint: 0
---- !u!23 &461717596
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300012, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 461717593}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &461717597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8603,7 +8419,6 @@ GameObject:
   - 4: {fileID: 471082970}
   - 33: {fileID: 471082974}
   - 65: {fileID: 471082973}
-  - 23: {fileID: 471082972}
   - 114: {fileID: 471082971}
   m_Layer: 0
   m_Name: 31a
@@ -8638,28 +8453,6 @@ MonoBehaviour:
   next: {fileID: 2129197730}
   previous: {fileID: 211514616}
   rank: 9
---- !u!23 &471082972
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300030, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 471082969}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &471082973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11358,7 +11151,6 @@ GameObject:
   - 4: {fileID: 526348357}
   - 33: {fileID: 526348361}
   - 65: {fileID: 526348360}
-  - 23: {fileID: 526348359}
   - 114: {fileID: 526348358}
   m_Layer: 0
   m_Name: 1a
@@ -11393,28 +11185,6 @@ MonoBehaviour:
   next: {fileID: 631493036}
   previous: {fileID: 1823725132}
   rank: 0
---- !u!23 &526348359
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300054, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 526348356}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &526348360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13886,7 +13656,6 @@ GameObject:
   - 4: {fileID: 631493036}
   - 33: {fileID: 631493040}
   - 65: {fileID: 631493039}
-  - 23: {fileID: 631493038}
   - 114: {fileID: 631493037}
   m_Layer: 0
   m_Name: 3a
@@ -13921,28 +13690,6 @@ MonoBehaviour:
   next: {fileID: 1707722858}
   previous: {fileID: 526348357}
   rank: 1
---- !u!23 &631493038
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300052, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 631493035}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &631493039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16799,7 +16546,6 @@ GameObject:
   - 4: {fileID: 777234321}
   - 33: {fileID: 777234325}
   - 65: {fileID: 777234324}
-  - 23: {fileID: 777234323}
   - 114: {fileID: 777234322}
   m_Layer: 0
   m_Name: 34a
@@ -16834,28 +16580,6 @@ MonoBehaviour:
   next: {fileID: 1823725132}
   previous: {fileID: 1965293434}
   rank: 12
---- !u!23 &777234323
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300022, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 777234320}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &777234324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17409,7 +17133,6 @@ GameObject:
   - 4: {fileID: 860158448}
   - 33: {fileID: 860158452}
   - 65: {fileID: 860158451}
-  - 23: {fileID: 860158450}
   - 114: {fileID: 860158449}
   m_Layer: 0
   m_Name: 1b
@@ -17443,28 +17166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 526348357}
   startPoint: 1
---- !u!23 &860158450
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300018, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 860158447}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &860158451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19453,7 +19154,6 @@ GameObject:
   - 4: {fileID: 912671032}
   - 33: {fileID: 912671036}
   - 65: {fileID: 912671035}
-  - 23: {fileID: 912671034}
   - 114: {fileID: 912671033}
   m_Layer: 0
   m_Name: 32b
@@ -19487,28 +19187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 2129197730}
   startPoint: 0
---- !u!23 &912671034
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300004, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 912671031}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &912671035
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21869,7 +21547,35 @@ Prefab:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2300010, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300000, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300014, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300008, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300032, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300036, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300002, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300012, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300030, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300054, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300052, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300022, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300018, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300004, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300042, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300044, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300016, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300046, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300040, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300034, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300024, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300006, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300048, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300050, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300038, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300020, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300026, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
+    - {fileID: 2300028, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 561800b37f4c3f34680adacc2fe02db8, type: 2}
   m_RootGameObject: {fileID: 1732663761}
   m_IsPrefabParent: 0
@@ -23018,7 +22724,6 @@ GameObject:
   - 4: {fileID: 1034775700}
   - 33: {fileID: 1034775704}
   - 65: {fileID: 1034775703}
-  - 23: {fileID: 1034775702}
   - 114: {fileID: 1034775701}
   m_Layer: 0
   m_Name: 21a
@@ -23053,28 +22758,6 @@ MonoBehaviour:
   next: {fileID: 1357182119}
   previous: {fileID: 1270978274}
   rank: 5
---- !u!23 &1034775702
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300042, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1034775699}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1034775703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27194,7 +26877,6 @@ GameObject:
   - 4: {fileID: 1086836416}
   - 33: {fileID: 1086836420}
   - 65: {fileID: 1086836419}
-  - 23: {fileID: 1086836418}
   - 114: {fileID: 1086836417}
   m_Layer: 0
   m_Name: 21b
@@ -27228,28 +26910,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1034775700}
   startPoint: 0
---- !u!23 &1086836418
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300044, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1086836415}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1086836419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29632,7 +29292,6 @@ GameObject:
   - 4: {fileID: 1234604627}
   - 33: {fileID: 1234604631}
   - 65: {fileID: 1234604630}
-  - 23: {fileID: 1234604629}
   - 114: {fileID: 1234604628}
   m_Layer: 0
   m_Name: 3b
@@ -29666,28 +29325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 631493036}
   startPoint: 0
---- !u!23 &1234604629
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300016, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1234604626}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1234604630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29979,7 +29616,6 @@ GameObject:
   - 4: {fileID: 1270978274}
   - 33: {fileID: 1270978278}
   - 65: {fileID: 1270978277}
-  - 23: {fileID: 1270978276}
   - 114: {fileID: 1270978275}
   m_Layer: 0
   m_Name: 18a
@@ -30014,28 +29650,6 @@ MonoBehaviour:
   next: {fileID: 1034775700}
   previous: {fileID: 1571544187}
   rank: 4
---- !u!23 &1270978276
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300046, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1270978273}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1270978277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34301,7 +33915,6 @@ GameObject:
   - 4: {fileID: 1357182119}
   - 33: {fileID: 1357182123}
   - 65: {fileID: 1357182122}
-  - 23: {fileID: 1357182121}
   - 114: {fileID: 1357182120}
   m_Layer: 0
   m_Name: 25a
@@ -34336,28 +33949,6 @@ MonoBehaviour:
   next: {fileID: 369915068}
   previous: {fileID: 1034775700}
   rank: 6
---- !u!23 &1357182121
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300040, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1357182118}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1357182122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35686,7 +35277,6 @@ GameObject:
   - 4: {fileID: 1403698102}
   - 33: {fileID: 1403698106}
   - 65: {fileID: 1403698105}
-  - 23: {fileID: 1403698104}
   - 114: {fileID: 1403698103}
   m_Layer: 0
   m_Name: 30b
@@ -35720,28 +35310,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 211514616}
   startPoint: 0
---- !u!23 &1403698104
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300034, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1403698101}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1403698105
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37186,7 +36754,6 @@ GameObject:
   - 4: {fileID: 1444256285}
   - 33: {fileID: 1444256289}
   - 65: {fileID: 1444256288}
-  - 23: {fileID: 1444256287}
   - 114: {fileID: 1444256286}
   m_Layer: 0
   m_Name: 34b
@@ -37220,28 +36787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 777234321}
   startPoint: 0
---- !u!23 &1444256287
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300024, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1444256284}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1444256288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38899,7 +38444,6 @@ GameObject:
   - 4: {fileID: 1515290640}
   - 33: {fileID: 1515290644}
   - 65: {fileID: 1515290643}
-  - 23: {fileID: 1515290642}
   - 114: {fileID: 1515290641}
   m_Layer: 0
   m_Name: 25b
@@ -38933,28 +38477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 1357182119}
   startPoint: 0
---- !u!23 &1515290642
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300006, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1515290639}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1515290643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39539,7 +39061,6 @@ GameObject:
   - 4: {fileID: 1571544187}
   - 33: {fileID: 1571544191}
   - 65: {fileID: 1571544190}
-  - 23: {fileID: 1571544189}
   - 114: {fileID: 1571544188}
   m_Layer: 0
   m_Name: 13a
@@ -39574,28 +39095,6 @@ MonoBehaviour:
   next: {fileID: 1270978274}
   previous: {fileID: 1707722858}
   rank: 3
---- !u!23 &1571544189
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300048, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1571544186}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1571544190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42825,7 +42324,6 @@ GameObject:
   - 4: {fileID: 1707722858}
   - 33: {fileID: 1707722862}
   - 65: {fileID: 1707722861}
-  - 23: {fileID: 1707722860}
   - 114: {fileID: 1707722859}
   m_Layer: 0
   m_Name: 7a
@@ -42860,28 +42358,6 @@ MonoBehaviour:
   next: {fileID: 1571544187}
   previous: {fileID: 631493036}
   rank: 2
---- !u!23 &1707722860
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300050, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1707722857}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1707722861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44596,7 +44072,6 @@ GameObject:
   - 4: {fileID: 1748963729}
   - 33: {fileID: 1748963733}
   - 65: {fileID: 1748963732}
-  - 23: {fileID: 1748963731}
   - 114: {fileID: 1748963730}
   m_Layer: 0
   m_Name: 26b
@@ -44630,28 +44105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeNearest: {fileID: 369915068}
   startPoint: 0
---- !u!23 &1748963731
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300038, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1748963728}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1748963732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47607,7 +47060,6 @@ GameObject:
   - 4: {fileID: 1823725132}
   - 33: {fileID: 1823725136}
   - 65: {fileID: 1823725135}
-  - 23: {fileID: 1823725134}
   - 114: {fileID: 1823725133}
   m_Layer: 0
   m_Name: 35a
@@ -47642,28 +47094,6 @@ MonoBehaviour:
   next: {fileID: 526348357}
   previous: {fileID: 777234321}
   rank: 13
---- !u!23 &1823725134
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300020, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1823725131}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1823725135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50270,7 +49700,6 @@ GameObject:
   - 4: {fileID: 1965293434}
   - 33: {fileID: 1965293433}
   - 65: {fileID: 1965293432}
-  - 23: {fileID: 1965293431}
   - 114: {fileID: 1965293430}
   m_Layer: 0
   m_Name: 33a
@@ -50294,28 +49723,6 @@ MonoBehaviour:
   next: {fileID: 777234321}
   previous: {fileID: 2129197730}
   rank: 11
---- !u!23 &1965293431
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300026, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 1965293429}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &1965293432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54267,7 +53674,6 @@ GameObject:
   - 4: {fileID: 2129197730}
   - 33: {fileID: 2129197734}
   - 65: {fileID: 2129197733}
-  - 23: {fileID: 2129197732}
   - 114: {fileID: 2129197731}
   m_Layer: 0
   m_Name: 32a
@@ -54302,28 +53708,6 @@ MonoBehaviour:
   next: {fileID: 1965293434}
   previous: {fileID: 471082970}
   rank: 10
---- !u!23 &2129197732
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300028, guid: 561800b37f4c3f34680adacc2fe02db8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023342038}
-  m_GameObject: {fileID: 2129197729}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!65 &2129197733
 BoxCollider:
   m_ObjectHideFlags: 0

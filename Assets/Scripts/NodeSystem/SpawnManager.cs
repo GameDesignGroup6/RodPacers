@@ -41,5 +41,7 @@ public class SpawnManager : MonoBehaviour {
 		right.EngineTransform.position = pos+direction*(targetDist/2f);
 		left.EngineTransform.position = pos-direction*(targetDist/2f);
 		Debug.Log("Should have respawned!");
+
+		transform.Find ("Pod").GetComponent<PlayerNode> ().updateWayPointWhenSpawn (trans);
 	}
 }

@@ -69,9 +69,21 @@ public class Rank : MonoBehaviour {
 
 	// when  all pod finished
 	public void checkFinsh(){
-		foreach (Transform pod in podRacer)
-			if (!pod.GetComponent<PlayerNode> ().finished)
+		foreach (Transform pod in podRacer) {
+						if (pod.parent.name == "Racer1" && !pod.GetComponent<PlayerNode> ().finished)
 								return;
+						if (PlayerManager.playerCount > 1)
+						if (pod.parent.name == "Racer2" && !pod.GetComponent<PlayerNode> ().finished)
+								return;
+						if (PlayerManager.playerCount > 2)
+						if (pod.parent.name == "Racer3" && !pod.GetComponent<PlayerNode> ().finished)
+								return;
+						if (PlayerManager.playerCount > 3)
+						if (pod.parent.name == "Racer4" && !pod.GetComponent<PlayerNode> ().finished)
+								return;
+				}
+
+
 		for (int i = 0; i<numPod; i++) {
 				leaderBoard [i,0] = podRacer[i].parent.name;
 				leaderBoard [i,1] = podRacer[i].GetComponent<PlayerNode> ().finishTime;

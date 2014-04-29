@@ -7,8 +7,10 @@ public class PlayerNode: MonoBehaviour {
 	public bool finished;
 	public string finishTime;
 	void Start () {
+		currentWayPoint = GameObject.Find ("Wall").transform.Find ("1a");
 		nextWayPoint = currentWayPoint.GetComponent<NodeA> ().next;
 		finishTime="0";
+
 	}
 
 	void Update () {

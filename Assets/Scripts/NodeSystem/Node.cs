@@ -5,6 +5,7 @@ public class Node : MonoBehaviour {
 	public Node next, previous;
 	public Node branch = null;
 	private float distance;
+	public float xMin = -100f,xMax = 100f,zMin = -100f,zMax = 100f;
 	public float DistanceFromStart{
 		get{return distance;}
 	}
@@ -30,6 +31,12 @@ public class Node : MonoBehaviour {
 			if(next.previous!=this)Gizmos.color = Color.red;
 			Gizmos.DrawLine(transform.position,next.transform.position);
 		}
+		Gizmos.color = Color.cyan;
+		float x = (transform.position.x*2f+xMin+xMax)/2f;
+		float z = (transform.position.z*2f+zMin+zMax)/2f;
+		Vector3 boxPos = new Vector3(x,transform.position.y,z);
+		Vector3 bounds = new Vector3(xMax-xMin,20f,zMax-zMin);
+		Gizmos.DrawWireCube(boxPos,bounds);
 	}
 
 	void Awake(){

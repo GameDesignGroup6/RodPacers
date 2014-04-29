@@ -14,6 +14,9 @@ public class TimeHUD : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKey(KeyCode.LeftShift)&&Input.GetKeyDown(KeyCode.H)){
+			guiText.enabled = !guiText.enabled;
+		}
 		guiText.text = "<color=yellow>" + (int)(Time.timeSinceLevelLoad/60) + ":" + (int)((Time.timeSinceLevelLoad%60)/10)
 			+ (int)((Time.timeSinceLevelLoad%60)%10) + ":" + (int)(Time.timeSinceLevelLoad%1 * 10) + (int)(Time.timeSinceLevelLoad%.1 * 100)
 				+ (int)(Time.timeSinceLevelLoad%.01 * 1000) + "</color>" ;

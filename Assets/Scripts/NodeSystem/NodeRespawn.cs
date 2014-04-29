@@ -20,7 +20,7 @@ public class NodeRespawn : MonoBehaviour {
 	}
 
 	void Update () {
-		DebugHUD.setValue(transform.parent.name+"/"+name+" distance",currentNode.DistanceFromStart+Vector3.Distance(transform.position,nodeTransform.position));
+//		DebugHUD.setValue(transform.parent.name+"/"+name+" distance",currentNode.DistanceFromStart+Vector3.Distance(transform.position,nodeTransform.position));
 		x = currentNode.pos.x;
 		z = currentNode.pos.z;
 		minX = x - 100;

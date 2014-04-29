@@ -19,29 +19,31 @@ public class EngineHealth : MonoBehaviour {
 		Engine e = GetComponent<Engine>();
 		e.HoverScript.enabled = true;
 		e.EngineThruster.enabled = true;
+		inv = 2f;
 	}
 
 	void OnCollisionStay(Collision col){
-		curHealth-=0.5f;
+		Hurt(1f);
 	}
 	void OnCollisionEnter(Collision col){
-		if(inv>0f)return;
-		inv = 0.25f;
 		Vector3 velocity = col.relativeVelocity;
 		Vector3 normal = col.contacts[0].normal;
 		float speed = Vector3.Project(velocity,normal).magnitude;
-		float damage = speed;
+		float damage = speed/20f;
 		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
-		Hurt(damage*damage*2f);
+		Hurt(damage*damage*5f);
 	}
 
 	void FixedUpdate(){
+		DebugHUD.setValue(transform.parent.name+"/"+name+" invTime",inv);
 		if(inv>0.0f){
 			inv-=Time.fixedDeltaTime;
 			if(inv<0f)inv=0f;
 		}
 	}
 	public void Hurt(float damage){
+		if(inv>0f)return;
+		inv = 0.25f;
 		curHealth-=damage;
 		if(curHealth<=0f){
 			Engine e = GetComponent<Engine>();

@@ -65,15 +65,18 @@ public class HoverScript : MonoBehaviour {
 			//Hooke's law: F=kx
 			if(Physics.Raycast(t.position,t.forward,out hit)){
 				if(hit.collider != col && hit.distance < stallHeight){//don't hover on other engines!
-						Debug.DrawRay(t.position,t.forward,Color.red);
-						Debug.DrawRay(hit.point,hit.normal,Color.green);
-						float delta = hit.distance-targetHeight;
-						sum += hit.distance;
-						hitsThisFrame++;
-						float force = k*delta*((targetHeight/hit.distance));
-						Vector3 forceVector = hit.normal*force;
-						rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
-						Debug.DrawRay(t.position,forceVector,Color.blue);
+					Debug.DrawRay(t.position,t.forward,Color.red);
+					Debug.DrawRay(hit.point,hit.normal,Color.green);
+					float delta = hit.distance-targetHeight;
+					sum += hit.distance;
+					hitsThisFrame++;
+					float force = k*delta;
+					if(delta<0f){
+						force*=(targetHeight/hit.distance);
+					}
+					Vector3 forceVector = hit.normal*force;
+					rgb.AddForceAtPosition(forceVector,t.position,ForceMode.Force);
+					Debug.DrawRay(t.position,forceVector,Color.blue);
 				}
 				else if (hit.distance > stallHeight) {
 					rgb.AddForce(0, -gravity, 0);

@@ -1897,6 +1897,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &506205544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,10 +2508,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1846939659}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &593620954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3071,6 +3073,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &716302590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3339,10 +3342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1145511756}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &791270569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3616,6 +3620,7 @@ GameObject:
   - 114: {fileID: 801580638}
   - 114: {fileID: 801580645}
   - 64: {fileID: 801580643}
+  - 114: {fileID: 801580646}
   m_Layer: 2
   m_Name: Engine_Left
   m_TagString: Engine
@@ -3708,10 +3713,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1846939659}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &801580641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,6 +3802,18 @@ MonoBehaviour:
   RearLink: {fileID: 636897820}
   DecorativeLink: {fileID: 538390553}
   Side: 0
+--- !u!114 &801580646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a799aee03c2104ba081cf819774d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backwards: 0
 --- !u!1 &804804434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,6 +4084,7 @@ GameObject:
   - 114: {fileID: 912205912}
   - 114: {fileID: 912205919}
   - 64: {fileID: 912205917}
+  - 114: {fileID: 912205920}
   m_Layer: 2
   m_Name: Engine_Left
   m_TagString: Engine
@@ -4158,10 +4177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1145511756}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &912205915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4246,6 +4266,18 @@ MonoBehaviour:
   RearLink: {fileID: 2006368020}
   DecorativeLink: {fileID: 1097583080}
   Side: 0
+--- !u!114 &912205920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912205908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a799aee03c2104ba081cf819774d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backwards: 0
 --- !u!1 &914852875
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,8 +5022,10 @@ GameObject:
   - 114: {fileID: 1145511757}
   - 82: {fileID: 1145511755}
   - 114: {fileID: 1145511760}
-  - 114: {fileID: 1145511756}
   - 114: {fileID: 1145511766}
+  - 114: {fileID: 1145511768}
+  - 114: {fileID: 1145511767}
+  - 114: {fileID: 1145511756}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -5096,9 +5130,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1145511752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Script: {fileID: 11500000, guid: aeeea8b6941e06440bcd9deb84da539e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  dirNum: 0
 --- !u!114 &1145511757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5264,6 +5300,37 @@ MonoBehaviour:
   position: 0
   distanceToNextPoint: 0
   currentLap: 0
+--- !u!114 &1145511767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145511752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d3958c2eafdda4ba1abfae3425785c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
+  currentPress: 0
+  backwards: 0
+  leftEngine: {fileID: 912205909}
+  rightEngine: {fileID: 791270564}
+  parent: {fileID: 1396121274}
+--- !u!114 &1145511768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145511752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8741fc960627b4c428194cc734298a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineLeft: {fileID: 912205909}
+  engineRight: {fileID: 791270564}
 --- !u!1 &1167735443
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,8 +5412,10 @@ GameObject:
   - 114: {fileID: 1190952261}
   - 82: {fileID: 1190952258}
   - 114: {fileID: 1190952256}
-  - 114: {fileID: 1190952257}
   - 114: {fileID: 1190952259}
+  - 114: {fileID: 1190952264}
+  - 114: {fileID: 1190952260}
+  - 114: {fileID: 1190952257}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -5407,9 +5476,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1190952253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Script: {fileID: 11500000, guid: aeeea8b6941e06440bcd9deb84da539e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  dirNum: 0
 --- !u!82 &1190952258
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5485,6 +5556,24 @@ MonoBehaviour:
   position: 0
   distanceToNextPoint: 0
   currentLap: 0
+--- !u!114 &1190952260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d3958c2eafdda4ba1abfae3425785c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
+  currentPress: 0
+  backwards: 0
+  leftEngine: {fileID: 1635442865}
+  rightEngine: {fileID: 1439036491}
+  parent: {fileID: 900000211}
 --- !u!114 &1190952261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5535,6 +5624,19 @@ MonoBehaviour:
   turningForce: 20
   turningTorque: 20
   turningThrust: 4
+--- !u!114 &1190952264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8741fc960627b4c428194cc734298a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineLeft: {fileID: 1635442865}
+  engineRight: {fileID: 1439036491}
 --- !u!114 &1190952265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6390,10 +6492,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1190952257}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &1439036496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7101,6 +7204,7 @@ GameObject:
   - 114: {fileID: 1635442868}
   - 114: {fileID: 1635442875}
   - 64: {fileID: 1635442873}
+  - 114: {fileID: 1635442876}
   m_Layer: 2
   m_Name: Engine_Left
   m_TagString: Engine
@@ -7193,10 +7297,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c50152bef1cd94428e6916c068a51b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1190952257}
+  manager: {fileID: 0}
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &1635442871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7281,6 +7386,18 @@ MonoBehaviour:
   RearLink: {fileID: 65068666}
   DecorativeLink: {fileID: 914852876}
   Side: 0
+--- !u!114 &1635442876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635442864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a799aee03c2104ba081cf819774d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backwards: 0
 --- !u!1 &1658917985
 GameObject:
   m_ObjectHideFlags: 0
@@ -8021,8 +8138,10 @@ GameObject:
   - 114: {fileID: 1846939663}
   - 82: {fileID: 1846939660}
   - 114: {fileID: 1846939658}
-  - 114: {fileID: 1846939659}
   - 114: {fileID: 1846939661}
+  - 114: {fileID: 1846939666}
+  - 114: {fileID: 1846939662}
+  - 114: {fileID: 1846939659}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -8083,9 +8202,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846939655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44392d7dd7a0ca64f89a724cb8c44e04, type: 3}
+  m_Script: {fileID: 11500000, guid: aeeea8b6941e06440bcd9deb84da539e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  dirNum: 0
 --- !u!82 &1846939660
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8161,6 +8282,24 @@ MonoBehaviour:
   position: 0
   distanceToNextPoint: 0
   currentLap: 0
+--- !u!114 &1846939662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d3958c2eafdda4ba1abfae3425785c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
+  currentPress: 0
+  backwards: 0
+  leftEngine: {fileID: 801580635}
+  rightEngine: {fileID: 593620959}
+  parent: {fileID: 1765756003}
 --- !u!114 &1846939663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8211,6 +8350,19 @@ MonoBehaviour:
   turningForce: 20
   turningTorque: 20
   turningThrust: 4
+--- !u!114 &1846939666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8741fc960627b4c428194cc734298a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineLeft: {fileID: 801580635}
+  engineRight: {fileID: 593620959}
 --- !u!114 &1846939667
 MonoBehaviour:
   m_ObjectHideFlags: 0

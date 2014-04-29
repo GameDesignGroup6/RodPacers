@@ -31,6 +31,8 @@ public class SpawnManager : MonoBehaviour {
 
 		left.EngineTransform.rotation = trans.rotation;
 		right.EngineTransform.rotation = trans.rotation;
+		left.EngineTransform.Rotate(90f,0f,0f);
+		right.EngineTransform.Rotate(90f,0f,0f);
 
 		float targetDist = left.enginePair.TargetDistance;
 

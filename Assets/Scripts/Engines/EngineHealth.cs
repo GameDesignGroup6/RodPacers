@@ -16,6 +16,9 @@ public class EngineHealth : MonoBehaviour {
 
 	void Start(){
 		curHealth = maxHealth;
+		Engine e = GetComponent<Engine>();
+		e.HoverScript.enabled = true;
+		e.EngineThruster.enabled = true;
 	}
 
 	void OnCollisionStay(Collision col){

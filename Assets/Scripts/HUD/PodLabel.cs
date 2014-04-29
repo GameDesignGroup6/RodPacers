@@ -5,17 +5,14 @@ using System.Collections;
  *Attach this script to the cube inside the pod
  */
 public class PodLabel : MonoBehaviour {
-	
 	public int playerNum;
-
 	public Transform pod;
 	public float maxDist;
-
 	public Camera[] podCams;
 	public GUIText[] podLabels;
-
 	public int initialFontSize = 14;
 	public float fontScaling = 1f;
+
 	// Use this for initialization
 	void Start () {
 		podCams = new Camera[4];
@@ -46,8 +43,6 @@ public class PodLabel : MonoBehaviour {
 				podLabels[i].text = "Player " + playerNum;
 				podLabels[i].fontSize = (int)(initialFontSize * fontScaling);
 				podLabels[i].transform.position = podCams[i].WorldToViewportPoint(pod.transform.position + 3*Vector3.up);
-
-				//Invoke("scaleFont", 1f);
 			}
 		}
 	}
@@ -64,16 +59,4 @@ public class PodLabel : MonoBehaviour {
 		Vector3 difference = podCam.transform.position - pod.transform.position;
 		fontScaling = 1f - (difference.sqrMagnitude / Mathf.Pow(1.41f * maxDist,2));
 	}
-
-	//realized we have no way of knowing which guitext to edit.
-//	void OnWillRenderObject(){
-//		Camera cam = Camera.current;
-//		if (cam.name == "MiniMap" || cam.name == "SceneCamera")
-//			return;
-//		podLabels[0].text = "Player " + playerNum;
-//		podLabels[0].transform.position = cam.WorldToViewportPoint(pod.transform.position + Vector3.up);
-//		Debug.Log ("I am " + cam.name + "and I am viewing " + transform.name);
-//
-//	}
-
 }

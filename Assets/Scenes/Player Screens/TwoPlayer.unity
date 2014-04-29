@@ -5793,6 +5793,7 @@ GameObject:
   - 114: {fileID: 1190952264}
   - 114: {fileID: 1190952260}
   - 114: {fileID: 1190952257}
+  - 114: {fileID: 1190952270}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -6098,6 +6099,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1190952253}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1190952270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!1 &1197980847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8561,6 +8575,7 @@ GameObject:
   - 114: {fileID: 1846939666}
   - 114: {fileID: 1846939662}
   - 114: {fileID: 1846939659}
+  - 114: {fileID: 1846939672}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -8866,6 +8881,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846939655}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1846939672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeTransform: {fileID: 0}
+  currentNode: {fileID: 0}
 --- !u!1 &1877146537
 GameObject:
   m_ObjectHideFlags: 0

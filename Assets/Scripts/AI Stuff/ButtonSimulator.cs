@@ -6,6 +6,10 @@ public class ButtonSimulator : MonoBehaviour {
 	public Transform nodeTransform;
 	public Node currentNode;
 	LeftRightTest test;
+	SpawnManager spawn;
+	RigidbodyInfo velocityL;
+	RigidbodyInfo velocityR;
+	NodeRespawn nodeStuffs;
 	public float currentPress;
 	Vector3 v;
 	double x;
@@ -15,6 +19,7 @@ public class ButtonSimulator : MonoBehaviour {
 	double minZ;
 	double maxZ;
 	RaycastHit hit;
+	float respawnTimer = 0;
 	public bool backwards = false;
 	public Transform leftEngine;
 	public Transform rightEngine;
@@ -24,22 +29,22 @@ public class ButtonSimulator : MonoBehaviour {
 		nodeTransform = GameObject.Find("Node1").transform;
 		currentNode = nodeTransform.GetComponent<Node>();
 		test = GetComponent<LeftRightTest>();
+		spawn = parent.GetComponent<SpawnManager>();
+		velocityL = leftEngine.GetComponent<RigidbodyInfo>();
+		velocityR = rightEngine.GetComponent<RigidbodyInfo>();
+		nodeStuffs = GetComponent<NodeRespawn>();
 	}
 
 	void Update () {
+		currentNode = nodeStuffs.currentNode;
+		nodeTransform = nodeStuffs.nodeTransform;
 		v = new Vector3((leftEngine.position.x + rightEngine.position.x) / 2, (leftEngine.position.y + rightEngine.position.y) / 2, (leftEngine.position.z + rightEngine.position.z) / 2);
-		x = currentNode.pos.x;
-		z = currentNode.pos.z;
-		minX = x - 100;
-		maxX = x + 100;
-		minZ = z - 100;
-		maxZ = z + 100;
-		if (v.x > minX && v.x < maxX && v.z > minZ && v.z < maxZ)
-			UpdateNode();
-		if (currentNode.branch != null && currentNode.pos.y - v.y >= 80) {;
-			currentNode = currentNode.branch;
-			nodeTransform = currentNode.transform;
-			test.ChangeNode();
+		if (velocityL.Velocity < 11 && velocityR.Velocity < 11)
+			respawnTimer+= Time.deltaTime;
+		if (respawnTimer > 3) {
+			spawn.RespawnAtTransform(currentNode.previous.transform);
+			Debug.Log ("Respawn!");
+			respawnTimer = 0;
 		}
 		GetButtons();
 	}

@@ -5,25 +5,21 @@ public class AIInputManager : InputManager {
 
 	float leftOrRight;
 	bool backL = false;
-	bool backR = false;
 	LeftRightTest test;
 	ButtonSimulator sim;
 	public Transform engineLeft;
 	public Transform engineRight;
 	ForwardBackSimulator sim2;
-	ForwardBackSimulator sim3;
 
 	void Start() {
 		test = GetComponent<LeftRightTest>();
 		sim = GetComponent<ButtonSimulator>();
 		sim2 = engineLeft.GetComponent<ForwardBackSimulator>();
-		sim3 = engineRight.GetComponent<ForwardBackSimulator>();
 	}
 
 	void Update() {
 		leftOrRight = test.dirNum;
 		backL = sim2.backwards;
-		backR = sim3.backwards;
 	}
 
 	public override float getLeftTrigger(){

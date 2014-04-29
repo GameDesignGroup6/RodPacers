@@ -9,11 +9,11 @@ public class LeftRightTest : MonoBehaviour {
 
 	public Transform target;
 	public float dirNum;
-	ButtonSimulator sim;
+	NodeRespawn spawn;
 
 	void Start() {
 		target = GameObject.Find("Node1").transform;
-		sim = GetComponent<ButtonSimulator>();
+		spawn = GetComponent<NodeRespawn>();
 	}
 
 	void Update () {
@@ -22,7 +22,7 @@ public class LeftRightTest : MonoBehaviour {
 	}
 
 	public void ChangeNode() {
-		target = sim.nodeTransform;
+		target = spawn.nodeTransform;
 	}
 	
 	float AngleDir(Vector3 fwd, Vector3 targetDir, Vector3 up) {

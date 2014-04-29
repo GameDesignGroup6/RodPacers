@@ -13,6 +13,7 @@ public class PodLabel : MonoBehaviour {
 	public int initialFontSize = 14;
 	public float fontScaling = 1f;
 
+	public float viewportZThreshold = 0;
 	// Use this for initialization
 	void Start () {
 		podCams = new Camera[4];
@@ -38,19 +39,24 @@ public class PodLabel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		for (int i = 0; i<podCams.Length; i++){
-			if (podCams[i] != null && nearby (podCams[i])){
-				scaleFont (podCams[i]);
-				podLabels[i].text = "Player " + playerNum;
-				podLabels[i].fontSize = (int)(initialFontSize * fontScaling);
-				podLabels[i].transform.position = podCams[i].WorldToViewportPoint(pod.transform.position + 3*Vector3.up);
+			if (podCams[i] != null && nearby (podCams[i]) ){
+				displayText(i);
 			}
 		}
 	}
 
+	void displayText(int i){
+		scaleFont (podCams[i]);
+		podLabels[i].text = "Player " + playerNum;
+		podLabels[i].fontSize = (int)(initialFontSize * fontScaling);
+		podLabels[i].transform.position = podCams[i].WorldToViewportPoint(pod.transform.position + 3*Vector3.up);
+	}
+
 	bool nearby (Camera podCam){
 		//doing this since we don't have to be extremely precise with the max distance where the label is visible.
+		Vector3 viewport = podCam.WorldToViewportPoint(pod.transform.position + 3*Vector3.up);
 		Vector3 difference = podCam.transform.position - pod.transform.position;
-		if (Mathf.Abs (difference.x) <maxDist && Mathf.Abs (difference.z) <maxDist)
+		if (Mathf.Abs (difference.x) <maxDist && Mathf.Abs (difference.z) <maxDist && viewport.z>viewportZThreshold)
 			return true;
 		else return false;
 	}

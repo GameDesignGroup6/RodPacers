@@ -400,7 +400,7 @@ GameObject:
   - 132: {fileID: 56718013}
   - 114: {fileID: 56718012}
   m_Layer: 11
-  m_Name: rank2
+  m_Name: ShowRak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,24 +409,15 @@ GameObject:
 --- !u!114 &56718012
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 9f595cd1520e2d048a72632bd96147e0,
-    type: 2}
-  m_PrefabInternal: {fileID: 830460288}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 56718011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2de48dba2efd7de42a41f2f5351ff51c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  podRacer:
-  - {fileID: 1943316325}
-  - {fileID: 1145511753}
-  - {fileID: 1846939656}
-  - {fileID: 1190952254}
-  notFinishedPod: 0
   currentPlayer: {fileID: 1145511753}
-  totalLap: 1
-  finish: 0
 --- !u!132 &56718013
 GUIText:
   m_ObjectHideFlags: 0
@@ -457,11 +448,11 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
   m_PrefabInternal: {fileID: 830460288}
   m_GameObject: {fileID: 56718011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -.70710665, z: 0, w: -.707107008}
+  m_LocalPosition: {x: -6.3158288, y: -15.8827295, z: 5.58849573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1396121274}
 --- !u!1 &65068665
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +594,7 @@ GameObject:
   - 132: {fileID: 115248373}
   - 114: {fileID: 115248372}
   m_Layer: 10
-  m_Name: rank1
+  m_Name: ShowRank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -612,24 +603,15 @@ GameObject:
 --- !u!114 &115248372
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 9f595cd1520e2d048a72632bd96147e0,
-    type: 2}
-  m_PrefabInternal: {fileID: 919788233}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115248371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2de48dba2efd7de42a41f2f5351ff51c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  podRacer:
-  - {fileID: 1943316325}
-  - {fileID: 1145511753}
-  - {fileID: 1846939656}
-  - {fileID: 1190952254}
-  notFinishedPod: 0
   currentPlayer: {fileID: 1943316325}
-  totalLap: 1
-  finish: 0
 --- !u!132 &115248373
 GUIText:
   m_ObjectHideFlags: 0
@@ -660,11 +642,11 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
   m_PrefabInternal: {fileID: 919788233}
   m_GameObject: {fileID: 115248371}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -.70710665, z: 0, w: -.707107008}
+  m_LocalPosition: {x: 13.8555584, y: -15.8827295, z: -.631597519}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 524838659}
 --- !u!1 &116269244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +1971,7 @@ Transform:
   - {fileID: 506205538}
   - {fileID: 716302584}
   - {fileID: 1943316325}
+  - {fileID: 115248374}
   m_Father: {fileID: 0}
 --- !u!114 &524838660
 MonoBehaviour:
@@ -3637,7 +3620,8 @@ Prefab:
       propertyPath: totalLap
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
   m_RootGameObject: {fileID: 56718011}
   m_IsPrefabParent: 0
@@ -4566,7 +4550,8 @@ Prefab:
       propertyPath: totalLap
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 9f595cd1520e2d048a72632bd96147e0, type: 2}
   m_RootGameObject: {fileID: 115248371}
   m_IsPrefabParent: 0
@@ -4597,6 +4582,53 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 506205538}
+--- !u!1 &952663698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+  m_PrefabInternal: {fileID: 1568678739}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 952663700}
+  - 114: {fileID: 952663699}
+  m_Layer: 0
+  m_Name: Rank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &952663699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70,
+    type: 2}
+  m_PrefabInternal: {fileID: 1568678739}
+  m_GameObject: {fileID: 952663698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de48dba2efd7de42a41f2f5351ff51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  podRacer:
+  - {fileID: 1943316325}
+  - {fileID: 1145511753}
+  - {fileID: 1846939656}
+  - {fileID: 1190952254}
+  notFinishedPod: 0
+  totalLap: 1
+  finish: 0
+--- !u!4 &952663700
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+  m_PrefabInternal: {fileID: 1568678739}
+  m_GameObject: {fileID: 952663698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &956637393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5659,8 +5691,10 @@ MonoBehaviour:
   currentWayPoint: {fileID: 1967284680}
   nextWayPoint: {fileID: 1450155985}
   position: 0
-  distanceToNextPoint: 0
   currentLap: 0
+  distanceToNextPoint: 0
+  finished: 0
+  finishTime: 
 --- !u!1 &1155154979
 GameObject:
   m_ObjectHideFlags: 0
@@ -5932,8 +5966,10 @@ MonoBehaviour:
   currentWayPoint: {fileID: 1967284680}
   nextWayPoint: {fileID: 1450155985}
   position: 0
-  distanceToNextPoint: 0
   currentLap: 0
+  distanceToNextPoint: 0
+  finished: 0
+  finishTime: 
 --- !u!114 &1190952260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6652,6 +6688,7 @@ Transform:
   - {fileID: 912205909}
   - {fileID: 791270564}
   - {fileID: 1145511753}
+  - {fileID: 56718014}
   m_Father: {fileID: 0}
 --- !u!114 &1396121275
 MonoBehaviour:
@@ -7499,6 +7536,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1729989315}
   m_GameObject: {fileID: 1565150430}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1568678739
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: podRacer.Array.data[0]
+      value: 
+      objectReference: {fileID: 1943316325}
+    - target: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: podRacer.Array.data[1]
+      value: 
+      objectReference: {fileID: 1145511753}
+    - target: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: podRacer.Array.data[2]
+      value: 
+      objectReference: {fileID: 1846939656}
+    - target: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+      propertyPath: podRacer.Array.data[3]
+      value: 
+      objectReference: {fileID: 1190952254}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
+  m_RootGameObject: {fileID: 952663698}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1618261397
 GameObject:
   m_ObjectHideFlags: 0
@@ -8714,8 +8807,10 @@ MonoBehaviour:
   currentWayPoint: {fileID: 1967284680}
   nextWayPoint: {fileID: 1450155985}
   position: 0
-  distanceToNextPoint: 0
   currentLap: 0
+  distanceToNextPoint: 0
+  finished: 0
+  finishTime: 
 --- !u!114 &1846939662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9406,8 +9501,10 @@ MonoBehaviour:
   currentWayPoint: {fileID: 1967284680}
   nextWayPoint: {fileID: 1450155985}
   position: 0
-  distanceToNextPoint: 0
   currentLap: 0
+  distanceToNextPoint: 0
+  finished: 0
+  finishTime: 
 --- !u!114 &1943316331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9990,7 +10087,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2064275745}
   m_Layer: 0
-  m_Name: wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

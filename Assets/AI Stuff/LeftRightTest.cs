@@ -12,6 +12,7 @@ public class LeftRightTest : MonoBehaviour {
 	ButtonSimulator sim;
 
 	void Start() {
+		target = GameObject.Find("Node1").transform;
 		sim = GetComponent<ButtonSimulator>();
 	}
 
@@ -28,13 +29,13 @@ public class LeftRightTest : MonoBehaviour {
 		Vector3 perp = Vector3.Cross(fwd, targetDir);
 		float dir = Vector3.Dot(perp, up);
 		if (dir > 0f) {
-			Debug.Log ("Going Right!");
+			//Debug.Log ("Going Right!");
 			return 1f;
 		} else if (dir < 0f) {
-			Debug.Log ("Going Left!");
+			//Debug.Log ("Going Left!");
 			return -1f;
 		} else {
-			Debug.Log ("Going Straight!");
+			//Debug.Log ("Going Straight!");
 			return 0f;
 		}
 	}

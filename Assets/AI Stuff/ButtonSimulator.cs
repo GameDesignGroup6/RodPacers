@@ -7,33 +7,52 @@ public class ButtonSimulator : MonoBehaviour {
 	public Node currentNode;
 	LeftRightTest test;
 	public float currentPress;
+	Vector3 v;
+	double x;
+	double z;
+	double minX;
+	double maxX;
+	double minZ;
+	double maxZ;
+	RaycastHit hit;
+	public bool backwards = false;
+	public Transform leftEngine;
+	public Transform rightEngine;
+	public Transform parent;
 
-	// Use this for initialization
 	void Start () {
+		nodeTransform = GameObject.Find("Node1").transform;
 		currentNode = nodeTransform.GetComponent<Node>();
 		test = GetComponent<LeftRightTest>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		double x = currentNode.pos.x;
-		double z = currentNode.pos.z;
-		double minX = x - 2;
-		double maxX = x + 2;
-		double minZ = z - 2;
-		double maxZ = z + 2;
-		if (transform.position.x > minX && transform.position.x < maxX && transform.position.z > minZ && transform.position.z < maxZ)
+		v = new Vector3((leftEngine.position.x + rightEngine.position.x) / 2, (leftEngine.position.y + rightEngine.position.y) / 2, (leftEngine.position.z + rightEngine.position.z) / 2);
+		x = currentNode.pos.x;
+		z = currentNode.pos.z;
+		minX = x - 100;
+		maxX = x + 100;
+		minZ = z - 100;
+		maxZ = z + 100;
+		if (v.x > minX && v.x < maxX && v.z > minZ && v.z < maxZ)
 			UpdateNode();
+		if (currentNode.branch != null && currentNode.pos.y - v.y >= 80) {;
+			currentNode = currentNode.branch;
+			nodeTransform = currentNode.transform;
+			test.ChangeNode();
+		}
 		GetButtons();
 	}
 
 	void GetButtons() {
-		Vector3 podToNode = new Vector3(currentNode.pos.x - transform.position.x, currentNode.pos.z - transform.position.z);
-		Vector3 podForward = transform.forward;
-		Debug.DrawLine(transform.position, currentNode.pos);
-		Debug.DrawRay(transform.position, transform.forward);
-		currentPress = Vector3.Angle(podToNode, podForward) / 180;
-		Debug.Log (currentPress.ToString ());
+		Vector3 podToNode = new Vector3(currentNode.pos.x - v.x, currentNode.pos.z - v.z);
+		Debug.DrawLine(v, currentNode.pos, Color.yellow);
+		Debug.DrawRay(v, transform.forward, Color.cyan);
+		currentPress = Vector3.Angle(podToNode, transform.forward) / 180;
+		if (currentPress < 0.2)
+			currentPress = 0;
+		if (currentPress > 0.8)
+			currentPress = 1;
 	}
 
 	void UpdateNode() {

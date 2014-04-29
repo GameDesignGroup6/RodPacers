@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Node : MonoBehaviour {
-	public Node next,previous;
+	public Node next, previous;
+	public Node branch = null;
 	private float distance;
 	public float DistanceFromStart{
 		get{return distance;}

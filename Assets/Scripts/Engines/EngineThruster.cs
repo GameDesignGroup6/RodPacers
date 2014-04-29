@@ -9,9 +9,9 @@ public class EngineThruster : MonoBehaviour {
 
 	public float thrust;
 
-	private float startThrust;
+	public float maxThrust = 325f;
 	public float DefaultThrust{
-		get{return startThrust;}
+		get{return maxThrust;}//for compatability
 	}
 
 	private Rigidbody rgb;
@@ -34,11 +34,10 @@ public class EngineThruster : MonoBehaviour {
 //	}
 
 	public void resetThrust(){
-		thrust = startThrust;
+		thrust = maxThrust;
 	}
 	
 	void Start () {
-		startThrust = thrust;
 		rgb = rigidbody;
 		resetThrustDirection();
 		thrust = 0f;

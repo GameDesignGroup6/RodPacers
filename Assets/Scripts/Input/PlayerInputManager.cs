@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(NodeRespawn))]
 public class PlayerInputManager : InputManager {
 	public int playerNumber;
 
@@ -20,5 +21,9 @@ public class PlayerInputManager : InputManager {
 	}
 	public override float getThrottle(){
 		return Input.GetAxis("Throttle"+playerNumber);
+	}
+	void Update(){
+		if(Input.GetButtonDown("Respawn"+playerNumber))
+			transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(GetComponent<NodeRespawn>().currentNode.previous.transform);
 	}
 }

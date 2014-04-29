@@ -35,6 +35,11 @@ public class Node : MonoBehaviour {
 	void Awake(){
 		pos = transform.position;
 	}
+	void Start(){
+		if(start){
+			updateTotalLength(true);
+		}
+	}
 
 	public void updateTotalLength(bool propigate){
 		if(start){

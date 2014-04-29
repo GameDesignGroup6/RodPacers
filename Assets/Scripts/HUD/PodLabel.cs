@@ -41,7 +41,7 @@ public class PodLabel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		for (int i = 0; i<podCams.Length; i++){
-			if (nearby (podCams[i])){
+			if (podCams[i] != null && nearby (podCams[i])){
 				scaleFont (podCams[i]);
 				podLabels[i].text = "Player " + playerNum;
 				podLabels[i].fontSize = (int)(initialFontSize * fontScaling);
@@ -65,15 +65,15 @@ public class PodLabel : MonoBehaviour {
 		fontScaling = 1f - (difference.sqrMagnitude / Mathf.Pow(1.41f * maxDist,2));
 	}
 
-	//also realized we have no way of knowing which guitext to edit.
-	void OnWillRenderObject(){
-		Camera cam = Camera.current;
-		if (cam.name == "MiniMap" || cam.name == "SceneCamera")
-			return;
-		podLabels[0].text = "Player " + playerNum;
-		podLabels[0].transform.position = cam.WorldToViewportPoint(pod.transform.position + Vector3.up);
-		Debug.Log ("I am " + cam.name + "and I am viewing " + transform.name);
-
-	}
+	//realized we have no way of knowing which guitext to edit.
+//	void OnWillRenderObject(){
+//		Camera cam = Camera.current;
+//		if (cam.name == "MiniMap" || cam.name == "SceneCamera")
+//			return;
+//		podLabels[0].text = "Player " + playerNum;
+//		podLabels[0].transform.position = cam.WorldToViewportPoint(pod.transform.position + Vector3.up);
+//		Debug.Log ("I am " + cam.name + "and I am viewing " + transform.name);
+//
+//	}
 
 }

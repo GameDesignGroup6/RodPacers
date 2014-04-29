@@ -31,7 +31,7 @@ public class Rank : MonoBehaviour {
 			}
 			Application.LoadLevel ("FinishScene");
 		} else {
-			bubbleSort (podRacer, notFinishedPod);
+			if (notFinishedPod>1) bubbleSort (podRacer, notFinishedPod);
 			//assign position by array's position
 			int j = numPod;
 			for (int i = 0; i<notFinishedPod; i++) {

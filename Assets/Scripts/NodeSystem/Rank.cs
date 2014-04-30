@@ -21,16 +21,7 @@ public class Rank : MonoBehaviour {
 	}
 
 	void Update () {
-		if (finish) {
-			for (int i = 0; i<numPod; i++) {
-				if (podRacer[0]==null)
-					return;
-				leaderBoard [i, 0] = podRacer [i].parent.name;
-				leaderBoard [i, 1] = podRacer [i].GetComponent<PlayerNode> ().finishTime;
-				leaderBoard [i, 2] = podRacer [i].GetComponent<PlayerNode> ().position.ToString ();
-			}
-			Application.LoadLevel ("FinishScene");
-		} else {
+		if (!finish) {
 			if (notFinishedPod>1) bubbleSort (podRacer, notFinishedPod);
 			//assign position by array's position
 			int j = numPod;
@@ -45,7 +36,7 @@ public class Rank : MonoBehaviour {
 	//sort by PodRace array by each's current waypoint, if having same waypoint then compare distance to next waypoint
 	//credit to eecs 233 slide
 	//1. compare lap 2. compare way point 3. if 1,2 same, compare distance to nextwaypoint
-	 void bubbleSort(Transform[] arr, int length) {
+	 public void bubbleSort(Transform[] arr, int length) {
 			for(int i=length-1;i>0; i--){
 			for (int j = 0; j < i; j++) {
 					if (arr[j].GetComponent<PlayerNode>().currentLap>arr[j+1].GetComponent<PlayerNode>().currentLap)
@@ -67,7 +58,7 @@ public class Rank : MonoBehaviour {
 				arr [j] = temp;
 		}	
 
-	// when  all pod finished
+	// when  all player pod finished
 	public void checkFinsh(){
 		foreach (Transform pod in podRacer) {
 						if (pod.parent.name == "Racer1" && !pod.GetComponent<PlayerNode> ().finished)

@@ -61,8 +61,12 @@ public class SpawnManager : MonoBehaviour {
 	}
 
 	public void RespawnAtTransform(Transform trans){
-		left.EngineHealth.SendMessage("Start");
-		right.EngineHealth.SendMessage("Start");
+		if(left.EngineHealth.Health<=0){
+			left.EngineHealth.SendMessage("Start");
+		}
+		if(right.EngineHealth.Health<=0){
+			right.EngineHealth.SendMessage("Start");
+		}
 
 		left.EngineRigidbody.velocity = Vector3.zero;
 		right.EngineRigidbody.velocity = Vector3.zero;

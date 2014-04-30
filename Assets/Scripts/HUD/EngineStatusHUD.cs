@@ -34,7 +34,7 @@ public class EngineStatusHUD : MonoBehaviour {
 				Color c = warningSign.color;
 				c.a = 0.5f;
 				warningSign.color = c;
-				redMeter.color.a = 0f;
+				redMeter.color.a = 0.15f;
 			}else if(timer>=60){
 				redMeter.color.a = 1f;
 				Color c = warningSign.color;
@@ -42,6 +42,11 @@ public class EngineStatusHUD : MonoBehaviour {
 				warningSign.color = c;
 				timer=0;
 			}
+		}else{
+			redMeter.color.a = 1f;
+			Color c = warningSign.color;
+			c.a = 0f;
+			warningSign.color = c;
 		}
 
 

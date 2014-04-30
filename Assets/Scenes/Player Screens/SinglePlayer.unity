@@ -135,7 +135,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17503649}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -419,7 +419,8 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 3f61cff267d51ad47baa7318d54d1f24, type: 2}
   m_RootGameObject: {fileID: 761485170}
   m_IsPrefabParent: 0
@@ -1372,7 +1373,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485925987}
-  - 114: {fileID: 485925986}
   - 114: {fileID: 485925988}
   m_Layer: 0
   m_Name: Rank
@@ -1381,26 +1381,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &485925986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ed97fb9464d7b214393f50e639d41f70,
-    type: 2}
-  m_PrefabInternal: {fileID: 524560144}
-  m_GameObject: {fileID: 485925985}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2de48dba2efd7de42a41f2f5351ff51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  podRacer:
-  - {fileID: 1943316325}
-  - {fileID: 1145511753}
-  - {fileID: 1846939656}
-  - {fileID: 1190952254}
-  notFinishedPod: 0
-  totalLap: 1
-  finish: 0
 --- !u!4 &485925987
 Transform:
   m_ObjectHideFlags: 0
@@ -1423,6 +1403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6f92b9ca9e91d4db866114674f7f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapsToWin: 1
 --- !u!1 &492966035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1826,8 @@ Prefab:
       propertyPath: podRacer.Array.data[3]
       value: 
       objectReference: {fileID: 1190952254}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ed97fb9464d7b214393f50e639d41f70, type: 2}
   m_RootGameObject: {fileID: 485925985}
   m_IsPrefabParent: 0
@@ -1859,7 +1841,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 524838659}
   - 114: {fileID: 524838662}
-  - 114: {fileID: 524838660}
   - 114: {fileID: 524838661}
   m_Layer: 0
   m_Name: Racer1
@@ -1883,18 +1864,6 @@ Transform:
   - {fileID: 1943316325}
   - {fileID: 761485171}
   m_Father: {fileID: 0}
---- !u!114 &524838660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 524838658}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a716ee149c043934f8fdb2ad755b5e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nearestNode: {fileID: 0}
 --- !u!114 &524838661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,6 +1875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCheckpoint: {fileID: 0}
   isAI: 0
 --- !u!114 &524838662
 MonoBehaviour:
@@ -1960,7 +1930,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538390552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -2146,7 +2116,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 542924726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -3096,7 +3066,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 761485171}
   - 132: {fileID: 761485173}
-  - 114: {fileID: 761485172}
   m_Layer: 10
   m_Name: ShowRank
   m_TagString: Untagged
@@ -3115,19 +3084,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 524838659}
---- !u!114 &761485172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3f61cff267d51ad47baa7318d54d1f24,
-    type: 2}
-  m_PrefabInternal: {fileID: 85000711}
-  m_GameObject: {fileID: 761485170}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPlayer: {fileID: 1943316325}
 --- !u!132 &761485173
 GUIText:
   m_ObjectHideFlags: 0
@@ -3738,7 +3694,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 900000211}
   - 114: {fileID: 900000214}
-  - 114: {fileID: 900000212}
   - 114: {fileID: 900000213}
   m_Layer: 0
   m_Name: Racer4
@@ -3761,18 +3716,6 @@ Transform:
   - {fileID: 1439036491}
   - {fileID: 1190952254}
   m_Father: {fileID: 0}
---- !u!114 &900000212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 900000210}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a716ee149c043934f8fdb2ad755b5e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nearestNode: {fileID: 0}
 --- !u!114 &900000213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3784,6 +3727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCheckpoint: {fileID: 0}
   isAI: 1
 --- !u!114 &900000214
 MonoBehaviour:
@@ -4154,7 +4098,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914852875}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -4470,7 +4414,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097583079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -4932,11 +4876,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceFromStart: 0
   playerNumber: 2
   lap: 0
   rank: 2
   text: {fileID: 0}
+  curCheckpoint: {fileID: 0}
+  distanceToNextCheckpoint: 0
+  finishTime: -1
+  finished: 0
 --- !u!1 &1167735443
 GameObject:
   m_ObjectHideFlags: 0
@@ -5360,11 +5307,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceFromStart: 0
   playerNumber: 4
   lap: 0
   rank: 4
   text: {fileID: 0}
+  curCheckpoint: {fileID: 0}
+  distanceToNextCheckpoint: 0
+  finishTime: -1
+  finished: 0
 --- !u!1 &1203379533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,7 +5701,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1396121274}
   - 114: {fileID: 1396121277}
-  - 114: {fileID: 1396121275}
   - 114: {fileID: 1396121276}
   m_Layer: 0
   m_Name: Racer2
@@ -5774,18 +5723,6 @@ Transform:
   - {fileID: 791270564}
   - {fileID: 1145511753}
   m_Father: {fileID: 0}
---- !u!114 &1396121275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1396121273}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a716ee149c043934f8fdb2ad755b5e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nearestNode: {fileID: 0}
 --- !u!114 &1396121276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5797,6 +5734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCheckpoint: {fileID: 0}
   isAI: 1
 --- !u!114 &1396121277
 MonoBehaviour:
@@ -6077,7 +6015,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527575460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -7012,7 +6950,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738395629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -7178,7 +7116,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1765756003}
   - 114: {fileID: 1765756005}
-  - 114: {fileID: 1765756006}
   - 114: {fileID: 1765756004}
   m_Layer: 0
   m_Name: Racer3
@@ -7212,6 +7149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCheckpoint: {fileID: 0}
   isAI: 1
 --- !u!114 &1765756005
 MonoBehaviour:
@@ -7231,18 +7169,6 @@ MonoBehaviour:
   ChangeOnStart: 1
   initialSkinIndex: 2
   playerNumber: 3
---- !u!114 &1765756006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765756002}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a716ee149c043934f8fdb2ad755b5e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nearestNode: {fileID: 0}
 --- !u!1 &1775216209
 GameObject:
   m_ObjectHideFlags: 0
@@ -7660,11 +7586,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceFromStart: 0
   playerNumber: 3
   lap: 0
   rank: 3
   text: {fileID: 0}
+  curCheckpoint: {fileID: 0}
+  distanceToNextCheckpoint: 0
+  finishTime: -1
+  finished: 0
 --- !u!1 &1877146537
 GameObject:
   m_ObjectHideFlags: 0
@@ -7700,7 +7629,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877146537}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -8074,7 +8003,6 @@ GameObject:
   - 82: {fileID: 1943316328}
   - 114: {fileID: 1943316326}
   - 114: {fileID: 1943316327}
-  - 114: {fileID: 1943316329}
   - 114: {fileID: 1943316330}
   - 114: {fileID: 1943316334}
   m_Layer: 2
@@ -8189,24 +8117,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1943316329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1943316324}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentWayPoint: {fileID: 0}
-  nextWayPoint: {fileID: 0}
-  position: 0
-  currentLap: 0
-  distanceToNextPoint: 0
-  finished: 0
-  finishTime: 
 --- !u!114 &1943316330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8281,11 +8191,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceFromStart: 0
   playerNumber: 1
   lap: 0
   rank: 1
   text: {fileID: 761485173}
+  curCheckpoint: {fileID: 0}
+  distanceToNextCheckpoint: 0
+  finishTime: -1
+  finished: 0
 --- !u!54 &1943316336
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -54,7 +54,7 @@ public class PodSelect : MonoBehaviour {
 			break;
 		case 2: podDescription.text = "Plug-F Mammoth";
 			break;
-		case 3: podDescription.text = "KVT9T9-B Wasp";
+		case 3: podDescription.text = "KV9T9-B Wasp";
 			break;
 		case 4: podDescription.text = "GPE-3130";
 			break;

@@ -753,6 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -792,6 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -808,6 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -824,6 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -950,6 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -989,6 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1005,6 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1021,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1352,6 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1391,6 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1407,6 +1417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1423,6 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -2059,11 +2071,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 524838658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeTransform: {fileID: 0}
-  currentNode: {fileID: 0}
+  isAI: 0
 --- !u!114 &524838662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2950,6 +2961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -2989,6 +3001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -3005,6 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -3021,6 +3035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -4204,11 +4219,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 900000210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeTransform: {fileID: 0}
-  currentNode: {fileID: 0}
+  isAI: 1
 --- !u!114 &900000214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,6 +4813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -4838,6 +4853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -4854,6 +4870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -4870,6 +4887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -5986,6 +6004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+  slow: 0
   currentPress: 0
   backwards: 0
   leftEngine: {fileID: 1635442865}
@@ -6764,11 +6783,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396121273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeTransform: {fileID: 0}
-  currentNode: {fileID: 0}
+  isAI: 0
 --- !u!114 &1396121277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7880,6 +7898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -7919,6 +7938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -7935,6 +7955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -7951,6 +7972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -8367,11 +8389,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1765756002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13085a26dca8754459e8254e5b891e39, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeTransform: {fileID: 0}
-  currentNode: {fileID: 0}
+  isAI: 0
 --- !u!114 &1765756005
 MonoBehaviour:
   m_ObjectHideFlags: 0

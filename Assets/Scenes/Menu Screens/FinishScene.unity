@@ -182,7 +182,7 @@ GameObject:
   - 4: {fileID: 147303345}
   - 132: {fileID: 147303346}
   m_Layer: 0
-  m_Name: time1
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ GameObject:
   - 4: {fileID: 526416283}
   - 132: {fileID: 526416282}
   m_Layer: 0
-  m_Name: p3
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ GameObject:
   - 4: {fileID: 553057367}
   - 132: {fileID: 553057366}
   m_Layer: 0
-  m_Name: p1
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,7 +382,7 @@ GameObject:
   - 4: {fileID: 734017311}
   - 132: {fileID: 734017312}
   m_Layer: 0
-  m_Name: p4
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,7 +484,7 @@ GameObject:
   - 4: {fileID: 934669563}
   - 132: {fileID: 934669564}
   m_Layer: 0
-  m_Name: time3
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,7 +673,7 @@ GameObject:
   - 4: {fileID: 1183595803}
   - 132: {fileID: 1183595802}
   m_Layer: 0
-  m_Name: p2
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -723,7 +723,7 @@ GameObject:
   - 4: {fileID: 1195223347}
   - 132: {fileID: 1195223348}
   m_Layer: 0
-  m_Name: time2
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,7 +873,7 @@ GameObject:
   - 4: {fileID: 1442425540}
   - 132: {fileID: 1442425541}
   m_Layer: 0
-  m_Name: time4
+  m_Name: time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

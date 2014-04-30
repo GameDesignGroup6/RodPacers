@@ -3,8 +3,13 @@ using System.Collections;
 
 public class SpawnManager : MonoBehaviour {
 	private Engine left,right;
-	private Transform lastCheckpoint;
+	private Transform lastCheckpointTrans;
+	public Checkpoint lastCheckpoint;
 	public bool isAI = false;
+	[System.NonSerialized]
+	public int gateCount = 0;
+	[System.NonSerialized]
+	public bool lapFinished = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,9 +25,30 @@ public class SpawnManager : MonoBehaviour {
 			left = engines[1];
 			right = engines[0];
 		}
+
+		Checkpoint[] mapPoints = FindObjectsOfType<Checkpoint>();
+		foreach(Checkpoint c in mapPoints){
+			if(c.number==0){
+				lastCheckpoint = c;
+				lastCheckpointTrans = c.transform;
+				break;
+			}
+		}
+
+
 	}
-	public void updateCheckpoint(Transform c){
+	public void updateCheckpoint(Checkpoint c){
+		if(gateCount==lastCheckpoint.number+1&&c.number==0){
+			//finished a lap!
+			lapFinished = true;
+		}
+		if(c.number>lastCheckpoint.number){
+			gateCount++;
+		}else if(c.number<lastCheckpoint.number){
+			gateCount--;
+		}
 		lastCheckpoint = c;
+		lastCheckpointTrans = c.transform;
 	}
 	public void respawnAtLastCheckpoint(){
 		if(isAI){
@@ -30,7 +56,7 @@ public class SpawnManager : MonoBehaviour {
 			return;
 		}
 		if(lastCheckpoint!=null){
-			RespawnAtTransform(lastCheckpoint);
+			RespawnAtTransform(lastCheckpointTrans);
 		}
 	}
 

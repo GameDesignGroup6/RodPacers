@@ -2,21 +2,32 @@
 using System.Collections;
 [RequireComponent(typeof(NodeRespawn))]
 public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
-	private NodeRespawn spawn;
-	public float distanceFromStart;
 	public int playerNumber;
 	public int lap;
 	public int rank;
 	public GUIText text;
+	public Checkpoint curCheckpoint;
+	public float distanceToNextCheckpoint;
+	private SpawnManager manager;
+	public float finishTime = -1f;
+	public bool finished = false;
 	// Use this for initialization
 	void Start () {
-		spawn = GetComponent<NodeRespawn>();
+		manager = transform.parent.GetComponent<SpawnManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		distanceFromStart = spawn.currentNode.DistanceFromStart-Vector3.Distance(transform.position,spawn.nodeTransform.position);
-		DebugHUD.setValue(transform.parent.name+"/"+name+" distance",distanceFromStart);
+		if(finished)return;
+		if(manager.lapFinished){
+			lap++;
+			manager.lapFinished = false;
+		}
+		curCheckpoint = manager.lastCheckpoint;
+		if(curCheckpoint==null)return;
+//		distanceToNextCheckpoint = curCheckpoint.next.collider.ClosestPointOnBounds(transform.position).magnitude;
+		distanceToNextCheckpoint = Vector3.Distance(transform.position,curCheckpoint.next.transform.position);
+		DebugHUD.setValue(transform.parent.name+"/"+name+" distance",distanceToNextCheckpoint);
 	}
 	public void updateText(){
 		if(text!=null)text.text = rank+"";
@@ -27,9 +38,14 @@ public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
 		}else if(lap<orank.lap){
 			return 1;
 		}
-		if(distanceFromStart>orank.distanceFromStart){
+		if(manager.gateCount>orank.manager.gateCount){
 			return -1;
-		}else if(distanceFromStart<orank.distanceFromStart){
+		}else if(manager.gateCount<orank.manager.gateCount){
+			return 1;
+		}
+		if(distanceToNextCheckpoint<orank.distanceToNextCheckpoint){
+			return -1;
+		}else if(distanceToNextCheckpoint>orank.distanceToNextCheckpoint){
 			return 1;
 		}
 		if(playerNumber<orank.playerNumber){

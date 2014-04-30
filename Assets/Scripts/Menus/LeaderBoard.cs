@@ -15,7 +15,7 @@ public class LeaderBoard : MonoBehaviour {
 			name.text = getPlayerName(rank.playerNumber);
 		}
 	}
-	private string getPlayerName(int player){
+	public static string getPlayerName(int player){
 		switch(player){
 		case 1: return "<color=red>Player 1</color>";
 		case 2: return "<color=blue>Player 2</color>";

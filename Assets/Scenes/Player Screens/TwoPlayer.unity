@@ -135,7 +135,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17503649}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -647,16 +647,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 125475661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4db45ce310a834eb2c3a79ae27002b, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d534c82e501d6409312834b3dd5e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
-  pod: {fileID: 0}
-  maxDist: 0
-  podCams: []
-  podLabels: []
-  initialFontSize: 14
+  playerNum: 4
+  pod: {fileID: 125475662}
+  maxDist: 1200
+  minDist: 75
+  podCams:
+  - {fileID: 854620071}
+  - {fileID: 956637400}
+  podLabels:
+  - {fileID: 229077379}
+  - {fileID: 555513870}
+  - {fileID: 319533796}
+  - {fileID: 1746808627}
+  initialFontSize: 30
   fontScaling: 1
+  viewportZThreshold: 0
 --- !u!1 &170454087
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,16 +834,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 221103256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4db45ce310a834eb2c3a79ae27002b, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d534c82e501d6409312834b3dd5e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
-  pod: {fileID: 0}
-  maxDist: 0
-  podCams: []
-  podLabels: []
-  initialFontSize: 14
+  playerNum: 1
+  pod: {fileID: 1943316325}
+  maxDist: 1200
+  minDist: 75
+  podCams:
+  - {fileID: 854620071}
+  - {fileID: 956637400}
+  podLabels:
+  - {fileID: 917243073}
+  - {fileID: 807579255}
+  - {fileID: 2104443654}
+  - {fileID: 1388035325}
+  initialFontSize: 30
   fontScaling: 1
+  viewportZThreshold: 0
 --- !u!1 &229077377
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,15 +887,15 @@ GUIText:
   m_GameObject: {fileID: 229077377}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -999,15 +1015,15 @@ GUIText:
   m_GameObject: {fileID: 257541397}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1127,15 +1143,15 @@ GUIText:
   m_GameObject: {fileID: 319533794}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1430,15 +1446,15 @@ GUIText:
   m_GameObject: {fileID: 415013480}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1868,7 +1884,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538390552}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -2004,7 +2020,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 542924726}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -2140,15 +2156,15 @@ GUIText:
   m_GameObject: {fileID: 555513868}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -2478,15 +2494,15 @@ GUIText:
   m_GameObject: {fileID: 630645928}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -3348,15 +3364,15 @@ GUIText:
   m_GameObject: {fileID: 807579253}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -3622,15 +3638,15 @@ GUIText:
   m_GameObject: {fileID: 859667235}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -4176,7 +4192,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914852875}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -4301,15 +4317,15 @@ GUIText:
   m_GameObject: {fileID: 917243072}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -4798,7 +4814,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097583079}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -6158,15 +6174,15 @@ GUIText:
   m_GameObject: {fileID: 1388035323}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -6620,15 +6636,15 @@ GUIText:
   m_GameObject: {fileID: 1493518906}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -6670,7 +6686,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527575460}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -7434,16 +7450,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1710115844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4db45ce310a834eb2c3a79ae27002b, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d534c82e501d6409312834b3dd5e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
-  pod: {fileID: 0}
-  maxDist: 0
-  podCams: []
-  podLabels: []
-  initialFontSize: 14
+  playerNum: 3
+  pod: {fileID: 1846939656}
+  maxDist: 1200
+  minDist: 75
+  podCams:
+  - {fileID: 854620071}
+  - {fileID: 956637400}
+  podLabels:
+  - {fileID: 257541399}
+  - {fileID: 1493518908}
+  - {fileID: 1877878359}
+  - {fileID: 415013482}
+  initialFontSize: 30
   fontScaling: 1
+  viewportZThreshold: 0
 --- !u!33 &1710115848
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7512,7 +7536,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738395629}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -7648,15 +7672,15 @@ GUIText:
   m_GameObject: {fileID: 1746808625}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -8222,7 +8246,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877146537}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdafdad071ae5944aba2da6644e1b63, type: 3}
   m_Name: 
@@ -8358,15 +8382,15 @@ GUIText:
   m_GameObject: {fileID: 1877878357}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -8512,15 +8536,15 @@ GUIText:
   m_GameObject: {fileID: 1924949046}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -9067,15 +9091,15 @@ GUIText:
   m_GameObject: {fileID: 2104443652}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -9117,15 +9141,15 @@ GUIText:
   m_GameObject: {fileID: 2128765514}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Gui Text
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 34442079bdde445518a259f596d794f5, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -9223,13 +9247,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2134468011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4db45ce310a834eb2c3a79ae27002b, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d534c82e501d6409312834b3dd5e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
-  pod: {fileID: 0}
-  maxDist: 0
-  podCams: []
-  podLabels: []
-  initialFontSize: 14
+  playerNum: 2
+  pod: {fileID: 1145511753}
+  maxDist: 1200
+  minDist: 75
+  podCams:
+  - {fileID: 854620071}
+  - {fileID: 956637400}
+  podLabels:
+  - {fileID: 1924949048}
+  - {fileID: 2128765516}
+  - {fileID: 859667237}
+  - {fileID: 630645930}
+  initialFontSize: 30
   fontScaling: 1
+  viewportZThreshold: 0

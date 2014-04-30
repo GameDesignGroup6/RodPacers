@@ -1369,6 +1369,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 485925987}
   - 114: {fileID: 485925986}
+  - 114: {fileID: 485925988}
   m_Layer: 0
   m_Name: Rank
   m_TagString: Untagged
@@ -1383,7 +1384,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 524560144}
   m_GameObject: {fileID: 485925985}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2de48dba2efd7de42a41f2f5351ff51c, type: 3}
   m_Name: 
@@ -1407,6 +1408,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &485925988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485925985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6f92b9ca9e91d4db866114674f7f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492966035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,7 +3117,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 85000711}
   m_GameObject: {fileID: 761485170}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
   m_Name: 
@@ -4577,6 +4589,7 @@ GameObject:
   - 114: {fileID: 1145511767}
   - 114: {fileID: 1145511756}
   - 114: {fileID: 1145511769}
+  - 114: {fileID: 1145511770}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -4845,7 +4858,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145511752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
   m_Name: 
@@ -4901,6 +4914,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+--- !u!114 &1145511770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145511752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromStart: 0
+  playerNumber: 2
+  rank: 2
+  text: {fileID: 0}
 --- !u!1 &1167735443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4987,6 +5015,7 @@ GameObject:
   - 114: {fileID: 1190952260}
   - 114: {fileID: 1190952257}
   - 114: {fileID: 1190952270}
+  - 114: {fileID: 1190952271}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -5121,7 +5150,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1190952253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
   m_Name: 
@@ -5311,6 +5340,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+--- !u!114 &1190952271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190952253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromStart: 0
+  playerNumber: 4
+  rank: 4
+  text: {fileID: 0}
 --- !u!1 &1203379533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,6 +7307,7 @@ GameObject:
   - 114: {fileID: 1846939662}
   - 114: {fileID: 1846939659}
   - 114: {fileID: 1846939672}
+  - 114: {fileID: 1846939673}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -7397,7 +7442,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846939655}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
   m_Name: 
@@ -7587,6 +7632,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+--- !u!114 &1846939673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846939655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromStart: 0
+  playerNumber: 3
+  rank: 3
+  text: {fileID: 0}
 --- !u!1 &1877146537
 GameObject:
   m_ObjectHideFlags: 0
@@ -7998,6 +8058,7 @@ GameObject:
   - 114: {fileID: 1943316327}
   - 114: {fileID: 1943316329}
   - 114: {fileID: 1943316330}
+  - 114: {fileID: 1943316334}
   m_Layer: 2
   m_Name: Pod
   m_TagString: Player
@@ -8116,7 +8177,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1943316324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
   m_Name: 
@@ -8191,6 +8252,21 @@ MonoBehaviour:
   turningForce: 20
   turningTorque: 20
   turningThrust: 4
+--- !u!114 &1943316334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943316324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromStart: 0
+  playerNumber: 1
+  rank: 1
+  text: {fileID: 761485173}
 --- !u!54 &1943316336
 Rigidbody:
   m_ObjectHideFlags: 0

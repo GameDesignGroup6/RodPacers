@@ -56,5 +56,6 @@ public class Node : MonoBehaviour {
 		}else distance = previous.DistanceFromStart+Vector3.Distance(Position,previous.Position);
 		Debug.Log ("Setup "+name);
 		if(propigate&&!next.start&&next.name!="Node2")next.updateTotalLength(true); //do not continue to the start line again, else this is infinite!
+		if(branch)branch.distance = distance;
 	}
 }

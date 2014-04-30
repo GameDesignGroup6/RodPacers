@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100002
 GameObject:
@@ -30,7 +30,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100004
 GameObject:
@@ -46,7 +46,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100006
 GameObject:
@@ -62,7 +62,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100008
 GameObject:
@@ -78,7 +78,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100010
 GameObject:
@@ -94,7 +94,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100012
 GameObject:
@@ -110,7 +110,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100014
 GameObject:
@@ -126,7 +126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100016
 GameObject:
@@ -142,7 +142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100018
 GameObject:
@@ -158,7 +158,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100020
 GameObject:
@@ -174,7 +174,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100022
 GameObject:
@@ -190,7 +190,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100024
 GameObject:
@@ -206,7 +206,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100026
 GameObject:
@@ -222,7 +222,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100028
 GameObject:
@@ -238,7 +238,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100030
 GameObject:
@@ -254,7 +254,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100032
 GameObject:
@@ -270,7 +270,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100034
 GameObject:
@@ -286,7 +286,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100036
 GameObject:
@@ -302,7 +302,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100038
 GameObject:
@@ -318,7 +318,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100040
 GameObject:
@@ -334,7 +334,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100042
 GameObject:
@@ -350,7 +350,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100044
 GameObject:
@@ -366,7 +366,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100046
 GameObject:
@@ -382,7 +382,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100048
 GameObject:
@@ -398,7 +398,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100050
 GameObject:
@@ -414,7 +414,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100052
 GameObject:
@@ -430,7 +430,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100054
 GameObject:
@@ -446,7 +446,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100056
 GameObject:
@@ -462,7 +462,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100058
 GameObject:
@@ -478,7 +478,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100060
 GameObject:
@@ -494,7 +494,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100062
 GameObject:
@@ -510,7 +510,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100064
 GameObject:
@@ -526,7 +526,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100066
 GameObject:
@@ -542,7 +542,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100068
 GameObject:
@@ -558,7 +558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100070
 GameObject:
@@ -574,7 +574,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100072
 GameObject:
@@ -590,7 +590,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100074
 GameObject:
@@ -606,7 +606,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100076
 GameObject:
@@ -622,7 +622,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100078
 GameObject:
@@ -638,7 +638,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100080
 GameObject:
@@ -654,7 +654,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100082
 GameObject:
@@ -670,7 +670,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100084
 GameObject:
@@ -686,7 +686,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100086
 GameObject:
@@ -702,7 +702,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100088
 GameObject:
@@ -718,7 +718,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100090
 GameObject:
@@ -734,7 +734,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100092
 GameObject:
@@ -750,7 +750,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100094
 GameObject:
@@ -766,7 +766,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100096
 GameObject:
@@ -782,7 +782,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100098
 GameObject:
@@ -798,7 +798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100100
 GameObject:
@@ -814,7 +814,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100102
 GameObject:
@@ -830,7 +830,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100104
 GameObject:
@@ -846,7 +846,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100106
 GameObject:
@@ -862,7 +862,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100108
 GameObject:
@@ -878,7 +878,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100110
 GameObject:
@@ -894,7 +894,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100112
 GameObject:
@@ -910,7 +910,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100114
 GameObject:
@@ -926,7 +926,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100116
 GameObject:
@@ -942,7 +942,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100118
 GameObject:
@@ -958,7 +958,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100120
 GameObject:
@@ -974,7 +974,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100122
 GameObject:
@@ -990,7 +990,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100124
 GameObject:
@@ -1006,7 +1006,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100126
 GameObject:
@@ -1022,7 +1022,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100128
 GameObject:
@@ -1038,7 +1038,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100130
 GameObject:
@@ -1053,7 +1053,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100132
 GameObject:
@@ -1069,7 +1069,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100134
 GameObject:
@@ -1085,7 +1085,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100136
 GameObject:
@@ -1101,7 +1101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100138
 GameObject:
@@ -1117,7 +1117,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100140
 GameObject:
@@ -1133,7 +1133,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100142
 GameObject:
@@ -1149,7 +1149,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &400000
 Transform:
@@ -1223,7 +1223,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
-  m_LocalRotation: {x: 0, y: -.258748919, z: 0, w: .965944648}
+  m_LocalRotation: {x: 0, y: -.165952742, z: 0, w: .986133754}
   m_LocalPosition: {x: -4111.60303, y: 19.0222778, z: -2844.32397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1245,7 +1245,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
-  m_LocalRotation: {x: 0, y: -.258749336, z: 0, w: .965944529}
+  m_LocalRotation: {x: 0, y: -.744477689, z: 0, w: .667647362}
   m_LocalPosition: {x: -2800.23413, y: 97.8503418, z: -2039.08777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1256,7 +1256,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
-  m_LocalRotation: {x: .0787109956, y: -.256428957, z: -.000253999984, w: .963352859}
+  m_LocalRotation: {x: 0, y: -.835152268, z: 0, w: .550018966}
   m_LocalPosition: {x: -1947.88171, y: 102.037842, z: -1509.37134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1322,7 +1322,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100030}
-  m_LocalRotation: {x: 0, y: -.258748919, z: 0, w: .965944648}
+  m_LocalRotation: {x: 0, y: -.92858839, z: 0, w: .371111453}
   m_LocalPosition: {x: -3474.55396, y: 19.0222778, z: -2089.63794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1421,7 +1421,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100048}
-  m_LocalRotation: {x: 0, y: -.258748919, z: 0, w: .965944648}
+  m_LocalRotation: {x: 0, y: -.740588665, z: 0, w: .671958745}
   m_LocalPosition: {x: -3733.66821, y: 94.5510864, z: -3084.37354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1487,7 +1487,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100060}
-  m_LocalRotation: {x: 0, y: -.258748919, z: 0, w: .965944648}
+  m_LocalRotation: {x: 0, y: -.637384355, z: 0, w: .770546079}
   m_LocalPosition: {x: -3818.72437, y: 19.0222778, z: -2849.08545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1619,7 +1619,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100084}
-  m_LocalRotation: {x: 0, y: -.087155737, z: 0, w: .99619472}
+  m_LocalRotation: {x: 0, y: -.881994843, z: 0, w: .471259147}
   m_LocalPosition: {x: -47.3803711, y: 4, z: -59.007782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1784,7 +1784,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100114}
-  m_LocalRotation: {x: 0, y: -.30070582, z: 0, w: .953716993}
+  m_LocalRotation: {x: 0, y: -.794726908, z: 0, w: .60696727}
   m_LocalPosition: {x: -2902.4563, y: 18.7091675, z: -1942.28418}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1795,7 +1795,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100116}
-  m_LocalRotation: {x: 0, y: -.258749336, z: 0, w: .965944529}
+  m_LocalRotation: {x: 0, y: -.987342834, z: 0, w: .15860109}
   m_LocalPosition: {x: -3397.24512, y: 94.5510864, z: -2223.58594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1839,7 +1839,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100124}
-  m_LocalRotation: {x: .0787109956, y: -.256428957, z: -.000253999984, w: .963352859}
+  m_LocalRotation: {x: 0, y: -.789667785, z: 0, w: .613534689}
   m_LocalPosition: {x: -1657.72925, y: 48.7789307, z: -1420.9574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2028,6 +2028,10 @@ MonoBehaviour:
   next: {fileID: 11400100}
   previous: {fileID: 11400102}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2045,6 +2049,10 @@ MonoBehaviour:
   next: {fileID: 11400130}
   previous: {fileID: 11400038}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4173.04199, y: 7.22338867, z: -3699.78491}
@@ -2062,6 +2070,10 @@ MonoBehaviour:
   next: {fileID: 11400078}
   previous: {fileID: 11400098}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 1302.15601, y: 7.39678955, z: -399.151123}
@@ -2079,6 +2091,10 @@ MonoBehaviour:
   next: {fileID: 11400010}
   previous: {fileID: 11400088}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12382.6289, y: 8.18292236, z: 1950.66724}
@@ -2096,6 +2112,10 @@ MonoBehaviour:
   next: {fileID: 11400108}
   previous: {fileID: 11400106}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -13767.4482, y: 8.18292236, z: 273.499115}
@@ -2113,6 +2133,10 @@ MonoBehaviour:
   next: {fileID: 11400106}
   previous: {fileID: 11400006}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -13372.0762, y: 8.18292236, z: 1950.66724}
@@ -2130,6 +2154,10 @@ MonoBehaviour:
   next: {fileID: 11400102}
   previous: {fileID: 11400060}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2147,6 +2175,10 @@ MonoBehaviour:
   next: {fileID: 11400118}
   previous: {fileID: 11400034}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -8513.58887, y: 39.9761963, z: -7468.38623}
@@ -2164,6 +2196,10 @@ MonoBehaviour:
   next: {fileID: 11400116}
   previous: {fileID: 11400018}
   branch: {fileID: 11400114}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -2800.23413, y: 97.8503418, z: -2039.08777}
@@ -2181,6 +2217,10 @@ MonoBehaviour:
   next: {fileID: 11400016}
   previous: {fileID: 11400124}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -1947.88171, y: 102.037842, z: -1509.37134}
@@ -2198,6 +2238,10 @@ MonoBehaviour:
   next: {fileID: 11400136}
   previous: {fileID: 11400024}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 2939.09302, y: 11.4744873, z: -5950.27979}
@@ -2215,6 +2259,10 @@ MonoBehaviour:
   next: {fileID: 11400132}
   previous: {fileID: 11400036}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -7930.49609, y: 94.5510864, z: -559.787292}
@@ -2232,6 +2280,10 @@ MonoBehaviour:
   next: {fileID: 11400020}
   previous: {fileID: 11400112}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 2939.09302, y: 11.4744873, z: -6370.23633}
@@ -2249,6 +2301,10 @@ MonoBehaviour:
   next: {fileID: 11400054}
   previous: {fileID: 11400100}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2266,6 +2322,10 @@ MonoBehaviour:
   next: {fileID: 11400088}
   previous: {fileID: 11400076}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12492.3018, y: 8.18292236, z: -439.15686}
@@ -2283,6 +2343,10 @@ MonoBehaviour:
   next: {fileID: 11400060}
   previous: {fileID: 11400114}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2300,6 +2364,10 @@ MonoBehaviour:
   next: {fileID: 11400076}
   previous: {fileID: 11400140}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -10044.0557, y: 94.5510864, z: -1291.76367}
@@ -2317,6 +2385,10 @@ MonoBehaviour:
   next: {fileID: 11400014}
   previous: {fileID: 11400128}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -9915.73438, y: 39.9761963, z: -7184.6543}
@@ -2334,6 +2406,10 @@ MonoBehaviour:
   next: {fileID: 11400022}
   previous: {fileID: 11400056}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -7499.66406, y: 94.5510864, z: -311.129517}
@@ -2351,6 +2427,10 @@ MonoBehaviour:
   next: {fileID: 11400002}
   previous: {fileID: 11400138}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4719.03369, y: 6.7164917, z: -3820.17358}
@@ -2368,6 +2448,10 @@ MonoBehaviour:
   next: {fileID: 11400134}
   previous: {fileID: 11400136}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 3457.65894, y: 11.4744873, z: -5110.96924}
@@ -2385,6 +2469,10 @@ MonoBehaviour:
   next: {fileID: 11400046}
   previous: {fileID: 11400070}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -2715.06738, y: 60.4556885, z: -8732.45215}
@@ -2402,6 +2490,10 @@ MonoBehaviour:
   next: {fileID: 11400056}
   previous: {fileID: 11400080}
   branch: {fileID: 11400026}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5846.71973, y: 94.5510864, z: -1653.11072}
@@ -2419,6 +2511,10 @@ MonoBehaviour:
   next: {fileID: 11400072}
   previous: {fileID: 11400042}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -1974.06799, y: 83.5404053, z: -8877.36621}
@@ -2436,6 +2532,10 @@ MonoBehaviour:
   next: {fileID: 11400082}
   previous: {fileID: 11400116}
   branch: {fileID: 11400060}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3733.66821, y: 94.5510864, z: -3084.37354}
@@ -2453,6 +2553,10 @@ MonoBehaviour:
   next: {fileID: 11400112}
   previous: {fileID: 11400122}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 515.466797, y: 16.4572754, z: -7561.30078}
@@ -2470,6 +2574,10 @@ MonoBehaviour:
   next: {fileID: 11400092}
   previous: {fileID: 11400096}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5313.08496, y: 39.9761963, z: -5790.72461}
@@ -2487,6 +2595,10 @@ MonoBehaviour:
   next: {fileID: 11400036}
   previous: {fileID: 11400026}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2504,6 +2616,10 @@ MonoBehaviour:
   next: {fileID: 11400036}
   previous: {fileID: 11400044}
   branch: {fileID: 11400054}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -6114.33691, y: 94.5510864, z: -797.407227}
@@ -2521,6 +2637,10 @@ MonoBehaviour:
   next: {fileID: 11400126}
   previous: {fileID: 11400064}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -11921.9375, y: 8.18292236, z: -4468.40869}
@@ -2538,6 +2658,10 @@ MonoBehaviour:
   next: {fileID: 11400012}
   previous: {fileID: 11400030}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2555,6 +2679,10 @@ MonoBehaviour:
   next: {fileID: 11400120}
   previous: {fileID: 11400130}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3164.50317, y: 7.22338867, z: -5060.72266}
@@ -2572,6 +2700,10 @@ MonoBehaviour:
   next: {fileID: 11400058}
   previous: {fileID: 11400094}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12020.4814, y: 8.18292236, z: -4368.54346}
@@ -2589,6 +2721,10 @@ MonoBehaviour:
   next: {fileID: 11400090}
   previous: {fileID: 11400120}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -2871.64038, y: 7.22338867, z: -6097.26953}
@@ -2606,6 +2742,10 @@ MonoBehaviour:
   next: {fileID: 11400080}
   previous: {fileID: 11400110}
   branch: {fileID: 11400000}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4424.63281, y: 94.5510864, z: -2193.95142}
@@ -2623,6 +2763,10 @@ MonoBehaviour:
   next: {fileID: 11400042}
   previous: {fileID: 11400090}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3042.68726, y: 7.22338867, z: -8396.9248}
@@ -2640,6 +2784,10 @@ MonoBehaviour:
   next: {fileID: 11400122}
   previous: {fileID: 11400046}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -531.490417, y: 83.5404053, z: -8839.78223}
@@ -2657,6 +2805,10 @@ MonoBehaviour:
   next: {fileID: 11400138}
   previous: {fileID: 11400092}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5138.46191, y: 39.9761963, z: -5197.08545}
@@ -2674,6 +2826,10 @@ MonoBehaviour:
   next: {fileID: 11400028}
   previous: {fileID: 11400032}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -11950.7686, y: 8.18292236, z: -1010.24902}
@@ -2688,9 +2844,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f702d063b97d2e2469ba817f9e7e3c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next: {fileID: 0}
+  next: {fileID: 11400124}
   previous: {fileID: 11400004}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 1
   start: 0
   pos: {x: -463.667236, y: 7.39678955, z: -48.4701843}
@@ -2708,6 +2868,10 @@ MonoBehaviour:
   next: {fileID: 11400044}
   previous: {fileID: 11400068}
   branch: {fileID: 11400100}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5361.19434, y: 94.5510864, z: -1794.98633}
@@ -2725,6 +2889,10 @@ MonoBehaviour:
   next: {fileID: 11400110}
   previous: {fileID: 11400048}
   branch: {fileID: 11400012}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4101.06445, y: 94.5510864, z: -3075.97778}
@@ -2742,6 +2910,10 @@ MonoBehaviour:
   next: {fileID: 11400124}
   previous: {fileID: 0}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 1
   pos: {x: -47.3803711, y: 4, z: -59.007782}
@@ -2759,6 +2931,10 @@ MonoBehaviour:
   next: {fileID: 11400128}
   previous: {fileID: 11400126}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -10769.1924, y: 8.18292236, z: -6462.82715}
@@ -2776,6 +2952,10 @@ MonoBehaviour:
   next: {fileID: 11400006}
   previous: {fileID: 11400028}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12598.2129, y: 8.18292236, z: 1585.46143}
@@ -2793,6 +2973,10 @@ MonoBehaviour:
   next: {fileID: 11400070}
   previous: {fileID: 11400066}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3042.68726, y: 7.22338867, z: -6347.76074}
@@ -2810,6 +2994,10 @@ MonoBehaviour:
   next: {fileID: 11400074}
   previous: {fileID: 11400052}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5495.21875, y: 39.9761963, z: -5373.75244}
@@ -2827,6 +3015,10 @@ MonoBehaviour:
   next: {fileID: 11400064}
   previous: {fileID: 11400104}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12768.4922, y: 8.18292236, z: -3371.45996}
@@ -2844,6 +3036,10 @@ MonoBehaviour:
   next: {fileID: 11400052}
   previous: {fileID: 11400118}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -5431.19629, y: 39.9761963, z: -6892.93018}
@@ -2861,6 +3057,10 @@ MonoBehaviour:
   next: {fileID: 11400004}
   previous: {fileID: 11400134}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 2336.29248, y: 7.39678955, z: -1142.58813}
@@ -2878,6 +3078,10 @@ MonoBehaviour:
   next: {fileID: 11400026}
   previous: {fileID: 11400000}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2895,6 +3099,10 @@ MonoBehaviour:
   next: {fileID: 11400000}
   previous: {fileID: 11400012}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -2912,6 +3120,10 @@ MonoBehaviour:
   next: {fileID: 11400094}
   previous: {fileID: 11400108}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -12830.6953, y: 8.18292236, z: -2958.76733}
@@ -2929,6 +3141,10 @@ MonoBehaviour:
   next: {fileID: 11400008}
   previous: {fileID: 11400010}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -14180.4775, y: 8.18292236, z: 496.364349}
@@ -2946,6 +3162,10 @@ MonoBehaviour:
   next: {fileID: 11400104}
   previous: {fileID: 11400008}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -13678.8994, y: 8.18292236, z: -1143.0061}
@@ -2963,6 +3183,10 @@ MonoBehaviour:
   next: {fileID: 11400068}
   previous: {fileID: 11400082}
   branch: {fileID: 11400102}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4362.08008, y: 94.5510864, z: -2691.66504}
@@ -2980,6 +3204,10 @@ MonoBehaviour:
   next: {fileID: 11400024}
   previous: {fileID: 11400050}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 2259.93555, y: 11.4744873, z: -6507.86279}
@@ -2995,8 +3223,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next: {fileID: 11400030}
-  previous: {fileID: 0}
+  previous: {fileID: 11400018}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 0, y: 0, z: 0}
@@ -3014,6 +3246,10 @@ MonoBehaviour:
   next: {fileID: 11400048}
   previous: {fileID: 11400016}
   branch: {fileID: 11400030}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3397.24512, y: 94.5510864, z: -2223.58594}
@@ -3031,6 +3267,10 @@ MonoBehaviour:
   next: {fileID: 11400096}
   previous: {fileID: 11400014}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -6173.27832, y: 39.9761963, z: -7208.83008}
@@ -3048,6 +3288,10 @@ MonoBehaviour:
   next: {fileID: 11400066}
   previous: {fileID: 11400062}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -2960.28369, y: 7.22338867, z: -5378.61035}
@@ -3065,6 +3309,10 @@ MonoBehaviour:
   next: {fileID: 11400050}
   previous: {fileID: 11400072}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -260.744781, y: 16.4572754, z: -8419.57227}
@@ -3082,6 +3330,10 @@ MonoBehaviour:
   next: {fileID: 11400018}
   previous: {fileID: 11400084}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -1657.72925, y: 48.7789307, z: -1420.9574}
@@ -3099,6 +3351,10 @@ MonoBehaviour:
   next: {fileID: 11400086}
   previous: {fileID: 11400058}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -11435.0771, y: 8.18292236, z: -6020.55859}
@@ -3116,6 +3372,10 @@ MonoBehaviour:
   next: {fileID: 11400034}
   previous: {fileID: 11400086}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -10106.2568, y: 39.9761963, z: -6714.39941}
@@ -3133,6 +3393,10 @@ MonoBehaviour:
   next: {fileID: 11400062}
   previous: {fileID: 11400002}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -3482.97729, y: 7.22338867, z: -4255.45947}
@@ -3150,6 +3414,10 @@ MonoBehaviour:
   next: {fileID: 11400140}
   previous: {fileID: 11400022}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -8106.75098, y: 94.5510864, z: -254.400848}
@@ -3167,6 +3435,10 @@ MonoBehaviour:
   next: {fileID: 11400098}
   previous: {fileID: 11400040}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 3492.71265, y: 7.39678955, z: -4030.32373}
@@ -3184,6 +3456,10 @@ MonoBehaviour:
   next: {fileID: 11400040}
   previous: {fileID: 11400020}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: 3248.87549, y: 11.4744873, z: -5915.39062}
@@ -3201,6 +3477,10 @@ MonoBehaviour:
   next: {fileID: 11400038}
   previous: {fileID: 11400074}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -4229.21094, y: 39.9761963, z: -5031.60107}
@@ -3218,6 +3498,10 @@ MonoBehaviour:
   next: {fileID: 11400032}
   previous: {fileID: 11400132}
   branch: {fileID: 0}
+  xMin: -100
+  xMax: 100
+  zMin: -100
+  zMax: 100
   checkpoint: 0
   start: 0
   pos: {x: -9091.80176, y: 94.5510864, z: -1439.44226}

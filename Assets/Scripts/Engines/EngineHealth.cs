@@ -30,12 +30,12 @@ public class EngineHealth : MonoBehaviour {
 		Vector3 normal = col.contacts[0].normal;
 		float speed = Vector3.Project(velocity,normal).magnitude;
 		float damage = speed/20f;
-		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
+//		Debug.Log ("HIT speed: "+speed+", damage: "+damage);
 		Hurt(damage*damage*5f);
 	}
 
 	void FixedUpdate(){
-		DebugHUD.setValue(transform.parent.name+"/"+name+" invTime",inv);
+//		DebugHUD.setValue(transform.parent.name+"/"+name+" invTime",inv);
 		if(inv>0.0f){
 			inv-=Time.fixedDeltaTime;
 			if(inv<0f)inv=0f;
@@ -51,7 +51,7 @@ public class EngineHealth : MonoBehaviour {
 			e.EngineThruster.enabled = false;
 			dead = true;
 			if(e.OtherEngine.EngineHealth.Dead){
-				transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(transform.parent.FindChild("Pod").GetComponent<NodeRespawn>().currentNode.previous.transform);
+//				transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(transform.parent.FindChild("Pod").GetComponent<NodeRespawn>().currentNode.previous.transform);
 			}
 
 		}

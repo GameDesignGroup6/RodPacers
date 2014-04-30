@@ -41,6 +41,10 @@ public class AIInputManager : InputManager {
 	public override float getThrottle(){
 		if (backL)// || backR)
 			return -.3f;
+		if (!backL && sim.slow) {
+			sim.slow = false;
+			return .6f;
+		}
 		else
 			return .8f;
 	}

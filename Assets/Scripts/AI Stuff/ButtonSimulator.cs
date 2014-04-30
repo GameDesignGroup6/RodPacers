@@ -10,6 +10,7 @@ public class ButtonSimulator : MonoBehaviour {
 	RigidbodyInfo velocityL;
 	RigidbodyInfo velocityR;
 	NodeRespawn nodeStuffs;
+	public bool slow = false;
 	public float currentPress;
 	Vector3 v;
 	double x;
@@ -54,10 +55,12 @@ public class ButtonSimulator : MonoBehaviour {
 		Debug.DrawLine(v, currentNode.pos, Color.yellow);
 		Debug.DrawRay(v, transform.forward, Color.cyan);
 		currentPress = Vector3.Angle(podToNode, transform.forward) / 180;
-		if (currentPress < 0.2)
+		if (currentPress < 0.15)
 			currentPress = 0;
-		if (currentPress > 0.8)
+		if (currentPress > 0.8) {
 			currentPress = 1;
+			slow = true;
+		}
 	}
 
 	void UpdateNode() {

@@ -4,6 +4,7 @@ using System.Collections;
 public class SpawnManager : MonoBehaviour {
 	private Engine left,right;
 	private Transform lastCheckpoint;
+	public bool isAI = false;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,10 @@ public class SpawnManager : MonoBehaviour {
 		lastCheckpoint = c;
 	}
 	public void respawnAtLastCheckpoint(){
+		if(isAI){
+			RespawnAtTransform(GetComponentInChildren<NodeRespawn>().currentNode.previous.transform);
+			return;
+		}
 		if(lastCheckpoint!=null){
 			RespawnAtTransform(lastCheckpoint);
 		}
@@ -49,7 +54,6 @@ public class SpawnManager : MonoBehaviour {
 		Vector3 direction = trans.right.normalized;
 		right.EngineTransform.position = pos+direction*(targetDist/2f);
 		left.EngineTransform.position = pos-direction*(targetDist/2f);
-		Debug.Log("Should have respawned!");
 
 //		transform.Find ("Pod").GetComponent<PlayerNode> ().updateWayPointWhenSpawn (trans);
 	}

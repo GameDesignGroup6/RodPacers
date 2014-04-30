@@ -213,6 +213,22 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
+    m_Name: LeftStickHoriz1
+    descriptiveName: Player 1 Pod Select - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: LeftStickHoriz2
     descriptiveName: Player 2 Pod Select
     descriptiveNegativeName: 
@@ -293,6 +309,22 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
+    m_Name: RightStickHoriz1
+    descriptiveName: RightStickHoriz1 - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: q
+    positiveButton: e
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: RightStickHoriz2
     descriptiveName: 
     descriptiveNegativeName: 
@@ -346,7 +378,7 @@ InputManager:
     descriptiveNegativeName: Player 1 Brakes
     negativeButton: joystick 1 button 1
     positiveButton: joystick 1 button 0
-    altNegativeButton: s
+    altNegativeButton: left shift
     altPositiveButton: space
     gravity: 1000
     dead: 0

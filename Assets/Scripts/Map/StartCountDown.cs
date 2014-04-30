@@ -29,7 +29,7 @@ public class StartCountDown : MonoBehaviour {
 			timePassed=0;
 		}
 		if (count==0){
-			gameObject.guiText.text="<color=red>"+ "Start!" + "</color>";
+			gameObject.guiText.text="<color=red>"+ "Go!" + "</color>";
 		}
 		else if(count<0){
 			DoneCounting();

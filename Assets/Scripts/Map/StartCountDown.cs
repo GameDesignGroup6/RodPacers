@@ -6,6 +6,7 @@ public class StartCountDown : MonoBehaviour {
 	public int count;
 	public float deltaTime;
 	public float timePassed;
+
 	// Use this for initialization
 	void Start () {
 		count = 4;//we're counting down from 3, right?
@@ -30,20 +31,10 @@ public class StartCountDown : MonoBehaviour {
 		}
 		if (count==0){
 			gameObject.guiText.text="<color=red>"+ "Go!" + "</color>";
+			Input.ResetInputAxes();
 		}
 		else if(count<0){
 			DoneCounting();
-		}
-		else
-			gameObject.guiText.text="<color=red>"+count + "</color>";
-	}
-
-	//old implementation of count
-	void Count(){
-		count--;
-		if (count<1){
-			gameObject.guiText.text="<color=red>"+ "Start!" + "</color>";
-			Invoke ("DoneCounting",1f);
 		}
 		else
 			gameObject.guiText.text="<color=red>"+count + "</color>";

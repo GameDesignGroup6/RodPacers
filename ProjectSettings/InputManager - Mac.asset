@@ -21,6 +21,22 @@ InputManager:
     axis: 4
     joyNum: 1
   - serializedVersion: 3
+    m_Name: LeftTrigger1
+    descriptiveName: Player 1 Steer Left - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: a
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 4
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: LeftTrigger2
     descriptiveName: Player 2 Steer Left
     descriptiveNegativeName: 
@@ -82,6 +98,22 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
+    axis: 5
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: RightTrigger1
+    descriptiveName: Player 1 Steer Right - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
     axis: 5
     joyNum: 1
   - serializedVersion: 3
@@ -149,6 +181,22 @@ InputManager:
     axis: 1
     joyNum: 1
   - serializedVersion: 3
+    m_Name: LeftStickVert1
+    descriptiveName: Menu Item Selection (Player 1 only) - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: s
+    positiveButton: w
+    altNegativeButton: down
+    altPositiveButton: up
+    gravity: 1000
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 1
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: LeftStickHoriz1
     descriptiveName: Player 1 Pod Select
     descriptiveNegativeName: 
@@ -162,6 +210,22 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: LeftStickHoriz1
+    descriptiveName: Player 1 Pod Select - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
     axis: 0
     joyNum: 1
   - serializedVersion: 3
@@ -245,6 +309,22 @@ InputManager:
     axis: 2
     joyNum: 1
   - serializedVersion: 3
+    m_Name: RightStickHoriz1
+    descriptiveName: RightStickHoriz1 - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: q
+    positiveButton: e
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 2
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: RightStickHoriz2
     descriptiveName: 
     descriptiveNegativeName: 
@@ -298,7 +378,7 @@ InputManager:
     descriptiveNegativeName: Player 1 Brakes
     negativeButton: joystick 1 button 17
     positiveButton: joystick 1 button 16
-    altNegativeButton: 
+    altNegativeButton: left shift
     altPositiveButton: space
     gravity: 1000
     dead: 0
@@ -363,6 +443,38 @@ InputManager:
     negativeButton: 
     positiveButton: joystick 1 button 9
     altNegativeButton: 
+    altPositiveButton: escape
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: Respawn1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 18
+    altNegativeButton: 
+    altPositiveButton: joystick 1 button 19
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: Respawn1
+    descriptiveName: Respawn1 - keyboard alt
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: q
+    altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
     dead: 0
@@ -372,3 +484,51 @@ InputManager:
     type: 0
     axis: 3
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: Respawn2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 2 button 18
+    altNegativeButton: 
+    altPositiveButton: joystick 2 button 19
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: Respawn3
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 3 button 18
+    altNegativeButton: 
+    altPositiveButton: joystick 3 button 19
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: Respawn4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 4 button 18
+    altNegativeButton: 
+    altPositiveButton: joystick 4 button 19
+    gravity: 1000
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 3
+    joyNum: 4

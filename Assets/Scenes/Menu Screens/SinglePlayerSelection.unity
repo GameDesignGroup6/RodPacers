@@ -74,6 +74,56 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &99917151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 99917153}
+  - 132: {fileID: 99917152}
+  m_Layer: 0
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &99917152
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99917151}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: LS to choose, RS to rotate
+  m_Anchor: 7
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 40
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &99917153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99917151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .0599999987, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &101056593
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +348,56 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294913250
   m_UseWorldSpace: 1
+--- !u!1 &428807849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 428807851}
+  - 132: {fileID: 428807850}
+  m_Layer: 0
+  m_Name: Pod
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &428807850
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428807849}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Custom Radon-Ulzer 620C
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 40
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &428807851
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428807849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &518840771
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!54 &518840774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -397,6 +498,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &518840778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +788,56 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &610020672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 610020674}
+  - 132: {fileID: 610020673}
+  m_Layer: 0
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &610020673
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610020672}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: A/D or arrow keys to choose, Q/E to rotate
+  m_Anchor: 7
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 40
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &610020674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610020672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &616091237
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +1095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &1062150415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,6 +1112,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &1062150416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2486,7 +2640,7 @@ Camera:
   field of view: 24
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2613,7 +2767,7 @@ MonoBehaviour:
   basePod: {fileID: 1733256505}
   baseLeft: {fileID: 1062150411}
   baseRight: {fileID: 518840772}
-  ChangeOnStart: 0
+  ChangeOnStart: 1
   initialSkinIndex: 1
   playerNumber: -1
 --- !u!114 &1518085402
@@ -2627,6 +2781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bcbeb95c404488b2aeaf2c3992edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  podDescription: {fileID: 428807850}
   playerNumber: 1
   maxPodNumber: 4
   minPodNumber: 1

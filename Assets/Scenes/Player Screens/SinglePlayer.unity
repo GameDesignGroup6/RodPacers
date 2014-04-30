@@ -1058,6 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1097,6 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1113,6 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1129,6 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -1902,6 +1906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAI: 0
 --- !u!114 &524838662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3779,6 +3784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAI: 1
 --- !u!114 &900000214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4883,6 +4889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+  slow: 0
   currentPress: 0
   backwards: 0
   leftEngine: {fileID: 912205909}
@@ -4927,6 +4934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceFromStart: 0
   playerNumber: 2
+  lap: 0
   rank: 2
   text: {fileID: 0}
 --- !u!1 &1167735443
@@ -5175,6 +5183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+  slow: 0
   currentPress: 0
   backwards: 0
   leftEngine: {fileID: 1635442865}
@@ -5353,6 +5362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceFromStart: 0
   playerNumber: 4
+  lap: 0
   rank: 4
   text: {fileID: 0}
 --- !u!1 &1203379533
@@ -5787,6 +5797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAI: 1
 --- !u!114 &1396121277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6786,6 +6797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: da2260c4dbac0334b9579fba2a3e9aeb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -6825,6 +6837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 91718ad90d306ec45b011d57529d88e8, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -6841,6 +6854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 8dc585906f4faa249ae06868fbb078dd, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -6857,6 +6871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36a1743ffa44d94aa0f6ef1ec1c1b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraToRenderTo: {fileID: 0}
   texture: {fileID: 2800000, guid: 44acca8bfde8b1c478187d06bd7e86eb, type: 3}
   angle: 0
   size: {x: 128, y: 128}
@@ -7197,6 +7212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc8796e0f8c5f64bb5145ba5c5dc600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAI: 1
 --- !u!114 &1765756005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7467,6 +7483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeTransform: {fileID: 0}
   currentNode: {fileID: 0}
+  slow: 0
   currentPress: 0
   backwards: 0
   leftEngine: {fileID: 801580635}
@@ -7645,6 +7662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceFromStart: 0
   playerNumber: 3
+  lap: 0
   rank: 3
   text: {fileID: 0}
 --- !u!1 &1877146537
@@ -8265,6 +8283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceFromStart: 0
   playerNumber: 1
+  lap: 0
   rank: 1
   text: {fileID: 761485173}
 --- !u!54 &1943316336

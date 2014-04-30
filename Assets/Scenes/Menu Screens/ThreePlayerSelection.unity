@@ -100,6 +100,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 404506889}
+--- !u!1 &59741905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 59741907}
+  - 132: {fileID: 59741906}
+  m_Layer: 0
+  m_Name: Pod3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &59741906
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59741905}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Custom Radon-Ulzer 620C
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &59741907
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59741905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .129999995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &101056593
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +290,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1459530367}
+--- !u!1 &165481394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 165481396}
+  - 132: {fileID: 165481395}
+  m_Layer: 0
+  m_Name: Pod2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &165481395
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165481394}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Custom Radon-Ulzer 620C
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &165481396
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165481394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .75, y: .519999981, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &232976439
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +378,7 @@ GameObject:
   - 114: {fileID: 242443402}
   - 114: {fileID: 242443401}
   m_Layer: 0
-  m_Name: Base_Racer
+  m_Name: Base_Racer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bcbeb95c404488b2aeaf2c3992edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  podDescription: {fileID: 59741906}
   playerNumber: 3
   maxPodNumber: 4
   minPodNumber: 1
@@ -870,6 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &404506892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,6 +988,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &404506893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!54 &518840774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1070,6 +1174,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &518840778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1702,56 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294913250
   m_UseWorldSpace: 1
+--- !u!1 &670664209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 670664211}
+  - 132: {fileID: 670664210}
+  m_Layer: 0
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &670664210
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670664209}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: LS to choose, RS to rotate
+  m_Anchor: 7
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 27
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &670664211
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 670664209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &696055033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,6 +1947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &778535560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,6 +1976,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &778535562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,6 +2381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &1062150415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2240,6 +2398,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &1062150416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4023,7 +4182,7 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: .200000003
+    x: .100000001
     y: .550000012
     width: .300000012
     height: .300000012
@@ -4032,7 +4191,7 @@ Camera:
   field of view: 24
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4225,6 +4384,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 975420021}
+--- !u!1 &1416114071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1416114073}
+  - 132: {fileID: 1416114072}
+  m_Layer: 0
+  m_Name: Player1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1416114072
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416114071}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Player 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1416114073
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416114071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .25, y: .879999995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1441659794
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,6 +4515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &1459530369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4334,6 +4544,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &1459530371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4483,7 +4694,7 @@ GameObject:
   - 114: {fileID: 1518085400}
   - 114: {fileID: 1518085402}
   m_Layer: 0
-  m_Name: Base_Racer
+  m_Name: Base_Racer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4547,6 +4758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bcbeb95c404488b2aeaf2c3992edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  podDescription: {fileID: 1659802022}
   playerNumber: 1
   maxPodNumber: 4
   minPodNumber: 1
@@ -4738,68 +4950,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2052187935}
---- !u!1 &1569707415
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1569707417}
-  - 108: {fileID: 1569707416}
-  m_Layer: 0
-  m_Name: Directional light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1569707416
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1569707415}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
---- !u!4 &1569707417
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1569707415}
-  m_LocalRotation: {x: .844561279, y: 0, z: 0, w: .535459042}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1580787904
 GameObject:
   m_ObjectHideFlags: 0
@@ -4826,6 +4976,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 778535558}
+--- !u!1 &1597589392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1597589394}
+  - 132: {fileID: 1597589393}
+  m_Layer: 0
+  m_Name: Player3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1597589393
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597589392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Player 3
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1597589394
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597589392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1604038323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,7 +5071,7 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: .550000012
+    x: .600000024
     y: .550000012
     width: .300000012
     height: .300000012
@@ -4880,7 +5080,7 @@ Camera:
   field of view: 24
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4911,7 +5111,7 @@ GameObject:
   - 114: {fileID: 1627510389}
   - 114: {fileID: 1627510388}
   m_Layer: 0
-  m_Name: Base_Racer
+  m_Name: Base_Racer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4942,6 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bcbeb95c404488b2aeaf2c3992edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  podDescription: {fileID: 165481395}
   playerNumber: 2
   maxPodNumber: 4
   minPodNumber: 1
@@ -4978,6 +5179,56 @@ MonoBehaviour:
   ChangeOnStart: 0
   initialSkinIndex: 1
   playerNumber: -1
+--- !u!1 &1659802021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1659802023}
+  - 132: {fileID: 1659802022}
+  m_Layer: 0
+  m_Name: Pod1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1659802022
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659802021}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Custom Radon-Ulzer 620C
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1659802023
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659802021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .25, y: .519999981, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1672893114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,8 +5739,8 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: .375
-    y: .200000003
+    x: .349999994
+    y: .174999997
     width: .300000012
     height: .300000012
   near clip plane: .300000012
@@ -5497,7 +5748,7 @@ Camera:
   field of view: 24
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5669,6 +5920,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 975420021}
+--- !u!1 &2004770077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2004770079}
+  - 132: {fileID: 2004770078}
+  m_Layer: 0
+  m_Name: Player2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &2004770078
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004770077}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Player 2
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: bccdd9cf75f1e46a18792ebf55750151, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278512639
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &2004770079
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004770077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .75, y: .879999995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &2012927067
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,6 +6025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrustDirection: 0
   thrust: 175
+  maxThrust: 325
 --- !u!114 &2012927070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5752,6 +6054,7 @@ MonoBehaviour:
   forceMiltiplier: 1
   torqueMultiplier: 1
   velocityThreshold: 1
+  boostMultiplier: 20
 --- !u!114 &2012927072
 MonoBehaviour:
   m_ObjectHideFlags: 0

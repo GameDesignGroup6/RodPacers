@@ -6,7 +6,7 @@
  */
 [ExecuteInEditMode()]
 public class RotatableGuiItem : MonoBehaviour {
-	
+	public Camera cameraToRenderTo;
 	public Texture2D texture = null;
 	public float angle = 0;
 	public Vector2 size = new Vector2(128, 128);
@@ -32,6 +32,8 @@ public class RotatableGuiItem : MonoBehaviour {
 //		render();
 	}
 	public void render(){
+//		Debug.Log(Camera.current);
+//		if(cameraToRenderTo!=null && Camera.current!=cameraToRenderTo)return;
 		Matrix4x4 matrixBackup = GUI.matrix;
 		Color restore = GUI.color;
 		GUI.color = color;

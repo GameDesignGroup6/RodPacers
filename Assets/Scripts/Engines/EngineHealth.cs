@@ -51,6 +51,7 @@ public class EngineHealth : MonoBehaviour {
 			e.EngineThruster.enabled = false;
 			dead = true;
 			if(e.OtherEngine.EngineHealth.Dead){
+				transform.parent.GetComponent<SpawnManager>().respawnAtLastCheckpoint();
 //				transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(transform.parent.FindChild("Pod").GetComponent<NodeRespawn>().currentNode.previous.transform);
 			}
 

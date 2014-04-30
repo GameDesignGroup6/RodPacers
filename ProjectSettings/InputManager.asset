@@ -443,7 +443,7 @@ InputManager:
     negativeButton: 
     positiveButton: joystick 1 button 7
     altNegativeButton: 
-    altPositiveButton: 
+    altPositiveButton: escape
     gravity: 1000
     dead: 0
     sensitivity: 1000

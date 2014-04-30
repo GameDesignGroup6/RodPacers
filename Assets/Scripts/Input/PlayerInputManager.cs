@@ -24,6 +24,6 @@ public class PlayerInputManager : InputManager {
 	}
 	void Update(){
 		if(Input.GetButtonDown("Respawn"+playerNumber))
-			transform.parent.GetComponent<SpawnManager>().RespawnAtTransform(GetComponent<NodeRespawn>().currentNode.previous.transform);
+			transform.parent.GetComponent<SpawnManager>().respawnAtLastCheckpoint();
 	}
 }

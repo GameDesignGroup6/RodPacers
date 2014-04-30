@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SpawnManager : MonoBehaviour {
 	private Engine left,right;
+	private Transform lastCheckpoint;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,14 @@ public class SpawnManager : MonoBehaviour {
 		}else{
 			left = engines[1];
 			right = engines[0];
+		}
+	}
+	public void updateCheckpoint(Transform c){
+		lastCheckpoint = c;
+	}
+	public void respawnAtLastCheckpoint(){
+		if(lastCheckpoint!=null){
+			RespawnAtTransform(lastCheckpoint);
 		}
 	}
 
@@ -42,6 +51,6 @@ public class SpawnManager : MonoBehaviour {
 		left.EngineTransform.position = pos-direction*(targetDist/2f);
 		Debug.Log("Should have respawned!");
 
-		transform.Find ("Pod").GetComponent<PlayerNode> ().updateWayPointWhenSpawn (trans);
+//		transform.Find ("Pod").GetComponent<PlayerNode> ().updateWayPointWhenSpawn (trans);
 	}
 }

@@ -6,6 +6,7 @@ public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
 	public int lap;
 	public int rank;
 	public GUIText text;
+	public GUIText lapText;
 	public Checkpoint curCheckpoint;
 	public float distanceToNextCheckpoint;
 	private SpawnManager manager;
@@ -32,6 +33,7 @@ public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
 	}
 	public void updateText(){
 		if(text!=null)text.text = rank+"";
+		if(lapText!=null)lapText.text = "Lap: " + (lap + 1) + "/" + MapManager.maxLaps;
 	}
 	public int CompareTo(NodeRank orank){
 		if(lap>orank.lap){

@@ -2,19 +2,32 @@ using UnityEngine;
 using System.Collections;
 
 public class PodPauseMenu : MonoBehaviour {
-	
+
+	// The options to choose from
 	public GUIText[] menuChoices;
+
+	// The maps have two suns, turn off one when it's paused
 	public Light dimmerLight;
+
+	// The current position in the menu
 	private int position = 0;
+
+	// Make it so it only changes every quarter second if you hold down the button
 	private float updateIsTooFast = .25f;
+
+	// If the game is paused
 	private bool paused = false;
+
+	// Reference for when timeScale = 0
 	private float whatWouldBeDeltaTime;
 	
 	void Start () {
 		Screen.showCursor = false;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-		whatWouldBeDeltaTime = Time.deltaTime;//this doesnt do anything, you realize
+		whatWouldBeDeltaTime = Time.deltaTime;//this doesnt do anything, you realize // shuddup
 		menuChoices[0].color = Color.white;
+
+		// Don't see the pause menu at the beginning
 		for (int i = 0; i < menuChoices.Length; i++) {
 			menuChoices[i].enabled = false;
 		}
@@ -66,6 +79,9 @@ public class PodPauseMenu : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * Stops time and makes the pause menu appear
+	 */
 	public void pause() {
 		Time.timeScale = 0;
 		Input.ResetInputAxes();
@@ -77,6 +93,9 @@ public class PodPauseMenu : MonoBehaviour {
 		paused = true;
 	}
 
+	/**
+	 * Restarts time and makes the pause menu disappear
+	 */
 	public void unpause() {
 		dimmerLight.enabled = true;
 		AudioListener.pause = false;

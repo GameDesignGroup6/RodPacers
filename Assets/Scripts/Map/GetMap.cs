@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// well, it really gets the player scene now
 public class GetMap : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Make sure no AI has the same pod as someone else
 		int[] forbiddenSkins = new int[PlayerManager.podSkins.Length];
 		for(int i = 0; i<PlayerManager.playerCount;i++){
 			forbiddenSkins[i] = PlayerManager.podSkins[i];
@@ -27,7 +28,7 @@ public class GetMap : MonoBehaviour {
 
 
 
-		//if(PlayerManager.playerCount==0)
+		// load the number of players
 		switch(PlayerManager.playerCount){
 		case 1: Application.LoadLevelAdditive("SinglePlayer");break;
 		case 2: Application.LoadLevelAdditive("TwoPlayer");break;

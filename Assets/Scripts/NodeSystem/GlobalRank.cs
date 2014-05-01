@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class GlobalRank : MonoBehaviour {
-	public int lapsToWin = 1;
 	private NodeRank[] players;
 	private NodeRank[] rankings;
 	public static NodeRank[] finalRanks;
@@ -15,7 +14,7 @@ public class GlobalRank : MonoBehaviour {
 	void LateUpdate () {
 		int playersFinished = 0;
 		for(int i = 0; i<players.Length;i++){
-			if(players[i].playerNumber<=PlayerManager.playerCount&&players[i].lap>=lapsToWin){
+			if(players[i].playerNumber<=PlayerManager.playerCount&&players[i].lap>=MapManager.maxLaps){
 				if(players[i].finishTime<0f){
 					players[i].GetComponent<TestEngineController>().acceptUserInput = false;
 					players[i].finishTime = Time.timeSinceLevelLoad;

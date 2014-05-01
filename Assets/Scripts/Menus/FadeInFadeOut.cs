@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Used for the two title screens to load the next scene
 public class FadeInFadeOut : MonoBehaviour {
 
 	public string nextLevel;

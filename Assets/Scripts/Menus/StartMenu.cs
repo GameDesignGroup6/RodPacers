@@ -3,9 +3,16 @@ using System.Collections;
 
 public class StartMenu : MonoBehaviour {
 
+	// The options to choose from
 	public GUIText[] menuChoices;
+
+	// Where each option leads
 	public string[] nextScenes;
+
+	// The current position in the menu
 	private int position = 0;
+
+	// Make it so it only changes every quarter second if you hold down the button
 	private float updateIsTooFast = .25f;
 
 	void Start () {
@@ -45,6 +52,8 @@ public class StartMenu : MonoBehaviour {
 				Application.LoadLevel (nextScenes[position]);
 			}
 		}
+
+		// B makes it go back but not quit
 		if (Input.GetAxis ("Throttle1") < 0) {
 			if (nextScenes[nextScenes.Length - 1] != "Quit") {
 				Application.LoadLevel (nextScenes[nextScenes.Length - 1]);

@@ -1953,7 +1953,7 @@ GameObject:
   - 33: {fileID: 1471000557}
   - 64: {fileID: 1471000556}
   - 23: {fileID: 1471000555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiniMap
   m_TagString: Road
   m_Icon: {fileID: 0}
@@ -2364,7 +2364,7 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
   m_FontSize: 0
   m_FontStyle: 0
@@ -2809,6 +2809,11 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 13200000, guid: 03975c4efbaba4dcea53915b5d60460a, type: 2}
+      propertyPath: m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03975c4efbaba4dcea53915b5d60460a, type: 2}
   m_RootGameObject: {fileID: 1624939079}
@@ -3004,6 +3009,7 @@ MonoBehaviour:
   - {fileID: 1532138418}
   - {fileID: 2141209296}
   - {fileID: 1794225592}
+  dimmerLight: {fileID: 1956171732}
 --- !u!82 &1958118550
 AudioSource:
   m_ObjectHideFlags: 0

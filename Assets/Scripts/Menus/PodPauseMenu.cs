@@ -4,6 +4,7 @@ using System.Collections;
 public class PodPauseMenu : MonoBehaviour {
 	
 	public GUIText[] menuChoices;
+	public Light dimmerLight;
 	private int position = 0;
 	private float updateIsTooFast = .25f;
 	private bool paused = false;
@@ -66,6 +67,7 @@ public class PodPauseMenu : MonoBehaviour {
 	public void pause() {
 		Time.timeScale = 0;
 		Input.ResetInputAxes();
+		dimmerLight.enabled = false;
 		AudioListener.pause = true;
 		for (int i = 0; i < menuChoices.Length; i++) {
 			menuChoices[i].enabled = true;
@@ -74,6 +76,7 @@ public class PodPauseMenu : MonoBehaviour {
 	}
 
 	public void unpause() {
+		dimmerLight.enabled = true;
 		AudioListener.pause = false;
 		for (int i = 0; i < menuChoices.Length; i++) {
 			menuChoices[i].enabled = false;

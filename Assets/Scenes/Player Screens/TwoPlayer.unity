@@ -3691,7 +3691,7 @@ GameObject:
   - 4: {fileID: 868340464}
   - 132: {fileID: 868340463}
   - 114: {fileID: 868340462}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1942,6 +1942,79 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 973601026}
+--- !u!1 &1471000553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: a14ddefdbefe14c1d98973743d45ed90, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1471000554}
+  - 33: {fileID: 1471000557}
+  - 64: {fileID: 1471000556}
+  - 23: {fileID: 1471000555}
+  m_Layer: 0
+  m_Name: MiniMap
+  m_TagString: Road
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1471000554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: a14ddefdbefe14c1d98973743d45ed90, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471000553}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: 976.783203, y: 4.08665228, z: 1021.60748}
+  m_LocalScale: {x: 188.699997, y: 1, z: 184}
+  m_Children: []
+  m_Father: {fileID: 1958118544}
+--- !u!23 &1471000555
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300068, guid: a14ddefdbefe14c1d98973743d45ed90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471000553}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 043b51031f36f469bae51886c76d8c63, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!64 &1471000556
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6400004, guid: a14ddefdbefe14c1d98973743d45ed90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471000553}
+  m_Material: {fileID: 13400000, guid: 53796e05200320f43bdb9570760e2bb3, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1471000557
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300068, guid: a14ddefdbefe14c1d98973743d45ed90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471000553}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1485722353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +2910,7 @@ Transform:
   - {fileID: 954873895}
   - {fileID: 216899030}
   - {fileID: 730098294}
+  - {fileID: 1471000554}
   - {fileID: 2079306806}
   - {fileID: 793754483}
   - {fileID: 809948709}

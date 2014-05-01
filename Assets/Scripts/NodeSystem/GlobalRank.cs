@@ -14,13 +14,13 @@ public class GlobalRank : MonoBehaviour {
 	void LateUpdate () {
 		int playersFinished = 0;
 		for(int i = 0; i<players.Length;i++){
-			if(players[i].playerNumber<=PlayerManager.playerCount&&players[i].lap>=MapManager.maxLaps){
+			if(players[i].lap>=MapManager.maxLaps){
 				if(players[i].finishTime<0f){
 					players[i].GetComponent<TestEngineController>().acceptUserInput = false;
 					players[i].finishTime = Time.timeSinceLevelLoad;
 					players[i].finished = true;
 				}
-				playersFinished++;
+				if(players[i].playerNumber<=PlayerManager.playerCount)playersFinished++;
 			}
 		}
 		if(playersFinished==PlayerManager.playerCount){

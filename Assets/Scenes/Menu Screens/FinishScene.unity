@@ -798,7 +798,7 @@ GUIText:
   m_GameObject: {fileID: 1263691039}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: player
+  m_Text: Player
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -843,7 +843,7 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: 714da3809e2d7430ead466891f00db89, type: 3}
+  m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
   m_FontSize: 35
   m_FontStyle: 0

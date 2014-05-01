@@ -8054,7 +8054,7 @@ MonoBehaviour:
   playerNumber: 1
   lap: 0
   rank: 1
-  text: {fileID: 761485173}
+  text: {fileID: 285207647}
   lapText: {fileID: 761485173}
   curCheckpoint: {fileID: 0}
   distanceToNextCheckpoint: 0

@@ -6,10 +6,21 @@ public class LeaderBoard : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		NodeRank[] players = GlobalRank.finalRanks;
-		for(int i = 0; i<players.Length;i++){
+		NodeRank[] sortedPlayers = new NodeRank[players.Length];
+		for(int i = 0;i<players.Length;i++){
+			for(int p = 0; p<players.Length;p++){
+				if(players[p].rank==i+1){
+					sortedPlayers[i] = players[p];
+					break;
+				}
+			}
+		}
+
+
+		for(int i = 0; i<sortedPlayers.Length;i++){
 			GUIText name = transform.Find((i+1)+"/name").guiText;
 			GUIText time = transform.Find((i+1)+"/time").guiText;
-			NodeRank rank = players[i];
+			NodeRank rank = sortedPlayers[i];
 //			bool ai = !rank.playerNumber<=PlayerManager.playerCount;
 			time.text = timeToString(rank.finishTime);
 			name.text = getPlayerName(rank.playerNumber);

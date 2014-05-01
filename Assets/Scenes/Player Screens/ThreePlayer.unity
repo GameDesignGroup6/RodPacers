@@ -2581,7 +2581,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 600900274}
   - 132: {fileID: 600900273}
-  - 114: {fileID: 600900272}
   m_Layer: 11
   m_Name: ShowRank
   m_TagString: Untagged
@@ -2589,18 +2588,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &600900272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 600900271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPlayer: {fileID: 1145511753}
 --- !u!132 &600900273
 GUIText:
   m_ObjectHideFlags: 0
@@ -5086,7 +5073,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1085781927}
   - 132: {fileID: 1085781926}
-  - 114: {fileID: 1085781925}
   m_Layer: 12
   m_Name: ShowRank
   m_TagString: Untagged
@@ -5094,18 +5080,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1085781925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085781924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPlayer: {fileID: 1846939656}
 --- !u!132 &1085781926
 GUIText:
   m_ObjectHideFlags: 0
@@ -7025,7 +6999,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1466403844}
   - 132: {fileID: 1466403843}
-  - 114: {fileID: 1466403842}
   m_Layer: 10
   m_Name: ShowRank
   m_TagString: Untagged
@@ -7033,18 +7006,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1466403842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1466403841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe896219fbe1b4d93412cf3c38f036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPlayer: {fileID: 1943316325}
 --- !u!132 &1466403843
 GUIText:
   m_ObjectHideFlags: 0
@@ -8660,9 +8621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23049560059c4854896944222e14a02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 2
+  playerNumber: 3
   lap: 0
-  rank: 2
+  rank: 3
   text: {fileID: 1085781926}
   curCheckpoint: {fileID: 0}
   distanceToNextCheckpoint: 0

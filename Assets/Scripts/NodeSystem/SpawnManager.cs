@@ -38,15 +38,20 @@ public class SpawnManager : MonoBehaviour {
 
 	}
 	public void updateCheckpoint(Checkpoint c){
-		if(gateCount==lastCheckpoint.number+1&&c.number==0){
+		if(c==lastCheckpoint)return;
+		if(gateCount==lastCheckpoint.number&&c.number==0&&lastCheckpoint.next.number==0){
 			//finished a lap!
+			Debug.Log ("Lap completion detected!");
 			lapFinished = true;
+			gateCount = 1;//or maybe zero?
+		}else{
+			if(c.number>lastCheckpoint.number){
+				gateCount++;
+			}else if(c.number<lastCheckpoint.number){
+				gateCount--;
+			}
 		}
-		if(c.number>lastCheckpoint.number){
-			gateCount++;
-		}else if(c.number<lastCheckpoint.number){
-			gateCount--;
-		}
+		DebugHUD.setValue(name+" gateCount",gateCount);
 		lastCheckpoint = c;
 		lastCheckpointTrans = c.transform;
 	}

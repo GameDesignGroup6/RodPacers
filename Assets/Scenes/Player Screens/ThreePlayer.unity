@@ -4960,7 +4960,7 @@ GameObject:
   - 4: {fileID: 1038278144}
   - 132: {fileID: 1038278143}
   - 114: {fileID: 1038278142}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}

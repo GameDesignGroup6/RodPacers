@@ -66,10 +66,10 @@ public class SpawnManager : MonoBehaviour {
 	}
 
 	public void RespawnAtTransform(Transform trans){
-		if(left.EngineHealth.Health<=50){
+		if(left.EngineHealth.Health<=350){
 			left.EngineHealth.SendMessage("Start");
 		}
-		if(right.EngineHealth.Health<=50){
+		if(right.EngineHealth.Health<=350){
 			right.EngineHealth.SendMessage("Start");
 		}
 

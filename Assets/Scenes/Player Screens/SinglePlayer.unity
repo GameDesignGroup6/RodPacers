@@ -4441,7 +4441,6 @@ GameObject:
   - 114: {fileID: 1145511757}
   - 82: {fileID: 1145511755}
   - 114: {fileID: 1145511760}
-  - 114: {fileID: 1145511766}
   - 114: {fileID: 1145511768}
   - 114: {fileID: 1145511767}
   - 114: {fileID: 1145511756}
@@ -4709,24 +4708,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145511752}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1145511766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1145511752}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentWayPoint: {fileID: 0}
-  nextWayPoint: {fileID: 0}
-  position: 0
-  currentLap: 0
-  distanceToNextPoint: 0
-  finished: 0
-  finishTime: 
 --- !u!114 &1145511767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4873,7 +4854,6 @@ GameObject:
   - 114: {fileID: 1190952261}
   - 82: {fileID: 1190952258}
   - 114: {fileID: 1190952256}
-  - 114: {fileID: 1190952259}
   - 114: {fileID: 1190952264}
   - 114: {fileID: 1190952260}
   - 114: {fileID: 1190952257}
@@ -5007,24 +4987,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1190952259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1190952253}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentWayPoint: {fileID: 0}
-  nextWayPoint: {fileID: 0}
-  position: 0
-  currentLap: 0
-  distanceToNextPoint: 0
-  finished: 0
-  finishTime: 
 --- !u!114 &1190952260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7160,7 +7122,6 @@ GameObject:
   - 114: {fileID: 1846939663}
   - 82: {fileID: 1846939660}
   - 114: {fileID: 1846939658}
-  - 114: {fileID: 1846939661}
   - 114: {fileID: 1846939666}
   - 114: {fileID: 1846939662}
   - 114: {fileID: 1846939659}
@@ -7294,24 +7255,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1846939661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1846939655}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52bda6baddfee3246bc327c5ccc54894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentWayPoint: {fileID: 0}
-  nextWayPoint: {fileID: 0}
-  position: 0
-  currentLap: 0
-  distanceToNextPoint: 0
-  finished: 0
-  finishTime: 
 --- !u!114 &1846939662
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,19 +28,26 @@ public class TestEngineController : MonoBehaviour {
 		}
 
 
-		if(!acceptUserInput){Input.ResetInputAxes();}
+
 		float leftTrigger = manager.getLeftTrigger();
 		float rightTrigger = manager.getRightTrigger();
+
+		float throttle = manager.getThrottle();
+
+		if(!acceptUserInput){
+			leftTrigger = 0;
+			rightTrigger = 0;
+			throttle = 0;
+		}
 
 		leftEngine.AddForce (leftEngine.transform.forward *turningForce* leftTrigger);
 		rightEngine.AddForce(rightEngine.transform.forward*turningForce*rightTrigger);
 
-		float throttle = manager.getThrottle();
 		//thrust control
 		leftThruster.thrust = leftThruster.DefaultThrust*throttle;
 		rightThruster.thrust = rightThruster.DefaultThrust*throttle;
 
-		leftThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);//remap from 0-1 to 1-1.1
+		leftThruster.thrust*=(rightTrigger*1/turningThrust+1.0f);
 		rightThruster.thrust*=(leftTrigger*1/turningThrust+1.0f);
 
 	}

@@ -14,8 +14,8 @@ public class GlobalRank : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		int playersFinished = 0;
-		for(int i = 0; i<PlayerManager.playerCount;i++){
-			if(players[i].lap>=lapsToWin){
+		for(int i = 0; i<players.Length;i++){
+			if(players[i].playerNumber<=PlayerManager.playerCount&&players[i].lap>=lapsToWin){
 				if(players[i].finishTime<0f){
 					players[i].finishTime = Time.timeSinceLevelLoad;
 					players[i].finished = true;

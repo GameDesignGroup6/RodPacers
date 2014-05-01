@@ -20,6 +20,7 @@ public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
 	void Update () {
 		if(finished)return;
 		if(manager.lapFinished){
+			Debug.Log ("Finished a lap!");
 			lap++;
 			manager.lapFinished = false;
 		}
@@ -27,7 +28,7 @@ public class NodeRank : MonoBehaviour, System.IComparable<NodeRank> {
 		if(curCheckpoint==null)return;
 //		distanceToNextCheckpoint = curCheckpoint.next.collider.ClosestPointOnBounds(transform.position).magnitude;
 		distanceToNextCheckpoint = Vector3.Distance(transform.position,curCheckpoint.next.transform.position);
-		DebugHUD.setValue(transform.parent.name+"/"+name+" distance",distanceToNextCheckpoint);
+
 	}
 	public void updateText(){
 		if(text!=null)text.text = rank+"";

@@ -5,6 +5,7 @@ public class Beginning : MonoBehaviour {
 
 	void Start() {
 		Screen.showCursor = false;
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 
 	// Update is called once per frame

@@ -11,6 +11,8 @@ public class PodPauseMenu : MonoBehaviour {
 	private float whatWouldBeDeltaTime;
 	
 	void Start () {
+		Screen.showCursor = false;
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		whatWouldBeDeltaTime = Time.deltaTime;//this doesnt do anything, you realize
 		menuChoices[0].color = Color.white;
 		for (int i = 0; i < menuChoices.Length; i++) {

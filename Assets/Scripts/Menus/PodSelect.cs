@@ -52,7 +52,7 @@ public class PodSelect : MonoBehaviour {
 			break;
 		case 1: podDescription.text = "Custom Radon-Ulzer 620C";
 			break;
-		case 2: podDescription.text = "Plug-F Mammoth";
+		case 2: podDescription.text = "Plug-F Mammoth Split X";
 			break;
 		case 3: podDescription.text = "KV9T9-B Wasp";
 			break;

@@ -9,6 +9,8 @@ public class StartMenu : MonoBehaviour {
 	private float updateIsTooFast = .25f;
 
 	void Start () {
+		Screen.showCursor = false;
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		menuChoices[0].color = Color.white;
 	}
 

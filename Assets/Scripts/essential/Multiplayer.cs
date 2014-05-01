@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// we didn't have the heart to delete it
 public class Multiplayer : MonoBehaviour {
 
 	public int numPlayers = 1;

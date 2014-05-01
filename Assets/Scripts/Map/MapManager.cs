@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Makes a static variable to tell you how many laps for this map
 public class MapManager : MonoBehaviour {
 
 	public static int maxLaps;
@@ -8,10 +8,5 @@ public class MapManager : MonoBehaviour {
 
 	void Start () {
 		maxLaps = maximumLaps;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

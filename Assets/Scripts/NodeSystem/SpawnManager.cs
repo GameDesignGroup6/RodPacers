@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour {
 			//finished a lap!
 			Debug.Log ("Lap completion detected!");
 			lapFinished = true;
-			gateCount = 1;//or maybe zero?
+			gateCount = 0;
 		}else{
 			if(c.number>lastCheckpoint.number){
 				gateCount++;
@@ -66,10 +66,10 @@ public class SpawnManager : MonoBehaviour {
 	}
 
 	public void RespawnAtTransform(Transform trans){
-		if(left.EngineHealth.Health<=0){
+		if(left.EngineHealth.Health<=50){
 			left.EngineHealth.SendMessage("Start");
 		}
-		if(right.EngineHealth.Health<=0){
+		if(right.EngineHealth.Health<=50){
 			right.EngineHealth.SendMessage("Start");
 		}
 

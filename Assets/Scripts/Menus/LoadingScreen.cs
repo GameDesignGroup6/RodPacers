@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Whenever there is no camera, display Loading...
 public class LoadingScreen : MonoBehaviour {
 	public Texture2D background;
 	public GUIStyle style;

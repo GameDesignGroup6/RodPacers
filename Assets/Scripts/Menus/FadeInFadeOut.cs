@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Used for the two title screens to load the next scene
 public class FadeInFadeOut : MonoBehaviour {
 
 	public string nextLevel;
 
 	// Use this for initialization
 	void Start () {
-	
+		Screen.showCursor = false;
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 	
 	// Update is called once per frame

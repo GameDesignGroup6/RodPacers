@@ -20,9 +20,7 @@ public class GlobalRank : MonoBehaviour {
 					players[i].finishTime = Time.timeSinceLevelLoad;
 					players[i].finished = true;
 				}
-				if (players[i].playerNumber<=PlayerManager.playerCount) {
-					playersFinished++;
-				}
+				if(players[i].playerNumber<=PlayerManager.playerCount)playersFinished++;
 			}
 		}
 		if(playersFinished==PlayerManager.playerCount){

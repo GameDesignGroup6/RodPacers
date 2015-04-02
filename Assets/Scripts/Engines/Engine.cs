@@ -58,7 +58,7 @@ public class Engine : MonoBehaviour {
 		hoverScript = GetComponent<HoverScript>();
 		wobbleGenerator = GetComponent<WobbleGenerator>();
 		trans = transform;
-		rgb = rigidbody;
+		rgb = GetComponent<Rigidbody>();
 	}
 	public enum EngineSide{
 		LEFT,RIGHT

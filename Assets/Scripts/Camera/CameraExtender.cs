@@ -10,13 +10,13 @@ public class CameraExtender : MonoBehaviour {
 		OnValidate();
 	}
 	void OnValidate(){
-		Matrix4x4 mat = camera.projectionMatrix;
+		Matrix4x4 mat = GetComponent<Camera>().projectionMatrix;
 		mat[0,2] = horizontal;
 		mat[1,2] = vertical;
-		camera.projectionMatrix = mat;
+		GetComponent<Camera>().projectionMatrix = mat;
 	}
 	void OnDisable(){
-		camera.ResetProjectionMatrix();
+		GetComponent<Camera>().ResetProjectionMatrix();
 	}
 	void OnEnable(){
 		OnValidate();

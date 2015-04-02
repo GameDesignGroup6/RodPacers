@@ -10,8 +10,8 @@ public class StartCountDown : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		count = 4;//we're counting down from 3, right?
-		gameObject.guiText.fontSize= 200;
-		gameObject.guiText.text="<color=red>"+count + "</color>";
+		gameObject.GetComponent<GUIText>().fontSize= 200;
+		gameObject.GetComponent<GUIText>().text="<color=red>"+count + "</color>";
 		deltaTime = Time.realtimeSinceStartup;
 		Time.timeScale=0;//freeze pods
 	}
@@ -30,14 +30,14 @@ public class StartCountDown : MonoBehaviour {
 			timePassed=0;
 		}
 		if (count==0){
-			gameObject.guiText.text="<color=red>"+ "Go!" + "</color>";
+			gameObject.GetComponent<GUIText>().text="<color=red>"+ "Go!" + "</color>";
 			Input.ResetInputAxes();
 		}
 		else if(count<0){
 			DoneCounting();
 		}
 		else
-			gameObject.guiText.text="<color=red>"+count + "</color>";
+			gameObject.GetComponent<GUIText>().text="<color=red>"+count + "</color>";
 	}
 
 	void DoneCounting(){

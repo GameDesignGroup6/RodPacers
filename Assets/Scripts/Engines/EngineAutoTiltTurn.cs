@@ -16,7 +16,7 @@ public class EngineAutoTiltTurn : MonoBehaviour {
 	void Start () {
 		leftTransform = leftEngine.transform;
 		rightTransform = rightEngine.transform;
-		podRigidbody = rigidbody;
+		podRigidbody = GetComponent<Rigidbody>();
 	}
 	void FixedUpdate () {
 		float heightDelta = rightTransform.position.y-leftTransform.position.y;

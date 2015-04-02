@@ -10,7 +10,7 @@ public class Multiplayer : MonoBehaviour {
 
 	void Start () {
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-		Screen.showCursor = false;
+		Cursor.visible = false;
 //		Application.LoadLevelAdditive ("SinglePlayer");
 //		miniMap.enabled = false;
 //		for (int i = numPlayers; i < cameras.Length; i++) {

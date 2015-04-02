@@ -7,7 +7,7 @@ public class FadeInFadeOut : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = false;
+		Cursor.visible = false;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 	

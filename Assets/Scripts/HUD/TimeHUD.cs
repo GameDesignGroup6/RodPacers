@@ -6,9 +6,9 @@ public class TimeHUD : MonoBehaviour {
 	// Position the text
 	void Start () {
 		transform.position = Vector3.up;
-		guiText.alignment = TextAlignment.Left;
-		guiText.anchor = TextAnchor.UpperLeft;
-		guiText.richText = true;
+		GetComponent<GUIText>().alignment = TextAlignment.Left;
+		GetComponent<GUIText>().anchor = TextAnchor.UpperLeft;
+		GetComponent<GUIText>().richText = true;
 	
 	}
 	
@@ -16,11 +16,11 @@ public class TimeHUD : MonoBehaviour {
 	void Update () {
 		// Steven wants it to be able to disappear
 		if(Input.GetKey(KeyCode.LeftShift)&&Input.GetKeyDown(KeyCode.H)){
-			guiText.enabled = !guiText.enabled;
+			GetComponent<GUIText>().enabled = !GetComponent<GUIText>().enabled;
 		}
 
 		// Split it into each digit
-		guiText.text = "<color=yellow>" + (int)(Time.timeSinceLevelLoad/60) + ":" + (int)((Time.timeSinceLevelLoad%60)/10)
+		GetComponent<GUIText>().text = "<color=yellow>" + (int)(Time.timeSinceLevelLoad/60) + ":" + (int)((Time.timeSinceLevelLoad%60)/10)
 			+ (int)((Time.timeSinceLevelLoad%60)%10) + ":" + (int)(Time.timeSinceLevelLoad%1 * 10) + (int)(Time.timeSinceLevelLoad%.1 * 100)
 				+ (int)(Time.timeSinceLevelLoad%.01 * 1000) + "</color>" ;
 	}

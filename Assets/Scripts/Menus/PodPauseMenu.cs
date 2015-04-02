@@ -22,7 +22,7 @@ public class PodPauseMenu : MonoBehaviour {
 	private float whatWouldBeDeltaTime;
 	
 	void Start () {
-		Screen.showCursor = false;
+		Cursor.visible = false;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		whatWouldBeDeltaTime = Time.deltaTime;//this doesnt do anything, you realize // shuddup
 		menuChoices[0].color = Color.white;

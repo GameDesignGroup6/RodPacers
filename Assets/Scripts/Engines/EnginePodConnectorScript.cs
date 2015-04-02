@@ -14,7 +14,7 @@ public class EnginePodConnectorScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rb = rigidbody;
+		rb = GetComponent<Rigidbody>();
 		targetDist = (Vector3.Distance(rightMount.position,rightEngine.position)+Vector3.Distance(leftMount.position,leftEngine.position))/2.0f;
 		targetCrossDist = (Vector3.Distance(rightMount.position,leftEngine.position)+Vector3.Distance(leftMount.position,rightEngine.position))/2.0f;
 		leftRenderer = leftMount.GetComponent<LineRenderer>();

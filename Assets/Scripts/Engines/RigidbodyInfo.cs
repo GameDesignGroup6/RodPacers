@@ -10,13 +10,13 @@ public class RigidbodyInfo : MonoBehaviour {
 	private Rigidbody rgb;
 	// Use this for initialization
 	void Start () {
-		rgb = rigidbody;
+		rgb = GetComponent<Rigidbody>();
 	}
 //	void Update(){
 //		DebugHUD.setValue(gameObject.transform.parent.name+"/"+name+" velocity",curVelocity);
 //	}
 	void FixedUpdate () {
-		if(rgb==null)rgb=rigidbody;
+		if(rgb==null)rgb=GetComponent<Rigidbody>();
 		curVelocity = Vector3.Magnitude(rgb.velocity);
 	}
 }

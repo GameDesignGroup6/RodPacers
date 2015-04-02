@@ -38,7 +38,7 @@ public class EngineThruster : MonoBehaviour {
 	}
 	
 	void Start () {
-		rgb = rigidbody;
+		rgb = GetComponent<Rigidbody>();
 		resetThrustDirection();
 		thrust = 0f;
 	}

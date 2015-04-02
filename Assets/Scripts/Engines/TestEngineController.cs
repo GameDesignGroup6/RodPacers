@@ -14,7 +14,7 @@ public class TestEngineController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = false;
+		Cursor.visible = false;
 		acceptUserInputOn = acceptUserInput;
 		manager = GetComponent<InputManager>();
 	}

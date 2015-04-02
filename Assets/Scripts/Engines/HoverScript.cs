@@ -29,13 +29,13 @@ public class HoverScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = false;
+		Cursor.visible = false;
 		OnValidate();
 	}
 	void OnValidate(){
-		rgb = rigidbody;
+		rgb = GetComponent<Rigidbody>();
 		trans = this.transform;
-		col = collider;
+		col = GetComponent<Collider>();
 		switch(upwardsDirection){
 		case DirectionOptions.forward:up = Vector3.forward;break;
 		case DirectionOptions.backward:up = -Vector3.forward;break;
@@ -55,7 +55,7 @@ public class HoverScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if(rgb==null)rgb = rigidbody;
+		if(rgb==null)rgb = GetComponent<Rigidbody>();
 		rgb.AddForceAtPosition(2*Vector3.up,trans.TransformPoint(stabHeight*up));
 
 		sum = 0;

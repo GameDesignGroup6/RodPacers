@@ -18,21 +18,21 @@ public class DebugHUD : MonoBehaviour {
 	
 	void Start () {
 		transform.position = Vector3.up;
-		guiText.alignment = TextAlignment.Left;
-		guiText.anchor = TextAnchor.UpperLeft;
-		guiText.richText = true;
-		guiText.enabled = Application.isEditor||Debug.isDebugBuild;
+		GetComponent<GUIText>().alignment = TextAlignment.Left;
+		GetComponent<GUIText>().anchor = TextAnchor.UpperLeft;
+		GetComponent<GUIText>().richText = true;
+		GetComponent<GUIText>().enabled = Application.isEditor||Debug.isDebugBuild;
 	}
 
 	void LateUpdate () {
 		if(Input.GetKeyDown(KeyCode.F3)){
-			guiText.enabled = !guiText.enabled;
+			GetComponent<GUIText>().enabled = !GetComponent<GUIText>().enabled;
 		}
 		string s = "";
 		foreach(string key in list.Keys){
 			s+="<color=blue>"+key+"</color>: ";
 			s+=list[key]+"\n";
 		}
-		guiText.text = s;
+		GetComponent<GUIText>().text = s;
 	}
 }

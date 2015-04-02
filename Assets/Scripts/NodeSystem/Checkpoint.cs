@@ -5,7 +5,7 @@ public class Checkpoint : MonoBehaviour {
 	public int number;
 	public Checkpoint next;
 	void Start(){
-		collider.isTrigger = true;
+		GetComponent<Collider>().isTrigger = true;
 	}
 	void OnTriggerEnter(Collider other){
 		SpawnManager manager = other.transform.parent.GetComponent<SpawnManager>();

@@ -14,7 +14,7 @@ public class FixedEnginePodConnector : MonoBehaviour {
 
 		podOffsetLeft = left.EngineTransform.InverseTransformPoint(pod.position);
 		podOffsetRight = right.EngineTransform.InverseTransformPoint(pod.position);
-		if(rigidbody){rigidbody.isKinematic = true;}
+		if(GetComponent<Rigidbody>()){GetComponent<Rigidbody>().isKinematic = true;}
 
 		leftRenderer = leftMount.GetComponent<LineRenderer>();
 		rightRenderer = rightMount.GetComponent<LineRenderer>();

@@ -4,7 +4,7 @@ using System.Collections;
 public class Beginning : MonoBehaviour {
 
 	void Start() {
-		Screen.showCursor = false;
+		Cursor.visible = false;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 

@@ -18,8 +18,8 @@ public class LeaderBoard : MonoBehaviour {
 
 
 		for(int i = 0; i<sortedPlayers.Length;i++){
-			GUIText name = transform.Find((i+1)+"/name").guiText;
-			GUIText time = transform.Find((i+1)+"/time").guiText;
+			GUIText name = transform.Find((i+1)+"/name").GetComponent<GUIText>();
+			GUIText time = transform.Find((i+1)+"/time").GetComponent<GUIText>();
 			NodeRank rank = sortedPlayers[i];
 //			bool ai = !rank.playerNumber<=PlayerManager.playerCount;
 			time.text = timeToString(rank.finishTime);

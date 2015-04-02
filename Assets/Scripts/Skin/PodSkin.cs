@@ -44,7 +44,7 @@ public class PodSkin : MonoBehaviour {
 				Transform oldRightMount = basePod.Find("RightMount");
 				if(oldRightMount!=null)oldRightMount.position = newRightMount.position;
 			}
-			basePod.renderer.enabled = false;
+			basePod.GetComponent<Renderer>().enabled = false;
 			curPod.transform.parent = basePod;
 		}
 		if(newLeft!=null){
@@ -54,7 +54,7 @@ public class PodSkin : MonoBehaviour {
 				Transform oldDecLink = baseLeft.Find("Decorative_Link");
 				if(oldDecLink!=null)oldDecLink.position = newDecLink.position;
 			}
-			baseLeft.renderer.enabled = false;
+			baseLeft.GetComponent<Renderer>().enabled = false;
 			curLeft.transform.parent = baseLeft;
 		}
 		if(newRight!=null){
@@ -64,7 +64,7 @@ public class PodSkin : MonoBehaviour {
 				Transform oldDecLink = baseRight.Find("Decorative_Link");
 				if(oldDecLink!=null)oldDecLink.position = newDecLink.position;
 			}
-			baseRight.renderer.enabled = false;
+			baseRight.GetComponent<Renderer>().enabled = false;
 			curRight.transform.parent = baseRight;
 		}
 	}
@@ -80,9 +80,9 @@ public class PodSkin : MonoBehaviour {
 
 		curPod = curLeft = curRight = null;
 
-		basePod.renderer.enabled = true;
-		baseLeft.renderer.enabled = true;
-		baseRight.renderer.enabled = true;
+		basePod.GetComponent<Renderer>().enabled = true;
+		baseLeft.GetComponent<Renderer>().enabled = true;
+		baseRight.GetComponent<Renderer>().enabled = true;
 
 		Resources.UnloadUnusedAssets();
 	}

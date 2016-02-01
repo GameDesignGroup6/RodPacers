@@ -4,6 +4,9 @@ using System.Collections.Generic;
 public class DebugHUD : MonoBehaviour {
 	private static Dictionary<string,System.Object> list;
 
+    //RPAAEE change: removed tons of GetComponent calls
+    private GUIText text;
+
 	static DebugHUD(){
 		list = new Dictionary<string,System.Object>();
 	}
@@ -12,27 +15,33 @@ public class DebugHUD : MonoBehaviour {
 		list[key] = value;
 	}
 
+    //RPAAEE change: automatic boolean coloring
+    public static void setValue(string key, bool value) {
+        setValue(key, value ? "<color=green>True</color>" : "<color=red>False</color>");
+    }
+
 	public static void removeKey(string key){
 		list.Remove(key);
 	}
 	
 	void Start () {
 		transform.position = Vector3.up;
-		GetComponent<GUIText>().alignment = TextAlignment.Left;
-		GetComponent<GUIText>().anchor = TextAnchor.UpperLeft;
-		GetComponent<GUIText>().richText = true;
-		GetComponent<GUIText>().enabled = Application.isEditor||Debug.isDebugBuild;
+        text = GetComponent<GUIText>();
+		text.alignment = TextAlignment.Left;
+        text.anchor = TextAnchor.UpperLeft;
+        text.richText = true;
+        text.enabled = Application.isEditor||Debug.isDebugBuild;
 	}
 
 	void LateUpdate () {
 		if(Input.GetKeyDown(KeyCode.F3)){
-			GetComponent<GUIText>().enabled = !GetComponent<GUIText>().enabled;
+            text.enabled = !text.enabled;
 		}
 		string s = "";
 		foreach(string key in list.Keys){
 			s+="<color=blue>"+key+"</color>: ";
 			s+=list[key]+"\n";
 		}
-		GetComponent<GUIText>().text = s;
+        text.text = s;
 	}
 }

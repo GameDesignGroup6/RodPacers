@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+using XInputDotNetPure;
+#endif
+
 
 [RequireComponent(typeof(PodSkin),typeof(bouncySpinnyCubeScript))]
 public class PodSelect : MonoBehaviour {
@@ -24,28 +28,42 @@ public class PodSelect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(playerNumber<1||playerNumber>4)return;
-		bscs.spinRate.y = 16+72*Input.GetAxis("RightStickHoriz"+playerNumber);
+        if (playerNumber < 1 || playerNumber > 4) return;
+        //begin RPAAEE changes
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        float leftStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Left.X;
+        float rightStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Right.X;
+#else
+        float leftStickHoriz = Input.GetAxis("LeftStickHoriz"+playerNumber);
+        float rightStickHoriz = Input.GetAxis("RightStickHoriz"+playerNumber);
+#endif
 
+        
+        bscs.spinRate.y = 16 + 72 * rightStickHoriz;
 
 		if (updateIsTooFast > 0) {
 			updateIsTooFast-=Time.deltaTime;
 			return;
 		}
-		if(Input.GetAxis("LeftStickHoriz"+playerNumber)<-0.7f){
+
+
+
+        if (leftStickHoriz<-0.7f){
 			selectedPod--;
 			if(selectedPod<minPodNumber&&!(Input.GetKey("joystick "+playerNumber+" button 6")&&selectedPod>=0))selectedPod = maxPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
 			PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		}
-		if(Input.GetAxis("LeftStickHoriz"+playerNumber)>0.7f){
+		if(leftStickHoriz>0.7f){
 			selectedPod++;
 			if(selectedPod>maxPodNumber && !(Input.GetKey("joystick "+playerNumber+" button 6")&&selectedPod<SkinManager.SkinList.Length))selectedPod = minPodNumber;
 			skinToChange.ChangeSkin(selectedPod);
 			updateIsTooFast = 0.25f;
 			PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		}
+
+        //end RPAEE changes
 
 		switch(selectedPod) {
 		case 0: podDescription.text = "Default";

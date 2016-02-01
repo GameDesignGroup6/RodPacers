@@ -15,7 +15,7 @@ public class PlayerInputManager : InputManager {
 
 	public override float getLeftTrigger(){
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
-        return GamePad.GetState((PlayerIndex)playerNumber).Triggers.Left;
+        return GamePad.GetState((PlayerIndex)(playerNumber-1)).Triggers.Left;
 #else
 		float leftTrigger = Input.GetAxis("LeftTrigger" + playerNumber);
 		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
@@ -26,7 +26,7 @@ public class PlayerInputManager : InputManager {
 	}
 	public override float getRightTrigger(){
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
-        return GamePad.GetState((PlayerIndex)playerNumber).Triggers.Right;
+        return GamePad.GetState((PlayerIndex)(playerNumber - 1)).Triggers.Right;
 #else
 		float rightTrigger = Input.GetAxis("RightTrigger" + playerNumber);
 		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
@@ -38,8 +38,8 @@ public class PlayerInputManager : InputManager {
 	public override float getThrottle(){
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
         float val = 0f;
-        if (GamePad.GetState((PlayerIndex)playerNumber).Buttons.A == ButtonState.Pressed) val += 1.0f;
-        if (GamePad.GetState((PlayerIndex)playerNumber).Buttons.B == ButtonState.Pressed) val -= 1.0f;
+        if (GamePad.GetState((PlayerIndex)(playerNumber - 1)).Buttons.A == ButtonState.Pressed) val += 1.0f;
+        if (GamePad.GetState((PlayerIndex)(playerNumber - 1)).Buttons.B == ButtonState.Pressed) val -= 1.0f;
         return val;
 #else
 		return Input.GetAxis("Throttle"+playerNumber);
@@ -48,7 +48,7 @@ public class PlayerInputManager : InputManager {
 	void Update(){
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
         //xinput doesn't have a "ButtonDown", we need to do it manually
-        bool pressedThisFrame = GamePad.GetState((PlayerIndex)playerNumber).Buttons.Y == ButtonState.Pressed;
+        bool pressedThisFrame = GamePad.GetState((PlayerIndex)(playerNumber - 1)).Buttons.Y == ButtonState.Pressed;
         if (pressedThisFrame && !pressedLastFrame) {
             respawnPlayer();
             pressedLastFrame = true;

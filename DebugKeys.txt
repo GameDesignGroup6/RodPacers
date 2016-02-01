@@ -1,3 +1,0 @@
-F3 - toggle DebugHUD
-F2+number - load skin [number] on all loaded pods
-LShift+H - toggle timer display

@@ -1,0 +1,12 @@
+Rod pacers hidden keyboard controls:
+
+F2 + <number> : switches all pods to the given skin number
+F3 : toggle DebugHUD
+
+F5 : toggle wireframe rendering
+
+G: forcibly enable pod engine controls (possibly unused)
+
+LShift + H : toggle timer display
+
+[REDACTED] : allows selecting of additional pods

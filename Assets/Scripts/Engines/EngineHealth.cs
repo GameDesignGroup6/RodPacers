@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+using XInputDotNetPure;
+#endif
+
 [RequireComponent(typeof(Collider),typeof(Engine))]
 public class EngineHealth : MonoBehaviour {
 	public float maxHealth = 1000f;
@@ -14,15 +18,33 @@ public class EngineHealth : MonoBehaviour {
 		get{return dead;}
 	}
 
-	void Start(){
+    //RPAAEE addition: xinput vibration support
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+    private bool vibrationEnabled;
+    private PlayerIndex index;
+    private float vibrationStrength = 0f;
+    private const float vibrationDecay = 0.05f;
+#endif
+
+    void Start(){
 		curHealth = maxHealth;
 		Engine e = GetComponent<Engine>();
 		e.HoverScript.enabled = true;
 		e.EngineThruster.enabled = true;
 		inv = 2f;
-	}
 
-	void OnCollisionStay(Collision col){
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        PlayerInputManager mgr = transform.parent.GetComponentInChildren<PlayerInputManager>();
+        if(mgr == null) {
+            vibrationEnabled = false;
+        } else {
+            vibrationEnabled = true;
+            index = (PlayerIndex)(mgr.playerNumber - 1);
+        }
+#endif
+    }
+
+        void OnCollisionStay(Collision col){
 		Hurt(1f);
 	}
 	void OnCollisionEnter(Collision col){
@@ -40,12 +62,25 @@ public class EngineHealth : MonoBehaviour {
 			inv-=Time.fixedDeltaTime;
 			if(inv<0f)inv=0f;
 		}
-	}
+
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        if (vibrationEnabled) {
+            vibrationStrength = Mathf.Max(0.0f, vibrationStrength - vibrationDecay);
+            GamePad.SetVibration(index, vibrationStrength, vibrationStrength);
+            DebugHUD.setValue("Vibration", vibrationStrength);
+        }
+#endif
+    }
 	public void Hurt(float damage){
 		if(inv>0f)return;
 		inv = 0.25f;
 		curHealth-=damage;
-		if(curHealth<=0f){
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+        if (vibrationEnabled) {
+            vibrationStrength = Mathf.Max(vibrationStrength, Mathf.Clamp01(damage / maxHealth * 20));
+        }
+#endif
+        if (curHealth<=0f){
 			Engine e = GetComponent<Engine>();
 			e.HoverScript.enabled = false;
 			e.EngineThruster.enabled = false;

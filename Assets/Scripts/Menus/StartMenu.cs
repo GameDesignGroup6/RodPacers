@@ -28,7 +28,7 @@ public class StartMenu : MonoBehaviour {
 			return;
 		}
 
-		if (Input.GetAxis ("LeftStickVert1") > 0.0f) {
+		if (Input.GetAxis ("LeftStickVert1") > 0.1f) {
 			menuChoices[position].color = Color.yellow;
 			position--;
 			if (position < 0) {
@@ -36,7 +36,7 @@ public class StartMenu : MonoBehaviour {
 			}
 			updateIsTooFast = 0.25f;
 		}
-		if (Input.GetAxis ("LeftStickVert1") < -0.0f) {
+		if (Input.GetAxis ("LeftStickVert1") < -0.1f) {
 			menuChoices[position].color = Color.yellow;
 			position = (position + 1)%menuChoices.Length;
 			updateIsTooFast = 0.25f;

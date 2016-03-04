@@ -19,7 +19,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 8
+    axis: 4
     joyNum: 1
   - serializedVersion: 3
     m_Name: LeftTrigger1
@@ -35,7 +35,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 0
-    axis: 8
+    axis: 4
     joyNum: 1
   - serializedVersion: 3
     m_Name: LeftTrigger2
@@ -51,7 +51,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 8
+    axis: 4
     joyNum: 2
   - serializedVersion: 3
     m_Name: LeftTrigger3
@@ -67,7 +67,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 8
+    axis: 4
     joyNum: 3
   - serializedVersion: 3
     m_Name: LeftTrigger4
@@ -83,7 +83,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 8
+    axis: 4
     joyNum: 4
   - serializedVersion: 3
     m_Name: RightTrigger1
@@ -99,7 +99,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 9
+    axis: 5
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightTrigger1
@@ -115,7 +115,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 0
-    axis: 9
+    axis: 5
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightTrigger2
@@ -131,7 +131,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 9
+    axis: 5
     joyNum: 2
   - serializedVersion: 3
     m_Name: RightTrigger3
@@ -147,7 +147,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 9
+    axis: 5
     joyNum: 3
   - serializedVersion: 3
     m_Name: RightTrigger4
@@ -163,7 +163,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 9
+    axis: 5
     joyNum: 4
   - serializedVersion: 3
     m_Name: LeftStickVert1
@@ -291,7 +291,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 4
+    axis: 3
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightStickHoriz1
@@ -307,7 +307,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightStickHoriz1
@@ -323,7 +323,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 0
-    axis: 3
+    axis: 2
     joyNum: 1
   - serializedVersion: 3
     m_Name: RightStickHoriz2
@@ -355,7 +355,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 3
   - serializedVersion: 3
     m_Name: RightStickHoriz4
@@ -371,14 +371,14 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 4
   - serializedVersion: 3
     m_Name: Throttle1
     descriptiveName: Player 1 Throttle
     descriptiveNegativeName: Player 1 Brakes
-    negativeButton: joystick 1 button 1
-    positiveButton: joystick 1 button 0
+    negativeButton: joystick 1 button 17
+    positiveButton: joystick 1 button 16
     altNegativeButton: left shift
     altPositiveButton: space
     gravity: 1000
@@ -393,8 +393,8 @@ InputManager:
     m_Name: Throttle2
     descriptiveName: Player 2 Throttle
     descriptiveNegativeName: Player 2 Brakes
-    negativeButton: joystick 2 button 1
-    positiveButton: joystick 2 button 0
+    negativeButton: joystick 2 button 17
+    positiveButton: joystick 2 button 16
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -409,8 +409,8 @@ InputManager:
     m_Name: Throttle3
     descriptiveName: Player 3 Throttle
     descriptiveNegativeName: Player 3 Brakes
-    negativeButton: joystick 3 button 1
-    positiveButton: joystick 3 button 0
+    negativeButton: joystick 3 button 17
+    positiveButton: joystick 3 button 16
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -425,8 +425,8 @@ InputManager:
     m_Name: Throttle4
     descriptiveName: Player 4 Throttle
     descriptiveNegativeName: Player 4 Brakes
-    negativeButton: joystick 4 button 1
-    positiveButton: joystick 4 button 0
+    negativeButton: joystick 4 button 17
+    positiveButton: joystick 4 button 16
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -442,7 +442,7 @@ InputManager:
     descriptiveName: Pause (Player 1 Only)
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 1 button 7
+    positiveButton: joystick 1 button 9
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -458,9 +458,9 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 1 button 2
+    positiveButton: joystick 1 button 18
     altNegativeButton: 
-    altPositiveButton: joystick 1 button 3
+    altPositiveButton: joystick 1 button 19
     gravity: 1000
     dead: 0
     sensitivity: 1000
@@ -490,9 +490,9 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 2 button 2
+    positiveButton: joystick 2 button 18
     altNegativeButton: 
-    altPositiveButton: joystick 2 button 3
+    altPositiveButton: joystick 2 button 19
     gravity: 1000
     dead: 0
     sensitivity: 1000
@@ -506,9 +506,9 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 3 button 2
+    positiveButton: joystick 3 button 18
     altNegativeButton: 
-    altPositiveButton: joystick 3 button 3
+    altPositiveButton: joystick 3 button 19
     gravity: 1000
     dead: 0
     sensitivity: 1000
@@ -522,9 +522,9 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 4 button 2
+    positiveButton: joystick 4 button 18
     altNegativeButton: 
-    altPositiveButton: joystick 4 button 3
+    altPositiveButton: joystick 4 button 19
     gravity: 1000
     dead: 0
     sensitivity: 1000
@@ -540,7 +540,7 @@ InputManager:
     negativeButton: 
     positiveButton: return
     altNegativeButton: 
-    altPositiveButton: joystick button 0
+    altPositiveButton: joystick button 16
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -572,7 +572,7 @@ InputManager:
     negativeButton: 
     positiveButton: escape
     altNegativeButton: 
-    altPositiveButton: joystick button 1
+    altPositiveButton: joystick button 17
     gravity: 1000
     dead: 0.001
     sensitivity: 1000

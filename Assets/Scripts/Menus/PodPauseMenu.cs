@@ -48,7 +48,7 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetAxis ("LeftStickVert1") > 0 && paused) {
+		if (Input.GetAxis ("LeftStickVert1") > 0.1f && paused) {
 			menuChoices[position].color = Color.yellow;
 			position--;
 			if (position < 0) {
@@ -56,7 +56,7 @@ public class PodPauseMenu : MonoBehaviour {
 			}
 			updateIsTooFast = 0.25f;
 		}
-		if (Input.GetAxis ("LeftStickVert1") < -0f && paused) {
+		if (Input.GetAxis ("LeftStickVert1") < -0.1f && paused) {
 			menuChoices[position].color = Color.yellow;
 			position = (position + 1)%menuChoices.Length;
 			updateIsTooFast = 0.25f;

@@ -339,7 +339,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 2
   - serializedVersion: 3
     m_Name: RightStickHoriz3
@@ -444,7 +444,7 @@ InputManager:
     negativeButton: 
     positiveButton: joystick 1 button 9
     altNegativeButton: 
-    altPositiveButton: 
+    altPositiveButton: escape
     gravity: 1000
     dead: 0
     sensitivity: 1000

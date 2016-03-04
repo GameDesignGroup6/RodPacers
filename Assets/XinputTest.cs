@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+
+using UnityEngine;
 using System.Collections;
 
 using XInputDotNetPure;
@@ -40,3 +42,5 @@ public class XinputTest : MonoBehaviour {
         DebugHUD.setValue("DPad.Right", state.DPad.Right.ToString());
     }
 }
+
+#endif

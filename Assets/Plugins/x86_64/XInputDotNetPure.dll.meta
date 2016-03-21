@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea895df4f09804d47ac0a43ce22418cb
+guid: b9f05caccaeb48146ae995df3ed431ab
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
@@ -45,6 +45,10 @@ PluginImporter:
         CPU: None
     Win64:
       enabled: 1
+      settings:
+        CPU: AnyCPU
+    WindowsStoreApps:
+      enabled: 0
       settings:
         CPU: AnyCPU
   userData: 

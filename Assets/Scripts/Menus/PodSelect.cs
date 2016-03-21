@@ -30,12 +30,17 @@ public class PodSelect : MonoBehaviour {
 	void Update () {
         if (playerNumber < 1 || playerNumber > 4) return;
         //begin RPAAEE changes
+		float leftStickHoriz, rightStickHoriz;
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
-        float leftStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Left.X;
-        float rightStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Right.X;
-#else
-        float leftStickHoriz = Input.GetAxis("LeftStickHoriz"+playerNumber);
-        float rightStickHoriz = Input.GetAxis("RightStickHoriz"+playerNumber);
+		if(GamePad.GetState((PlayerIndex)(playerNumber - 1)).IsConnected){
+        	leftStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Left.X;
+        	rightStickHoriz = GamePad.GetState((PlayerIndex)(playerNumber - 1)).ThumbSticks.Right.X;
+		} else {
+#endif
+        	leftStickHoriz = Input.GetAxis("LeftStickHoriz"+playerNumber);
+        	rightStickHoriz = Input.GetAxis("RightStickHoriz"+playerNumber);
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+		}
 #endif
 
         

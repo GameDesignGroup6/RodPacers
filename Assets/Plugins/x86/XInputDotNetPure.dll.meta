@@ -1,28 +1,24 @@
 fileFormatVersion: 2
-guid: 280f3b133f5a0f9438c68ee61440d577
+guid: c4e96c35cd46f534592ecc07b608e110
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
   executionOrder: {}
   isPreloaded: 0
   platformData:
-    Android:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
     Any:
-      enabled: 0
+      enabled: 1
       settings: {}
     Editor:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: x86
         DefaultValueInitialized: true
         OS: Windows
     Linux:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: None
+        CPU: x86
     Linux64:
       enabled: 0
       settings:
@@ -30,11 +26,11 @@ PluginImporter:
     LinuxUniversal:
       enabled: 0
       settings:
-        CPU: None
+        CPU: x86
     OSXIntel:
-      enabled: 0
+      enabled: 1
       settings:
-        CPU: None
+        CPU: AnyCPU
     OSXIntel64:
       enabled: 0
       settings:
@@ -42,15 +38,15 @@ PluginImporter:
     OSXUniversal:
       enabled: 0
       settings:
-        CPU: None
+        CPU: x86
     Win:
       enabled: 1
       settings:
         CPU: AnyCPU
     Win64:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: None
     WindowsStoreApps:
       enabled: 0
       settings:

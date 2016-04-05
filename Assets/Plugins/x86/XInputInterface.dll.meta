@@ -7,7 +7,7 @@ PluginImporter:
   isPreloaded: 0
   platformData:
     Any:
-      enabled: 1
+      enabled: 0
       settings: {}
     Editor:
       enabled: 0
@@ -47,6 +47,11 @@ PluginImporter:
       enabled: 0
       settings:
         CPU: None
+    iOS:
+      enabled: 0
+      settings:
+        CompileFlags: 
+        FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 

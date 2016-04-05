@@ -24,20 +24,31 @@ public class StartMenu : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         //begin IOS changes
-        if (Input.touchCount == 1) {
-            var touch = Input.touches[0];
-            if (touch.phase == TouchPhase.Ended) {
-                for (int x = 0; x < menuChoices.Length; x++) {
-                    if (menuChoices[x].HitTest(touch.position)) {
-                        if (nextScenes[x] == "Quit") {
-                            Application.Quit();
-                        } else {
-                            Application.LoadLevel(nextScenes[x]);
-                        }
-                    }
-                }
-            }
-        }
+//        if (Input.touchCount == 1) {
+//            var touch = Input.touches[0];
+//            if (touch.phase == TouchPhase.Ended) {
+//                for (int x = 0; x < menuChoices.Length; x++) {
+//                    if (menuChoices[x].HitTest(touch.position)) {
+//                        if (nextScenes[x] == "Quit") {
+//                            Application.Quit();
+//                        } else {
+//                            Application.LoadLevel(nextScenes[x]);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+		if (Input.GetMouseButtonDown(0)) {
+			for (int x = 0; x < menuChoices.Length; x++) {
+				if (menuChoices[x].HitTest(Input.mousePosition)) {
+					if (nextScenes[x] == "Quit") {
+						Application.Quit();
+					} else {
+						Application.LoadLevel(nextScenes[x]);
+					}
+				}
+			}
+		}
         //end IOS changes
 
         if (updateIsTooFast > 0) {

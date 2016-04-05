@@ -10,7 +10,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Team6
-  productName: Rod Pacers Anniversary of the Anniversary Edition Edition
+  productName: Rod Pacers
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -139,7 +139,8 @@ PlayerSettings:
   tvOSTopShelfImageLayers: []
   iOSLaunchScreenType: 0
   iOSLaunchScreenPortrait: {fileID: 0}
-  iOSLaunchScreenLandscape: {fileID: 0}
+  iOSLaunchScreenLandscape: {fileID: 2800000, guid: 0c1a1b852c073496f8b27993c9cc7f8a,
+    type: 3}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
     rgba: 0

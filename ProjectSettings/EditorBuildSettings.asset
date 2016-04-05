@@ -11,33 +11,33 @@ EditorBuildSettings:
     path: Assets/Scenes/ToddFraizerScreen.unity
   - enabled: 1
     path: Assets/Scenes/Menu Screens/StartScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Screens/PlayerNumberSelectionScreen.unity
   - enabled: 1
     path: Assets/Scenes/Small Map/Test0.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Screens/FourPlayerSelection.unity
   - enabled: 1
     path: Assets/Scenes/Big Map/Intro.unity
   - enabled: 1
     path: Assets/Scenes/Player Screens/SinglePlayer.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Player Screens/ThreePlayer.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Screens/ThreePlayerSelection.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Player Screens/TwoPlayer.unity
   - enabled: 1
     path: Assets/Scenes/Big Map/Test1.unity
   - enabled: 1
     path: Assets/Scenes/Menu Screens/SinglePlayerSelection.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Player Screens/FourPlayer.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Screens/FourPlayerSelection.unity
   - enabled: 1
     path: Assets/Scenes/Menu Screens/OptionsScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu Screens/TwoPlayerSelection.unity
   - enabled: 1
     path: Assets/Scenes/Menu Screens/SinglePlayerSelection.unity

@@ -117,7 +117,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -168,7 +168,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1996,7 +1996,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -2208,12 +2208,10 @@ MonoBehaviour:
   - {fileID: 526416282}
   - {fileID: 553057366}
   - {fileID: 1183595802}
-  - {fileID: 2010286270}
   nextScenes:
   - SinglePlayerSelection
   - OptionsScreen
   - LegalScreen
-  - Quit
 --- !u!1 &1855471271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,7 +2288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!132 &2010286270
 GUIText:
   m_ObjectHideFlags: 0

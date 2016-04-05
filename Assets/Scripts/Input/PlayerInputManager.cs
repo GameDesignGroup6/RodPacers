@@ -20,7 +20,7 @@ public class PlayerInputManager : InputManager {
 		}
 #endif
 		#if UNITY_IOS
-		return Mathf.Clamp01(-Input.acceleration.x * 3);
+		return Mathf.Clamp01(-Input.acceleration.x * 2.5f);
 		#endif
 
 		float leftTrigger = Input.GetAxis("LeftTrigger" + playerNumber);
@@ -37,7 +37,7 @@ public class PlayerInputManager : InputManager {
 #endif
 
 		#if UNITY_IOS
-		return Mathf.Clamp01(Input.acceleration.x * 3);
+		return Mathf.Clamp01(Input.acceleration.x * 2.5f);
 		#endif
 
 		float rightTrigger = Input.GetAxis("RightTrigger" + playerNumber);

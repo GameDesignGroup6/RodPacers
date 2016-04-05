@@ -117,7 +117,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -912,7 +912,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1459,7 +1459,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 714da3809e2d7430ead466891f00db89, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 50
+  m_FontSize: 60
   m_FontStyle: 2
   m_Color:
     serializedVersion: 2
@@ -3653,7 +3653,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 856910d095f1a43e29406bdd32d4f670, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 50
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2

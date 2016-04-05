@@ -19,6 +19,10 @@ public class PlayerInputManager : InputManager {
         	return GamePad.GetState((PlayerIndex)(playerNumber-1)).Triggers.Left;
 		}
 #endif
+		#if UNITY_IOS
+		return Mathf.Clamp01(-Input.acceleration.x * 3);
+		#endif
+
 		float leftTrigger = Input.GetAxis("LeftTrigger" + playerNumber);
 		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
 			leftTrigger = (leftTrigger +1)/2;
@@ -31,6 +35,11 @@ public class PlayerInputManager : InputManager {
         	return GamePad.GetState((PlayerIndex)(playerNumber - 1)).Triggers.Right;
 		}
 #endif
+
+		#if UNITY_IOS
+		return Mathf.Clamp01(Input.acceleration.x * 3);
+		#endif
+
 		float rightTrigger = Input.GetAxis("RightTrigger" + playerNumber);
 		if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer) {
 			rightTrigger = (rightTrigger + 1)/2;
@@ -46,6 +55,19 @@ public class PlayerInputManager : InputManager {
 	        return val;
 		}
 #endif
+		#if UNITY_IOS
+		if(Input.touchCount == 1){
+			var touch = Input.touches[0];
+			float x = touch.position.x / (float)Screen.width;
+			if(x > 0.5f){
+				return 1f;
+			} else {
+				return -1f;
+			}
+		} else {
+			return 0f;
+		}
+		#endif
 		return Input.GetAxis("Throttle"+playerNumber);
 	}
 	void Update(){
@@ -62,6 +84,11 @@ public class PlayerInputManager : InputManager {
 			return;
 		}
 #endif
+		#if UNITY_IOS
+		if(Input.touchCount == 3){
+			respawnPlayer();
+		}
+		#endif
         if (Input.GetButtonDown("Respawn" + playerNumber)) {
             respawnPlayer();
         }

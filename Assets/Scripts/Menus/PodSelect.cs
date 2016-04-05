@@ -16,6 +16,12 @@ public class PodSelect : MonoBehaviour {
 	private float updateIsTooFast = 0.25f;
 	private bouncySpinnyCubeScript bscs;
 
+		// iOS Changes
+		private Vector2 firstPressPos;
+		private Vector2 secondPressPos;
+		private Vector3 currentSwipe;
+		private bool isSwiping;
+		// end iOS Changes
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +30,9 @@ public class PodSelect : MonoBehaviour {
 		skinToChange.ChangeSkin(selectedPod);
 		PlayerManager.podSkins[playerNumber-1] = selectedPod;
 		bscs = GetComponent<bouncySpinnyCubeScript>();
+
+		// iOS
+				isSwiping = false;
 	}
 	
 	// Update is called once per frame
@@ -42,7 +51,33 @@ public class PodSelect : MonoBehaviour {
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
 		}
 #endif
+		// iOS changes
+		if(Input.GetMouseButtonDown(0))
+		{
+			firstPressPos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
+		}
+		if(Input.GetMouseButtonUp(0))
+		{
+			//save ended touch 2d point
+			secondPressPos = new Vector2(Input.mousePosition.x,Input.mousePosition.y);
 
+			//create vector from the two points
+			currentSwipe = new Vector3(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+
+			//normalize the 2d vector
+			currentSwipe.Normalize();
+			//swipe left
+			if(currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
+			{
+				leftStickHoriz = -1;
+			}
+			//swipe right
+			if(currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
+			{
+				leftStickHoriz = 1;
+			}
+		}
+		// end iOS changes
         
         bscs.spinRate.y = 16 + 72 * rightStickHoriz;
 

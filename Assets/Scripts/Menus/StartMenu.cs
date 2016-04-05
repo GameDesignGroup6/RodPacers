@@ -16,7 +16,7 @@ public class StartMenu : MonoBehaviour {
     private float updateIsTooFast = .25f;
 
     void Start() {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         //menuChoices[0].color = Color.white;
     }
@@ -41,6 +41,7 @@ public class StartMenu : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			for (int x = 0; x < menuChoices.Length; x++) {
 				if (menuChoices[x].HitTest(Input.mousePosition)) {
+					menuChoices[x].color = Color.white;
 					if (nextScenes[x] == "Quit") {
 						Application.Quit();
 					} else {

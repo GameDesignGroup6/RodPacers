@@ -70,7 +70,7 @@ public class StartMenu : MonoBehaviour {
             updateIsTooFast = 0.25f;
         }
 
-        menuChoices[position].color = Color.white;
+//        menuChoices[position].color = Color.white; // TURNED OFF FOR IOS
 
         if (Input.GetAxis("Throttle1") > 0) {
             if (nextScenes[position] == "Quit") {
